@@ -4653,7 +4653,6 @@ footer {
     height: 400px; /* Adjust height as needed */
     display: flex;
     align-items: center;
-    justify-content: center;
     color: #fff; /* Ensures text is readable on the image */
     text-align: center;
     position: relative;
@@ -4834,7 +4833,9 @@ footer {
 }
 
 .contact_inner_div {
+    padding: 2rem;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap-reverse;
     /* flex-direction: column; */
     width: 100%;
@@ -4850,20 +4851,20 @@ footer {
 }
 */
 
-@media(max-width:1689px) {
-    .contact_form_row {
-        width: 80%;
-        margin: auto;
-    }
-
-    .contact_info_section {
-        width: 100%;
-        padding: 40px 40px 40px 125px !important;
-    }
-    
+.contact_form_row {
+    width: 45%;
 }
 
+.contact_info_section {
+    width: 45%;
+}
+
+
 @media(max-width:1192px) {
+    .contact_inner_div {
+        padding: 0rem;
+        gap:20px;
+    }
     
     .contact_form_row {
         width: 90%;
@@ -4871,12 +4872,13 @@ footer {
     }
 
     .contact_info_section {
-    
+        width: 100%;
+        margin: auto;
         padding: 40px 40px 40px 40px !important;
     }
     .contact_us_section {
         background-color: #f1f1f1;
-        padding: 41px 0px;
+        padding: 41px 41px;
     }
 }
 
@@ -5241,6 +5243,16 @@ article.shop-item.card.border-0.shadow-sm.p-3{
 
 .card-body {
     padding: 1.5rem;
+}
+
+@media(max-width:767px){
+    .container-shop .row .col-md-4 {
+        width: 50%;
+    }
+    .container-shop .row {
+       
+         padding: 0 0; 
+    }
 }
 
 .shop-meta {
@@ -8040,6 +8052,24 @@ button.woocommerce-Delete-Button.button {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
+.shippingContainer {
+    font-family: var(--Mulish);
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background: #F6F5F0;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:2rem;
+}
+
+btn__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width: 1544px) {
     .user-profile-forms-details .large-9.col {
@@ -8085,7 +8115,7 @@ button.woocommerce-Delete-Button.button {
 
 .shopping-cart-section {
     background-color: #ffffff;
-    padding: 20px;
+    padding:0px 20px 20px 20px;
     border-radius: 10px;
 }
 .cart-container {
@@ -8154,7 +8184,7 @@ button.woocommerce-Delete-Button.button {
     }
 
     .product-image img {
-        width: 8.5rem;
+        width: 4.5rem !important;
     }
 
     .availability {
@@ -8186,8 +8216,9 @@ button.woocommerce-Delete-Button.button {
         width: 97%;
     }
 
+    
     .product-image {
-        width: 35%;
+        width: 35% !important;
     }
 
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
@@ -8527,26 +8558,28 @@ button.woocommerce-Delete-Button.button {
         border: none;
         border-radius: 22px;
         cursor: pointer;
+        
     }
 
 
     /* Basic button styles */
-    .cart-ingka-jumbo-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 33px 84px;
-        background-color: #0b4b30;
-        border: none;
-        border-radius: 8px;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        outline: none;
-    }
+.cart-ingka-jumbo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 84px;
+    background-color: #0b4b30;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+    width: 100%;
+}
 
         /* Button hover effect */
         .cart-ingka-jumbo-btn:hover {
@@ -8582,10 +8615,12 @@ button.woocommerce-Delete-Button.button {
     }
 
     /* Inner span styles */
-    .cart-ingka-jumbo-btn__inner {
-        display: inline-flex;
-        align-items: center;
-    }
+.cart-ingka-jumbo-btn__inner {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
     /* Icon size */
     .cart-ingka-svg-icon {
@@ -10485,7 +10520,7 @@ blockquote {
         /* flex: none; */
         padding: 0rem 1rem;
         /* flex: none; */
-        width: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
