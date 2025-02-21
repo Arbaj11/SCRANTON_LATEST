@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Scanton.Models.StoreProfile>
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Store Profiles";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary fw-bold">Store Profiles</h2>
+
+    <div class="d-flex justify-content-end mb-4">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add Store Profile
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <table class="table table-hover table-striped">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>#</th>
+                        <th>Store Name</th>
+                        <th>Image</th>
+                        <th>Zip Code</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var store in Model)
+                        {
+                            <tr>
+                                <td>@store.Id</td>
+                                <td>@store.StoreName</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(store.ImagePath))
+                                    {
+                                        <img src="@store.ImagePath" alt="Blog Image" style="width: 60px; height: auto;" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No Image</span>
+                                    }
+                                </td>
+                                <td>@store.ZipCode</td>
+                                <td>@store.City</td>
+                                <td>@store.State</td>
+                                <td>@store.ContactNumber</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@store.Id" class="btn btn-sm btn-warning">
+                                        <i class="bi bi-pencil"></i> Edit
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@store.Id" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this store profile?');">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center text-muted">No stores available.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

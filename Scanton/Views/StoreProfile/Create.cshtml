@@ -1,0 +1,81 @@
+﻿@model Scanton.Models.StoreProfile
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add Store Profile";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary fw-bold">Add Store Profile</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div class="mb-4">
+                    <label for="StoreName" class="form-label text-dark fw-semibold">Store Name</label>
+                    <input asp-for="StoreName" class="form-control border-primary rounded-pill" placeholder="Enter store name" />
+                    <span asp-validation-for="StoreName" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label for="Address" class="form-label text-dark fw-semibold">Address</label>
+                    <textarea asp-for="Address" class="form-control border-primary rounded" placeholder="Enter store address"></textarea>
+                    <span asp-validation-for="Address" class="text-danger small"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <label for="City" class="form-label text-dark fw-semibold">City</label>
+                        <input asp-for="City" class="form-control border-primary rounded-pill" placeholder="Enter city" />
+                        <span asp-validation-for="City" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <label for="State" class="form-label text-dark fw-semibold">State</label>
+                        <input asp-for="State" class="form-control border-primary rounded-pill" placeholder="Enter state" />
+                        <span asp-validation-for="State" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <label for="ZipCode" class="form-label text-dark fw-semibold">Zip Code</label>
+                        <input asp-for="ZipCode" class="form-control border-primary rounded-pill" placeholder="Enter zip code" />
+                        <span asp-validation-for="ZipCode" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="ContactNumber" class="form-label text-dark fw-semibold">Contact Number</label>
+                    <input asp-for="ContactNumber" class="form-control border-primary rounded-pill" placeholder="Enter contact number" />
+                    <span asp-validation-for="ContactNumber" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label for="Email" class="form-label text-dark fw-semibold">Email</label>
+                    <input asp-for="Email" class="form-control border-primary rounded-pill" placeholder="Enter email address" />
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label for="Description" class="form-label text-dark fw-semibold">Description</label>
+                    <textarea asp-for="Description" class="form-control border-primary rounded" placeholder="Enter store description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Product_Image1" class="form-label"> Image </label>
+                    <input type="file" class="form-control" id="ImageFile" name="ImageFile" />
+                    <input type="hidden" name="ImageFile" value="ImageFile" />
+                    <span asp-validation-for="ImagePath" class="text-danger"></span>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-success rounded-pill">
+                        <i class="bi bi-save"></i> Save
+                    </button>
+                    <a asp-action="List" class="btn btn-secondary rounded-pill ms-2">
+                        <i class="bi bi-arrow-left"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+﻿
+<div class="woocommerce-EditAccountForm-container">
+    <form class="woocommerce-EditAccountForm edit-account" action="" method="post">
+        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+            <label for="account_display_name">Name <span class="required">*</span></label>
+            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="John Doe" aria-describedby="account_display_name_description">
+            <span id="account_display_name_description"><em>This will be how your name will be displayed in the account section and in reviews</em></span>
+        </p>
+        <div class="clear"></div>
+
+        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+            <label for="account_email">Email address <span class="required">*</span></label>
+            <input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="john.doe@example.com">
+        </p>
+
+        <fieldset>
+            <legend>Password change</legend>
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_current">Current password (leave blank to leave unchanged)</label>
+                <span class="password-input">
+                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off">
+                    <span class="show-password-input"><i class="fa-regular fa-eye pas-eye"></i></span>
+                </span>
+            </p>
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_1">New password (leave blank to leave unchanged)</label>
+                <span class="password-input">
+                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off">
+                    <span class="show-password-input"><i class="fa-regular fa-eye pas-eye"></i></span>
+                </span>
+            </p>
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_2">Confirm new password</label>
+                <span class="password-input">
+                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off">
+                    <span class="show-password-input"><i class="fa-regular fa-eye pas-eye"></i></span>
+                </span>
+            </p>
+        </fieldset>
+        <div class="clear"></div>
+
+        <p class="form-row form-row-wide">
+            <label for="yith_birthday">Date of birth</label>
+            <span id="yith_birthday" style="display: block; border: solid 1px #ccc; padding: 10px;">2000-06-13</span>
+            <span class="yith_birthday_account_message" style="font-style: italic">If you need to change your date of birth, please contact the website administrator.</span>
+        </p>
+
+        <p>
+            <input type="hidden" id="save-account-details-nonce" name="save-account-details-nonce" value="be2ef07cbc">
+            <input type="hidden" name="_wp_http_referer" value="/my-account/edit-account/">
+            <div class="detals-form-buttons">
+                <button type="submit" class="woocommerce-Button button" name="save_account_details" value="Save changes">Save changes</button>
+                <button type="submit" class="woocommerce-Delete-Button button" name="delete_account_details" value="Deelete Acount">Delete Account</button>
+            </div>
+            <input type="hidden" name="action" value="save_account_details">
+        </p>
+    </form>
+</div>
+

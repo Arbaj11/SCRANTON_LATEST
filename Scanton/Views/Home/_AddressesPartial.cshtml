@@ -1,0 +1,83 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    var userAddress = ViewBag.UserAddressViewModel as Scanton.Models.IndexViewModel.CustomerDetail;
+}
+<div class="woocommerce-MyAccount-content">
+    <div class="woocommerce-notices-wrapper"></div>
+
+    <p>
+        The following addresses will be used on the checkout page by default.
+    </p>
+
+    <div class="u-columns woocommerce-Addresses col2-set addresses">
+
+
+        <div class="u-column1 col-1 woocommerce-Address">
+            <header class="woocommerce-Address-title title">
+                <h2>Billing address</h2>
+               @*  <a href="https://www.3chi.com/my-account/edit-address/billing/" class="edit" style="color: #fff;">
+                    Add Billing address
+                </a> *@
+            </header>
+            <address class="addres-p">
+                @if (userAddress != null && !string.IsNullOrEmpty(userAddress.Address))
+                {
+                    <div class="address-details">
+                        <div class="address-line">
+                            <strong>Address:</strong> @userAddress.Address
+                        </div>
+                        <div class="address-line">
+                            <strong>City:</strong> @userAddress.City
+                        </div>
+                        <div class="address-line">
+                            <strong>State:</strong> @userAddress.State
+                        </div>
+                        <div class="address-line">
+                            <strong>Zip Code:</strong> @userAddress.ZipCode
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <p>You have not set up this type of address yet.</p>
+                }
+            </address>
+        </div>
+
+
+        <div class="u-column2 col-2 woocommerce-Address">
+            <header class="woocommerce-Address-title title">
+                <h2>Shipping address</h2>
+               @*  <a href="https://www.3chi.com/my-account/edit-address/shipping/" class="edit" style="color: #fff;">
+                    Add Shipping address
+                </a> *@
+            </header>
+            <address class="addres-p">
+                @if (userAddress != null && !string.IsNullOrEmpty(userAddress.Address))
+                {
+                    <div class="address-details">
+                        <div class="address-line">
+                            <strong>Address:</strong> @userAddress.Address
+                        </div>
+                        <div class="address-line">
+                            <strong>City:</strong> @userAddress.City
+                        </div>
+                        <div class="address-line">
+                            <strong>State:</strong> @userAddress.State
+                        </div>
+                        <div class="address-line">
+                            <strong>Zip Code:</strong> @userAddress.ZipCode
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <p>You have not set up this type of address yet.</p>
+                }
+            </address>
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,172 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+
+}
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ::marker {
+        color: white;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="connect-about-us-banner-section"
+     style="background-image: url('@Url.Content(Model.Aboutus.Where(about => about.Is_Active).Take(1).Select(about => about.Banner_Image).FirstOrDefault() ?? "~/images/default-banner.jpg")');">
+    <div class="connect-about-us-banner-wrapper">
+        @foreach (var about in Model.Aboutus.Where(about => about.Is_Active).Take(1))
+        {
+            <div class="connect-about-us-banner-content">
+                <h2 class="connect-about-us-banner-title">@about.Banner_Title</h2>
+                <p class="connect-about-us-banner-subtitle">@about.Banner_SubTitle</p>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+<div class="about-us-section">
+    <div class="about-us-container">
+        <h2>
+            <span class="about-us-contained-heading">Over forty years ago we started our journey; turning our shelves over to sustainable, organic produce.</span>
+        </h2>
+        <div>
+            <p>We've always had a passion for real food and a desire to feed our children better. This passion has grown into one of the most sustainable organic grocers in the country, supplying fresh, seasonal produce from farm to fork.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="about-us-new-full-width-section">
+    <div class="about-us-new-container">
+        @foreach (var about in Model.Aboutus.Where(about => about.Is_Active).Take(1))
+        {
+            <div class="about-us-new-media-with-text">
+                <!-- Media (Image) -->
+                <div class="about-us-new-media">
+                    <picture>
+                        <source srcset="@about.Product_Image1" media="(max-width: 600px)" />
+                        <img src="@about.Product_Image1" alt="" />
+                    </picture>
+                </div>
+
+                <!-- Text Section -->
+                <div class="about-us-new-text">
+                    <h2 class="about-us-new-heading">@about.Product1_Title</h2>
+                    <div class="about-us-new-paragraph">
+                        <p>@Html.Raw(about.Product1_Description.Replace(Environment.NewLine, "<br />"))</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<div class="about-us-new-full-width-section">
+    <div class="about-us-new-container">
+        @foreach (var about in Model.Aboutus.Where(about => about.Is_Active).Take(1))
+        {
+            <div class="about-us-new-media-with-text">
+
+                <!-- Text Section -->
+                <div class="about-us-new-text">
+                    <h2 class="about-us-new-heading">@about.Product2_Title</h2>
+                    <div class="about-us-new-paragraph">
+                        <p>@Html.Raw(about.Product2_Description.Replace(Environment.NewLine, "<br />"))</p>
+                    </div>
+                </div>
+
+                <!-- Media (Image) -->
+                <div class="about-us-new-media">
+                    <picture>
+                        <source srcset="@about.Product_Image2" media="(max-width: 600px)" />
+                        <img src="@about.Product_Image2" alt="" />
+                    </picture>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+<div class="hero-section">
+    <div class="about-us-video-wrapper">
+        @foreach (var about in Model.Aboutus.Where(about => about.Is_Active).Take(1))
+        {
+            <video autoplay muted loop class="about-us-background-video">
+                <source src="@Url.Content(about.VideoPath)" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="about-us-vdo-content">
+                <h2 class="about-us-title">@about.VideoTitle</h2>
+                <p class="about-us-subtitle">- SINCE 1959 -</p>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<section class="about-us-contact">
+    <div class="about-us-newsletter-section">
+        <div class="about-us-newsletter-image">
+            <img src="~/images/smoking-brand-name-cigarette-pack-black-wooden-background-banner-copy-space-3d-illustration_771335-14768.jpg" alt="Content for Canopy Premium Shopify theme by Clean Canvas" class="about-us-newsletter-img">
+        </div>
+
+        <div class="about-us-newsletter-content">
+            <h2 class="about-us-newsletter-heading">Recipes & Inspiration</h2>
+            <p class="about-us-newsletter-description">Join our community to get exclusive offers, original recipes</p>
+            <div class="about-us-newsletter-form-container">
+                <form method="post" action="/contact#about-us-newsletter-signup" id="about-us-newsletter-signup-form">
+                    <input type="hidden" name="form_type" value="customer">
+                    <input type="hidden" name="utf8" value="✓">
+                    <input type="hidden" name="contact[tags]" value="prospect, newsletter">
+
+                    <div class="about-us-form-field">
+                        <label for="about-us-newsletter-email" class="visually-hidden">Email</label>
+                        <div class="about-us-input-container">
+                            <input type="email" id="about-us-newsletter-email" name="contact[email]" placeholder="Your email" autocomplete="email" required class="about-us-input-email">
+                            <button type="submit" class="about-us-submit-btn">
+                                <span class="visually-hidden">Subscribe</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" aria-hidden="true">
+                                    <path d="M4.696 12h14.686m-7.007-7.5 7.5 7.5-7.5 7.5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="about-us-h-captcha">
+                        <iframe aria-hidden="true" src="https://newassets.hcaptcha.com/captcha/v1/0b96e5e9c42dbf957bfbc38b40cf19fc6ddb81fb/static/hcaptcha.html" style="display: none;"></iframe>
+                        <textarea id="h-captcha-response" name="h-captcha-response" style="display: none;"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+

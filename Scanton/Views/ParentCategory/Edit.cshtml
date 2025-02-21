@@ -1,0 +1,33 @@
+﻿@model Scanton.Models.ParentCategory
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container">
+    <h1>  </h1>
+    <div class="row">
+        <!-- Add Parent Category -->
+        <div class="col-md-6">
+            <h4>Edit Parent Category</h4>
+            <form method="post" asp-action="Edit" enctype="multipart/form-data">
+                <input asp-for="Id" type="hidden" />
+
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="ImageFile" class="form-label">
+                        <i class="bi bi-image me-2"></i> Image
+                    </label>
+                    <input type="file" class="form-control" id="ImageFile3" name="imageFile" />
+                </div>
+                <div class="mb-3">
+                    <label>Description</label>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

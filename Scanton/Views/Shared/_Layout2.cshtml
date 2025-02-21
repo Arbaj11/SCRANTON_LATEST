@@ -1,0 +1,1111 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    var tracker = 0;
+    var cartDetails = ViewBag.CartProducts as List<IndexViewModel.Product>;
+    var profileImageUrl = User.Claims.FirstOrDefault(c => c.Type == "ProfileImageUrl")?.Value
+                         ?? "/images/default-profile.png";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Scanton</title>
+    <link rel="stylesheet" href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/site.css")" asp-append-version="true" />
+    <link rel="stylesheet" href="@Url.Content("~/css/Header.css")" asp-append-version="true" />
+    <link rel="stylesheet" href="@Url.Content("~/css/Header.css")" asp-append-version="true" />
+    <link rel="stylesheet" href="@Url.Content("~/css/Footer.css")" asp-append-version="true" />
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   @*  <header>
+
+      
+        
+        <div class="header__grid header__grid--left-logo container flex flex-wrap items-center">
+
+         
+            <div class="header__logo header__logo--top-left logo flex js-closes-menu">
+                <h1 class="logo__h1 m-0">
+                    <a class="logo__link inline-block" href="/">
+                        <span class="flex" style="max-width: 130px;">
+                            <img src="@Url.Content("/images/SCRANTONLOGO.svg")" alt="Canopy Logo" width="260" height="70" loading="eager">
+                        </span>
+                    </a>
+                </h1>
+            </div>
+
+           
+            <div class="search-container">
+              
+                <div class="custom-select-container">
+
+                    <label class="visually-hidden" for="product_types">Filter by Category</label>
+                    <div class="dropdown-wrapper">
+                        <i class="fa-solid fa-list dropdown-icon"></i>
+                        <select id="product_types" class="search__product-types" name="category">
+                            <option value="">All Categories</option>
+                            <option value="Cheese &amp; Dairy">Cheese &amp; Dairy</option>
+                            <option value="Cooking Ingredients">Cooking Ingredients</option>
+                            <option value="Fish &amp; Seafood">Fish &amp; Seafood</option>
+                            <option value="Fresh Fruit">Fresh Fruit</option>
+                            <option value="Fresh Meat">Fresh Meat</option>
+                            <option value="Fresh Vegetables">Fresh Vegetables</option>
+                            <option value="Gift Card">Gift Card</option>
+                            <option value="Meat &amp; Fish">Meat &amp; Fish</option>
+                            <option value="Store Cupboard">Store Cupboard</option>
+                            <option value="The Bakery">The Bakery</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- Search Bar -->
+                <input type="search"
+                       class="search__input"
+                       id="header-search"
+                       name="q"
+                       placeholder="Search for items..."
+                       autocomplete="off"
+                       aria-label="Search for products" />
+                <button type="submit" class="search__icon-button" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Icon Section -->
+            <div class="header__icons flex justify-end mis-auto js-closes-menu">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a class="header__icon" href="@Url.Action("Login","Home")#sign-in-contain">
+                        <i class="fa-solid fa-user header-font-icon"></i> <!-- Font Awesome icon for user -->
+                    </a>
+                }
+                else
+                {
+                    <a class="header__icon" href="@Url.Action("UserProfile","Home")">
+                        <div class="profile-image">
+                            <img class="profile-image-img" src="@Url.Content(profileImageUrl)" alt="Profile Image" />
+                        </div>
+                    </a>
+
+                }
+
+                <li style="position: relative; list-style-type: none;">
+                    <a href="#" class="p-2 mx-1 position-relative" id="cart">
+                        <i class="fa-solid fa-cart-shopping header-font-icon"></i>
+                        @if (@TempData["TotalCartProducts"] != null)
+                        {
+                            <span id="cart-count" class="cart-badge">@TempData["TotalCartProducts"]</span>
+                        }
+                        else
+                        {
+                            <span id="cart-count" class="cart-badge">0</span>
+                        }
+                    </a>
+                    <div class="container-cart cart-dropdown hidden" id="cartDropdown">
+                        @Html.Partial("_CartItemsPartial")
+                    </div>
+                </li>
+
+
+            </div>
+
+            
+        </div>
+        <div class="header-nav">
+            <nav aria-label="Primary">
+                <ul class="main-nav">
+                    <li><a class="main-nav__item is-active" href="/">Home</a></li>
+
+                    <li>
+
+                        <details class="js-mega-nav" open>
+
+                            <summary class="main-nav__item--toggle">
+                                <a id="shopLink" class="main-nav__item main-nav__item--primary" href="#">Shop <i b-mig7cuw6af="" class="fa-solid fa-chevron-down shop-arrow"></i></a>
+
+                            </summary>
+                            <div class="main-nav__child mega-nav" id="dropdownMenu" style="display: none;">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <div class="dropdown-content mega_menus">
+                                            <div class="container container-index nav-container">
+                                                <div class="row">
+                                                    @foreach (var group in Model.ParentCategories.Select((x, i) => new { x, i }).GroupBy(x => x.i / 6))
+                                                    {
+                                                        <div class="col-12">
+                                                            <div class="row-parent">
+                                                                @foreach (var parentCategory in group.Select(x => x.x))
+                                                                {
+                                                                    <div class="col-md-2">
+                                                                        <!-- Adjusted for 6 items per row -->
+                                                                        <div class="services-sec" data-id="@parentCategory.Name" data-tracker="@tracker">
+                                                                            <div class="mob-dev-menu">
+                                                                                <div class="menu-main">
+                                                                                    <a href="" class="head-drop-links">
+                                                                                        <div class="header-sub-menu" data-title="@parentCategory.Name" data-image="@parentCategory.ImagePath">
+
+                                                                                            <div class="sub-menu-title">
+                                                                                                <img src="@parentCategory.ImagePath" alt="@parentCategory.Name" class="heading-icon">
+                                                                                                <p class="drop-head">@parentCategory.Name</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="menu-sub-cat">
+                                                                                    @foreach (var subCategory in parentCategory.Categories)
+                                                                                    {
+                                                                                        <a href="@Url.Action("Index", "CategoryPages", new { category_id = subCategory.Id })" data-title="@subCategory.Name" data-image="@subCategory.ImagePath">
+                                                                                            <div class="header-sub-menu">
+                                                                                                <div class="sub-menu-title">
+                                                                                                    <p>@subCategory.Name</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    }
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                        tracker++;
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+
+                    </li>
+                    <li><a class="child-nav__item-mid" href="@Url.Action("Blogs","Home")">Blogs</a></li>
+                    <li class="main-nav__item">
+                        <a id="moreDropdownToggle" class="main-nav__item--toggle" href="javascript:void(0);" onclick="toggleMoreDropdown()">More <i class="fa-solid fa-chevron-down"></i></a>
+                        <div id="moreDropdown" class="more-dropdown custom-more-dropdown" style="display: none;">
+                            <ul class="more-list">
+                                <li>
+                                    <a class="child-nav__item-mid" href="@Url.Action("AboutUs","Home")">
+                                        <img src="~/images/SCRANTON LOGO 04.jpg" alt="About Us" class="dropdown-more-icon"> About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="child-nav__item-mid" href="@Url.Action("LabResult","Home")">
+                                        <img src="~/images/SCRANTON LOGO  02.jpg" alt="Lab Results" class="dropdown-more-icon"> Lab Results
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="child-nav__item-mid" href="@Url.Action("FAQ","Home")">
+                                        <img src="~/images/SCRANTON LOGO  03.jpg" alt="FAQ" class="dropdown-more-icon"> FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="child-nav__item-mid" href="@Url.Action("ContactUs","Home")">Contact Us</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header> *@
+    <header>
+        <nav class="navbar">
+            <div class="nav-box-1" id="box1">
+
+                <div class="nav-logo">
+                    <i class="fa fa-bars " style="color: white; " id="menu-btn"></i>
+                    <i class="fa-solid fa-xmark" id="x-mark" style=" color: white "></i>
+                    <img src="@Url.Content("~/images/SCRANTONLOGO.svg")" alt="Logo" />
+                </div>
+                <div class="nav-search" id="search">
+
+                    <div class="category-dropdown">
+                        <div class="category-icon" id="category-toggle">
+                            <span style="color: #656565;">All</span>
+                            <i class="fa-solid dropdown-arrow fa-chevron-down" style="font-size: 16px" id="arrow-toggle"></i>
+                        </div>
+                        <ul class="category-menu" id="category-menu">
+                            <li class="cat-item">All</li>
+                            <li class="cat-item">Cheese & Dairy</li>
+                            <li class="cat-item">Cooking Ingredients</li>
+                            <li class="cat-item">Fish & Seafood</li>
+                            <li class="cat-item">Fresh Fruit</li>
+                            <li class="cat-item">Fresh Meat</li>
+                            <li class="cat-item">Fresh Vegetables</li>
+                            <li class="cat-item">Gift Card</li>
+                            <li class="cat-item">Meat & Fish</li>
+                            <li class="cat-item">Store Cupboard</li>
+                            <li class="cat-item">The Bakery</li>
+                        </ul>
+                    </div>
+                    <div class="search-bar1">
+                        <input type="text" placeholder="Search items..." class="search-input2" />
+                        <i class="fa fa-magnifying-glass" style="color: black" ></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="nav-box-2" id="box2">
+                <div class="nav-search-icon" id="search-box">
+                    <i class="fa fa-magnifying-glass" style="color: white"></i>
+                </div>
+                <div class="nav-user">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Login", "Home")">
+                            <i class="fa fa-user" style="color: white"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("UserProfile", "Home")">
+                            <div class="profile-image">
+                                <img class="profile-image-img" src="@Url.Content(profileImageUrl)" alt="Profile Image" />
+                            </div>
+                        </a>
+                    }
+                </div>
+
+                <div class="nav-cart">
+                    <!-- Cart Tab -->
+                    <a href="#" class="cart-header-effects" id="cart">
+                        <i class="fa-solid fa-cart-shopping header-font-icon"></i>
+                        @if (TempData["TotalCartProducts"] != null)
+                        {
+                            <span id="cart-count" class="cart-badge-new">@TempData["TotalCartProducts"]</span>
+                        }
+                        else
+                        {
+                            <span id="cart-count" class="cart-badge-new">0</span>
+                        }
+                    </a>
+
+                    <!-- Cart Dropdown -->
+                    <div class="container-cart cart-dropdown hidden" id="cartDropdown">
+                        @Html.Partial("_CartItemsPartial")
+                    </div>
+                </div>
+            </div>
+            <div class="nav-search2" id="search2">
+
+                <div class="category-bar">
+                    <div class="category-icon" id="category-toggle2">
+                        <span style="color: #656565;">All</span>
+                        <i class="fa-solid dropdown-arrow fa-chevron-down" style="font-size: 16px" id="arrow-toggle2"></i>
+                    </div>
+                    <ul class="category-menu2" id="category-menu2">
+                        <li class="cat-item">All</li>
+                        <li class="cat-item">Cheese & Dairy</li>
+                        <li class="cat-item">Cooking Ingredients</li>
+                        <li class="cat-item">Fish & Seafood</li>
+                        <li class="cat-item">Fresh Fruit</li>
+                        <li class="cat-item">Fresh Meat</li>
+                        <li class="cat-item">Fresh Vegetables</li>
+                        <li class="cat-item">Gift Card</li>
+                        <li class="cat-item">Meat & Fish</li>
+                        <li class="cat-item">Store Cupboard</li>
+                        <li class="cat-item">The Bakery</li>
+                    </ul>
+                </div>
+                <div class="search-bar1">
+                    <input type="text" placeholder="Search items..." class="search-input2" />
+                    <i class="fa fa-magnifying-glass" style="color: black"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-tittle">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="shop-tittle">
+                    <a style="color: #cb3f44;" href="#">Shop</a>
+                    <i class="fa-solid fa-chevron-up shop-arrow" id="shop-up" style="color: red; cursor:pointer; display:none;"></i>
+                    <i class="fa-solid fa-chevron-down shop-arrow" id="shop-down" style="color: red; cursor:pointer; display:block;"></i>
+                </li>
+                <li><a href="@Url.Action("Blogs","Home")">Blog</a></li>
+                <li id="more-tittle">
+                    <a href="#" id="more-t" class="red-drop">More</a>
+                    <i class="fa-solid fa-chevron-down shop-arrow" id="more-down" style="cursor:pointer;"></i>
+                    <i class="fa-solid fa-chevron-up shop-arrow" id="more-up" style="color: red; cursor:pointer; "></i>
+                </li>
+                <li><a href="@Url.Action("ContactUs","Home")">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="more-option">
+            <div class="more-details">
+                <div class="lab">
+                    <img src="~/images/SCRANTON LOGO  02.jpg">
+                    <a class="lab" href="@Url.Action("LabResult","Home")">LabResults</a>
+                </div>
+                <div class="faq">
+                    <img src="~/images/SCRANTON LOGO  03.jpg" alt="#">
+                    <a class="faq" href="@Url.Action("FAQ","Home")">FAQ</a>
+                </div>
+                <div class="about-us">
+                    <img src="~/images/SCRANTON LOGO 04.jpg" alt="#">
+                    <a class="about-us" href="@Url.Action("AboutUs","Home")">About US</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            @foreach (var parentCategory in Model.ParentCategories)
+            {
+                <div class="column@(Model.ParentCategories.IndexOf(parentCategory))">
+                    <div class="box-tittle" id="c@(Model.ParentCategories.IndexOf(parentCategory))-tittle">
+                        <img src="@parentCategory.ImagePath" alt="#">@parentCategory.Name
+                    </div>
+                    <div class="box-sub">
+                        @foreach (var category in parentCategory.Categories)
+                        {
+                            <div class="c@(Model.ParentCategories.IndexOf(parentCategory))-sub c-all">@category.Name</div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="side-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="side-arrow">
+                    <div class="side-div">
+                        <div class="shop-tittle">
+                            <a href="#" style="color: red;">Shop</a>
+                        </div>
+                        <div class="shop-subtittle">
+                            <i class="fas fa-chevron-right" style=" color: red" id="shop-right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="@Url.Action("Blogs","Home")">Blog</a></li>
+                <li id="side-arrow">
+                    <div class="side-div">
+                        <div class="more-tittle">
+                            <a href="#">More</a>
+                        </div>
+                        <div class="more-subtittle">
+                            <i class="fas fa-chevron-right" style=" color: #656565;" id="more-right"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="more-sidebar">
+            <ul>
+                <li id="more-back" style="color: rgb(235, 23, 23)">
+                    <i class="fas fa-chevron-left" style="color: rgb(235, 23, 23)"></i>
+                    <span>Back</span>
+                </li>
+                <li>
+                    <img src="~/images/SCRANTON LOGO 04.jpg" width="50px" height="45px">
+                    <a class="about-us" href="@Url.Action("AboutUs","Home")">About US</a>
+                </li>
+                <li>
+                    <img src="~/images/SCRANTON LOGO  02.jpg" width="50px" height="45px">
+                    <a class="lab" href="@Url.Action("LabResult","Home")">LabResults</a>
+                </li>
+                <li>
+                    <img src="~/images/SCRANTON LOGO  03.jpg" width="50px" height="45px">
+                    <a class="faq" href="@Url.Action("FAQ","Home")">FAQ</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="shop-bar">
+            <div id="shop-back" style="color:red">
+                <i class="fa fa-chevron-left" style="font-size: 1rem; color:red "></i> Back
+            </div>
+            <div id="shop-cat-title"><a href="#">Shop</a></div>
+            <div id="ctx-body">
+                <div class="side-column0">
+                    <div class="side-box-tittle" id="side-c0-tittle">
+                        <div class="s-cat-img" id="s-cat1">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p1.png" alt="#">
+                                <strong>ROLL</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down1"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up1"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side1-body">
+                        <div class="side-c0-sub">Nicotine Roll Multipacks</div>
+                        <div class="side-c0-sub">Pre Roll</div>
+                        <div class="side-c0-sub">Classic Rolls</div>
+                        <div class="side-c0-sub">Premium Rolling Paper</div>
+                        <div class="side-c0-sub">King Size Rolls</div>
+                        <div class="side-c0-sub">Slim Fit Rolls</div>
+                        <div class="side-c0-sub">Organic Hemp Rolls</div>
+                        <div class="side-c0-sub">Eco-Friendly Rolls</div>
+                    </div>
+                </div>
+                <div class="side-column1">
+                    <div class="side-box-tittle" id="side-c2-tittle">
+                        <div class="s-cat-img" id="s-cat2">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p5.png" alt="#">
+                                <strong>PRE ROLL</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down2"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up2"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side2-body">
+                        <div class="side-c1-sub">Delta 10</div>
+                        <div class="side-c1-sub">Fdf</div>
+                        <div class="side-c1-sub">TOB100</div>
+                        <div class="side-c1-sub">Infused Pre-Rolls</div>
+                        <div class="side-c1-sub">CBD Pre Rolls</div>
+                        <div class="side-c1-sub">Hybrid Pre-Rolls</div>
+                        <div class="side-c1-sub">Indica Pre-Rolls</div>
+                        <div class="side-c1-sub">Tarpene Enchanced Pre-Rolls</div>
+                        <div class="side-c1-sub">Infused Pre-Rolls</div>
+                        <div class="side-c1-sub">CBD Pre-Rolls</div>
+                    </div>
+                </div>
+                <div class="side-column2">
+                    <div class="side-box-tittle" id="side-c2-tittle">
+                        <div class="s-cat-img" id="s-cat3">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p3.png" alt="#">
+                                <strong>Delta-9</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down3"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up3"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side3-body">
+                        <div class="side-c2-sub">Match 11</div>
+                        <div class="side-c2-sub">The Last of Us</div>
+                        <div class="side-c2-sub">ewf</div>
+                        <div class="side-c2-sub">Delta-9 Oils</div>
+                        <div class="side-c2-sub">Delta-9 Gummies</div>
+                        <div class="side-c2-sub">Delta-9 Capsules</div>
+                        <div class="side-c2-sub">Delta-9 Cartridges</div>
+                        <div class="side-c2-sub">Delta-9 Chocolates</div>
+                    </div>
+                </div>
+                <div class="side-column3">
+                    <div class="side-box-tittle" id="side-c3-tittle">
+                        <div class="s-cat-img" id="s-cat4">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p4.png" alt="#">
+                                <strong> NICOTINE ROLL</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down4"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up4"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side4-body">
+                        <div class="side-c3-sub">Unflavoured Nicotine Rolls</div>
+                        <div class="side-c3-sub">Mentholine Nicotine Rolls</div>
+                        <div class="side-c3-sub">Unflavoured Nicotine Rolls</div>
+                        <div class="side-c3-sub">Strong Nicotine Rolls</div>
+                        <div class="side-c3-sub">Mild Nicotine Rolls</div>
+                        <div class="side-c3-sub">Nicotine Roll Multipacks</div>
+                        <div class="side-c3-sub">Single Nicotine Rolls</div>
+                    </div>
+                </div>
+                <div class="side-column4">
+                    <div class="side-box-tittle" id="side-c4-tittle">
+                        <div class="s-cat-img" id="s-cat5">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p2.png" alt="#">
+                                <strong>HERBAL ROLL</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down5"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up5"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side5-body">
+                        <div class="side-c4-sub">Mint Herbal Rolls</div>
+                        <div class="side-c4-sub">Lavender Herbal Rolls</div>
+                        <div class="side-c4-sub">Chamomle Herbal Rolls</div>
+                        <div class="side-c4-sub">Rose Petal Herbal Rolls</div>
+                        <div class="side-c4-sub">Basil Herbal Rolls</div>
+                        <div class="side-c4-sub">Mixed Herbal Rolls</div>
+                    </div>
+                </div>
+                <div class="side-column5">
+                    <div class="side-box-tittle" id="side-c5-tittle">
+                        <div class="s-cat-img" id="s-cat6">
+                            <div class="cat-in">
+                                <img src="../Nav-table/p1.png" alt="#">
+                                <strong>TOBACCO ROLL</strong>
+                            </div>
+                            <i class="fa fa-chevron-down" style="color: #656565;" id="down6"></i>
+                            <i class="fa fa-chevron-up" style="color: #656565;" id="up6"></i>
+                        </div>
+                    </div>
+                    <div class="side-box-sub" id="side6-body">
+                        <div class="side-c5-sub">Virginia Tobacco Rolls</div>
+                        <div class="side-c5-sub">Dark Leaf Tobacco Rolls</div>
+                        <div class="side-c5-sub">Mild Tobacco Rolls</div>
+                        <div class="side-c5-sub">Menthol Tobacco Rolls</div>
+                        <div class="side-c5-sub">Vanilla Tobacco Rolls</div>
+                        <div class="side-c5-sub">Unfiltered Tobacco Rolls</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+   
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="pb-1">
+            <div class="cb-1">
+                <img src=@Url.Content("~/images/SCRANTONLOGO.svg") alt="logo" />
+                <div class="foot1-ul">
+                    @foreach (var icon in (ViewBag.FooterIcon as List<IndexViewModel.SocialMedia>).Where(i => i.Is_Active))
+                    {
+                        if (icon.AccountIcon != null)
+                        {
+                            <a href="@icon.AccountURLLink" class="">
+                                @Html.Raw(icon.AccountIcon)
+                            </a>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="cb-2">
+                <h5 class="h5">Quick Links</h5>
+                <ul class="foot2-ul">
+                    @foreach (var pageModel in (ViewBag.FooterPage as List<IndexViewModel.Page>).Where(i => i.Is_Active))
+                    {
+                        if (pageModel.PageCategory == "Quick Links")
+                        {
+                            <li>
+                                <a href="@pageModel.PageUrl" class="">@pageModel.CustomePageTittle</a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+            <div class="cb-3">
+                <h5 class="h5" id="customer-service">Customer Service</h5>
+                <ul class="foot3-ul">
+                    @foreach (var pageModel in (ViewBag.FooterPage as List<IndexViewModel.Page>).Where(i => i.Is_Active))
+                    {
+                        if (pageModel.PageCategory == "Customer Service")
+                        {
+                            <li>
+                                <a href="@pageModel.PageUrl" class="">@pageModel.CustomePageTittle</a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+
+            <form class="cb-4" action="index.html">
+                <h5 class="h5">Subscribe Us</h5>
+                <p>
+                    Subscribe to our newsletter to get updates about our grand offers.
+                </p>
+                <div class="cb4-d">
+                    <input type="email"
+                           placeholder="Email Address"
+                           aria-label="Email Address" />
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            @foreach (var footerDescription in (ViewBag.FooterDescription as List<IndexViewModel.FooterDescription>).Where(I => I.Is_Active))
+            {
+                <p>
+                    @footerDescription.Title
+
+                    @Html.Raw(footerDescription.Description)
+                </p>
+            }
+        </div>
+
+    </footer>
+
+    <div class="copy">
+        <p>© 2024 SCRANTON. All rights reserved.</p>
+    </div>
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+
+         $(document).ready(function() {
+            // Toggle dropdown menu on click
+            $("#shopDropdownToggle").click(function(e) {
+                e.preventDefault(); // Prevent default link action
+                $("#shopDropdownMenu").toggle(); // Toggle the visibility of the dropdown menu
+            });
+
+            // Close the dropdown if clicked outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('#shopDropdownToggle').length && !$(e.target).closest('#shopDropdownMenu').length) {
+                    $("#shopDropdownMenu").hide(); // Hide the dropdown if clicked outside
+                }
+            });
+        });
+
+
+        
+        $(document).ready(function () {
+          
+            $("#cart").on("click", function (e) {
+                debugger
+                e.preventDefault(); 
+                $("#cartDropdown").toggleClass("hidden").slideToggle(200);
+            });
+
+            $(document).on("click", function (e) {
+                debugger
+                if (!$(e.target).closest("#cart, #cartDropdown").length) {
+                    $("#cartDropdown").addClass("hidden").slideUp(200);
+                }
+            });
+        });
+
+
+
+           $(document).ready(function() {
+            // Toggle dropdown menu on click
+            $("#shopDropdownToggle").click(function(e) {
+                debugger
+                e.preventDefault(); // Prevent default link action
+                $("#shopDropdownMenu").toggle(); // Toggle the visibility of the dropdown menu
+            });
+
+            // Close the dropdown if clicked outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('#shopDropdownToggle').length && !$(e.target).closest('#shopDropdownMenu').length) {
+                    $("#shopDropdownMenu").hide(); // Hide the dropdown if clicked outside
+                }
+            });
+        });
+
+
+
+        
+
+        $(document).ready(function() {
+            $(".dropdown-wrapper").on("click", function() {
+                // Toggle the dropdown open/close
+                $(this).find("select").toggleClass("open");
+
+                // Toggle arrow direction
+                $(this).find(".dropdown-arrow").toggleClass("fa-chevron-down fa-chevron-up");
+            });
+
+           $('#search-box').click(function() {
+            $('#search2').toggle(); // Toggles the visibility of the search div
+           });
+        });
+
+      
+
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const moreToggle = document.querySelector('#more-tittle');
+            const moreSidebar = document.querySelector('.more-option');
+
+            if (moreToggle && moreSidebar) {
+                // Show the sidebar when mouse enters the "More" link
+                moreToggle.addEventListener('mouseenter', function () {
+                    moreSidebar.style.display = 'block';
+                });
+
+                // Keep sidebar visible when hovering over it
+                moreSidebar.addEventListener('mouseenter', function () {
+                    moreSidebar.style.display = 'block';
+                });
+
+                // Hide sidebar when mouse leaves both elements
+                moreToggle.addEventListener('mouseleave', function () {
+                    setTimeout(() => {
+                        if (!moreSidebar.matches(':hover')) {
+                            moreSidebar.style.display = 'none';
+                        }
+                    }, 200); 
+                });
+
+                moreSidebar.addEventListener('mouseleave', function () {
+                    moreSidebar.style.display = 'none';
+                });
+            }
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const moreTittle = document.querySelector('#more-tittle');
+            const moreDown = document.querySelector('#more-down');
+            const moreUp = document.querySelector('#more-up');
+            const moreSidebar = document.querySelector('.more-option');
+
+            if (moreTittle && moreDown && moreUp && moreSidebar) {
+                // Initially hide the up arrow and dropdown
+                moreUp.style.display = 'none';
+                moreSidebar.style.display = 'none';
+
+                // Function to show the dropdown
+                function showDropdown() {
+                    moreSidebar.style.display = 'block';
+                    moreSidebar.style.opacity = '1';
+                    moreSidebar.style.transition = 'opacity 0.3s ease-in-out';
+                    moreDown.style.display = 'none'; // Hide down arrow
+                    moreUp.style.display = 'inline'; // Show up arrow
+                }
+
+                // Function to hide the dropdown
+                function hideDropdown() {
+                    setTimeout(() => {
+                        if (!moreTittle.matches(':hover') && !moreSidebar.matches(':hover')) {
+                            moreSidebar.style.opacity = '0';
+                            setTimeout(() => {
+                                moreSidebar.style.display = 'none';
+                            }, 300); // Wait for fade out
+                            moreDown.style.display = 'inline'; // Show down arrow
+                            moreUp.style.display = 'none'; // Hide up arrow
+                        }
+                    }, 200); // Delay for smoother interaction
+                }
+
+                // Show dropdown when mouse enters "More" or either arrow
+                moreTittle.addEventListener('mouseenter', showDropdown);
+                moreDown.addEventListener('mouseenter', showDropdown);
+                moreUp.addEventListener('mouseenter', showDropdown);
+
+                // Keep dropdown open when hovering over it
+                moreSidebar.addEventListener('mouseenter', showDropdown);
+
+                // Hide dropdown when leaving both "More" and the dropdown
+                moreTittle.addEventListener('mouseleave', hideDropdown);
+                moreSidebar.addEventListener('mouseleave', hideDropdown);
+            }
+        });
+
+
+         document.addEventListener('DOMContentLoaded', function () {
+            const shopTittle = document.querySelector('#shop-tittle');
+            const shopDown = document.querySelector('#shop-down');
+            const shopUp = document.querySelector('#shop-up');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            if (shopTittle && shopDown && shopUp && dropdownContent) {
+                // Initially hide the up arrow and dropdown
+                shopUp.style.display = 'none';
+                dropdownContent.style.display = 'none';
+
+               
+                function showDropdown() {
+                    dropdownContent.style.display = 'flex'; 
+                    dropdownContent.style.opacity = '1';  
+                    shopDown.style.display = 'none';  
+                    shopUp.style.display = 'block';  
+                }
+
+                // Function to hide the dropdown
+                function hideDropdown() {
+                    setTimeout(() => {
+                        if (!shopTittle.matches(':hover') && !dropdownContent.matches(':hover')) {
+                            dropdownContent.style.opacity = '0';  // Fade-out effect
+                            setTimeout(() => {
+                                dropdownContent.style.display = 'none';  // Hide the dropdown
+                            }, 300);  // Wait for fade out
+                            shopDown.style.display = 'flex';  // Show down arrow
+                            shopUp.style.display = 'none';  // Hide up arrow
+                        }
+                    }, 200);  // Delay for smoother interaction
+                }
+
+                // Show dropdown when mouse enters "Shop" or the down arrow
+                shopTittle.addEventListener('mouseenter', showDropdown);
+                shopDown.addEventListener('mouseenter', showDropdown);
+
+                // Keep dropdown open when hovering over it
+                dropdownContent.addEventListener('mouseenter', function () {
+                    dropdownContent.style.opacity = '1'; 
+                    dropdownContent.style.display = 'flex'; 
+                });
+
+                // Hide dropdown when mouse leaves both "Shop" and the dropdown
+                shopTittle.addEventListener('mouseleave', hideDropdown);
+                dropdownContent.addEventListener('mouseleave', hideDropdown);
+            }
+        });
+
+       // new js
+
+
+              document.addEventListener("DOMContentLoaded", function () {
+           const search1 = document.querySelector(".nav-search"); // Main search bar
+           const search2 = document.querySelector(".nav-search2"); // Mobile search bar
+           const searchIcon = document.querySelector(".nav-search-icon"); // Search icon
+           const categoryToggle1 = document.getElementById("category-toggle");
+           const categoryMenu1 = document.getElementById("category-menu");
+           const arrowToggle1 = document.getElementById("arrow-toggle");
+           const categoryToggle2 = document.getElementById("category-toggle2");
+           const categoryMenu2 = document.getElementById("category-menu2");
+           const arrowToggle2 = document.getElementById("arrow-toggle2");
+           const menubt = document.getElementById("menu-btn");
+           const btn = document.querySelector(".side-bar");
+           const xmark = document.getElementById("x-mark");
+           const shopBar = document.getElementById("shop-bar");
+           const moreBar = document.querySelector(".more-sidebar");
+           const shopTittle = document.getElementById("shop-tittle");
+           const shopUp = document.getElementById("shop-up");
+           const shopDown = document.getElementById("shop-down");
+           const dropdownContent = document.querySelector(".dropdown-content");
+           const moreoption = document.querySelector(".more-option")
+           const moreup = document.getElementById("more-up")
+           const moredown = document.getElementById("more-down")
+           const moretittle = document.getElementById("more-tittle")
+           const moret = document.getElementById("more-t")
+
+
+               function disableScroll() {
+             document.body.style.overflow = "hidden"; // Prevent scrolling
+         }
+
+         function enableScroll() {
+             // Enable scrolling only if all sidebars are closed
+             if (
+                 btn.style.display === "none" &&
+                 moreBar.style.display === "none" &&
+                 shopBar.style.display === "none"
+             ) {
+                 document.body.style.overflow = ""; // Restore scrolling
+             }
+         }
+
+         function showElement(element) {
+             element.style.display = "block";
+             disableScroll();
+         }
+
+         function hideElement(element) {
+             element.style.display = "none";
+             enableScroll();
+         }
+
+
+           // Function to handle search visibility based on screen size
+           function handleSearchVisibility() {
+             if (window.innerWidth > 768) {
+               search1?.style.setProperty("display", "flex"); // Show nav-search
+               search2?.style.setProperty("display", "none"); // Hide nav-search2
+               menubt?.style.setProperty("display", "none");
+               xmark?.style.setProperty("display", "none");
+               btn?.style.setProperty("display", "none");
+               shopBar?.style.setProperty("display", "none"); // Hide shopBar on large screens
+               moreBar?.style.setProperty("display", "none"); // Hide moreBar on large screens
+             } else {
+               search1?.style.setProperty("display", "none"); // Hide nav-search
+               search2?.style.setProperty("display", "none"); // Hide nav-search2 initially
+               menubt?.style.setProperty("display", "block");
+               xmark?.style.setProperty("display", "none");
+               btn?.style.setProperty("display", "none");
+               moreoption?.style.setProperty("display", "none"); // Hide more-option on small screens
+             }
+           }
+
+           // Toggle nav-search2 when clicking on search icon (only if nav-search is hidden)
+           searchIcon?.addEventListener("click", function () {
+             if (window.getComputedStyle(search1).display === "none") {
+               search2.style.display = search2.style.display === "flex" ? "none" : "flex";
+             }
+           });
+
+           // Toggle category dropdown for nav-search
+           categoryToggle1?.addEventListener("click", function () {
+             const isVisible = categoryMenu1.style.display === "block";
+             categoryMenu1.style.display = isVisible ? "none" : "block";
+             arrowToggle1.className = isVisible ? "fa-solid dropdown-arrow fa-chevron-down" : "fa-solid dropdown-arrow fa-chevron-up";
+           });
+
+           // Toggle category dropdown for nav-search2
+
+           categoryToggle2?.addEventListener("click", function () {
+             const isVisible = categoryMenu2.style.display === "block";
+             categoryMenu2.style.display = isVisible ? "none" : "block";
+             arrowToggle2.className = isVisible
+               ? "fa-solid dropdown-arrow fa-chevron-down"
+               : "fa-solid dropdown-arrow fa-chevron-up";
+
+             if (!isVisible) {
+               // Hide elements when categoryMenu2 is shown
+               btn.style.display = "none";
+               moreBar.style.display = "none";
+               shopBar.style.display = "none";
+               xmark.style.display = "none";
+               menubt.style.display = "block";
+             } else {
+               // Restore elements when categoryMenu2 is hidden, but keep search2 visible
+               if (window.innerWidth <= 768) {
+                 search2.style.display = "flex"; // Ensure search2 remains visible on small screens
+               }
+               btn.style.display = "none";
+               moreBar.style.display = "none";
+               shopBar.style.display = "none";
+               xmark.style.display = "none";
+               menubt.style.display = "block";
+             }
+           });
+
+
+           // Toggle sidebar menu
+           menubt?.addEventListener("click", function () {
+               showElement(btn);
+
+             menubt.style.display = "none";
+             xmark.style.display = "block";
+             btn.style.display = "block";
+           });
+
+           xmark?.addEventListener("click", function () {
+                hideElement(btn);
+
+             menubt.style.display = "block";
+             xmark.style.display = "none";
+             btn.style.display = "none";
+             shopBar.style.display = "none";
+             moreBar.style.display = "none";
+           });
+
+
+           btn?.addEventListener("transitionend", function () {
+             if (btn.style.display === "block") {
+               menubt.style.display = "none"; // Hide menu button
+               xmark.style.display = "block"; // Show close button
+             } else {
+               menubt.style.display = "block"; // Show menu button
+               xmark.style.display = "none"; // Hide close button
+             }
+           });
+
+           // Show More Sidebar
+           document.querySelector(".more-subtittle")?.addEventListener("click", function () {
+            showElement(moreBar);
+             moreBar.style.display = "block";
+             btn.style.display = "none";
+           });
+
+           document.getElementById("more-back")?.addEventListener("click", function () {
+            hideElement(moreBar);
+             moreBar.style.display = "none";
+             btn.style.display = "block";
+           });
+
+           // Show Shop Sidebar
+           document.querySelector(".shop-subtittle")?.addEventListener("click", function () {
+              showElement(shopBar);
+             shopBar.style.display = "block";
+             btn.style.display = "none";
+           });
+
+           document.getElementById("shop-back")?.addEventListener("click", function () {
+             hideElement(shopBar);
+             shopBar.style.display = "none";
+             btn.style.display = "block";
+
+           });
+
+
+           // Open and Close shop categories
+           document.querySelectorAll("[id^='s-cat']").forEach(button => {
+             button.addEventListener("click", function () {
+               const index = button.id.match(/\d+/)[0]; // Extracts the number from "s-cat-X"
+               const side = document.getElementById(`side${index}-body`);
+               const up = document.getElementById(`up${index}`);
+               const down = document.getElementById(`down${index}`);
+
+               const isVisible = side.style.display === "flex";
+               side.style.display = isVisible ? "none" : "flex";
+               up.style.display = isVisible ? "none" : "block";
+               down.style.display = isVisible ? "block" : "none";
+             });
+           });
+
+           // Toggle shop dropdown
+           shopTittle?.addEventListener("click", function () {
+             const isVisible = dropdownContent.style.display === "flex";
+
+
+             dropdownContent.style.display = isVisible ? "none" : "flex";
+             shopUp.style.display = isVisible ? "none" : "block";
+             shopDown.style.display = isVisible ? "block" : "none";
+
+             // Get the anchor tag inside shopTittle
+             const shopAnchor = shopTittle.querySelector("a");
+
+             // Change anchor color when shopUp is visible
+             if (shopUp.style.display === "block") {
+               shopAnchor.style.color = "red"; // Change color to red
+             } else {
+               shopAnchor.style.color = ""; // Reset color to default
+             }
+
+             moreoption.style.display = "none";
+             moreup.style.display = "none";
+             moredown.style.display = "block";
+             moret.style.color = ""
+
+           });
+
+           moretittle?.addEventListener("click", function () {
+             const isVisible = moreoption.style.display === "flex";
+             moreoption.style.display = isVisible ? "none" : "flex";
+             moreup.style.display = isVisible ? "none" : "block";
+             moredown.style.display = isVisible ? "block" : "none";
+
+             moret.style.color = isVisible ? "" : "red";
+
+             dropdownContent.style.display = "none";
+             shopUp.style.display = "none";
+             shopDown.style.display = "block";
+             shopTittle.querySelector("a").style.color = "";
+
+           })
+
+
+
+           // Run function on page load and when resizing
+           handleSearchVisibility();
+           window.addEventListener("resize", handleSearchVisibility);
+         });
+
+        
+
+
+    </script>
+</body>
+</html>

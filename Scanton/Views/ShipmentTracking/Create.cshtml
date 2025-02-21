@@ -1,0 +1,46 @@
+﻿@model Scanton.Models.ShipmentTracking
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add Shipment";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary">Add Shipment</h2>
+    <p class="text-center text-muted">Enter details for the new shipment</p>
+
+    <form asp-action="Create" method="post" class="mt-4">
+        <div class="mb-3">
+            <label asp-for="TrackingNumber" class="form-label">Tracking Number</label>
+            <input asp-for="TrackingNumber" class="form-control" />
+            <span asp-validation-for="TrackingNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Carrier" class="form-label">Carrier</label>
+            <input asp-for="Carrier" class="form-control" />
+            <span asp-validation-for="Carrier" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Status" class="form-label">Status</label>
+            <input asp-for="Status" class="form-control" />
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ShippedDate" class="form-label">Shipped Date</label>
+            <input asp-for="ShippedDate" type="date" class="form-control" />
+            <span asp-validation-for="ShippedDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="EstimatedDeliveryDate" class="form-label">Estimated Delivery Date</label>
+            <input asp-for="EstimatedDeliveryDate" type="date" class="form-control" />
+            <span asp-validation-for="EstimatedDeliveryDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Destination" class="form-label">Destination</label>
+            <input asp-for="Destination" class="form-control" />
+            <span asp-validation-for="Destination" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

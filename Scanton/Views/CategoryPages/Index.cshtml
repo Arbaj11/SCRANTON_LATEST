@@ -1,0 +1,477 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout2";
+
+
+}
+<style>
+    .section-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        padding: 10px 5px;
+        border-bottom: 2px solid #f0f0f0
+    }
+
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        text-transform: capitalize;
+    }
+
+    i.fa-solid.fa-magnifying-glass {
+        font-size: 22px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+    }
+
+    body {
+        background-color: #fafafb;
+    }
+
+    #navBar {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        background-color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        transition: all ease-in-out 0.36s;
+        transform: translateX(0);
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity ease-in-out 0.36s;
+        opacity: 1;
+        position: relative;
+        z-index: 0;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .search-wrapper {
+        width: 42px;
+        display: flex;
+        align-items: center;
+        background: #fafafb;
+        border: 2px solid transparent;
+        transition: width 0.36s ease-in-out, border 0.36s ease-in-out;
+        overflow: hidden;
+        border-radius: 22px;
+        margin-right: 10px;
+    }
+
+
+    #searchInput {
+        width: 100%;
+        padding: 8px 16px;
+        border: none;
+        outline: none;
+        transition: opacity 0.36s ease-in-out;
+    }
+
+        #searchInput:focus {
+            outline: none;
+        }
+
+    #searchExecute {
+        width: 51px;
+        border: none;
+        padding: 8px 0;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 19px;
+        border: 1px solid #f0f0f0;
+        border-radius: 22px;
+    }
+
+    .category-listing {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+
+
+    .category-item {
+        padding: 8px 15px;
+        font-size: 15px;
+        color: #000000;
+        background-color: #f0f0f0;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: 600;
+    }
+
+        .category-item:hover {
+            background-color: #f0f0f0;
+            border-color: #f0f0f0;
+            color: #fbbe06;
+        }
+
+        .category-item.active {
+            background-color: #f0f0f0;
+            color: #fbbe06;
+            border-color: #f0f0f0;
+            font-weight: 600;
+        }
+
+    .page-specific-pagination .pagination {
+        display: flex;
+        justify-content: center; /* Center the pagination horizontally */
+        align-items: center; /* Center the pagination items vertically */
+        margin: 20px 0;
+        gap: 8px; /* Space between the pagination links */
+        width: 100%;
+    }
+
+    .page-specific-pagination .pagination-link {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+        .page-specific-pagination .pagination-link:hover {
+            background-color: #f8f9fa;
+            border-color: #007bff;
+            color: #0056b3;
+        }
+
+        .page-specific-pagination .pagination-link.active {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+
+</style>
+<section class=" overflow-hidden">
+    <div class="container-lg">
+        <!-- Section Header -->
+        <div class="nav-heading">
+            <i class="fa-solid fa-house"></i>
+            <span>/</span>
+            <span>Category Products</span>
+        </div>
+        <div class="section-header">
+            @foreach (var product in Model.Products.Take(1))
+            {
+                <h2 class="section-title">@product.CategoryName</h2>
+            }
+            @* <div class="nav-item search">
+                <form method="get" id="searchForm">
+                    <div id="searchWrapper" class="search-wrapper">
+                        <button id="searchExecute" type="button">
+                            <!-- Change type to "button" to prevent form submission -->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input id="searchInput" name="searchQuery" type="text" value="@ViewBag.SearchQuery" placeholder="Search products..." />
+                    </div>
+                </form>
+            </div> *@
+        </div>
+
+        <div class="category-listing">
+            <div class="category-item" data-bs-toggle="collapse" data-bs-target="#allProducts">All Products</div>
+            <div class="category-item" data-bs-toggle="collapse" data-bs-target="#newArrivals">New Arrivals</div>
+            <div class="category-item" data-bs-toggle="collapse" data-bs-target="#bestSellers">Best Sellers</div>
+            <div class="category-item" data-bs-toggle="collapse" data-bs-target="#discounts">Discounts</div>
+            <div class="category-item" data-bs-toggle="collapse" data-bs-target="#popular">Popular</div>
+        </div>
+
+
+
+        <!-- Parent container for collapsibles -->
+        <div id="productSections">
+            <!-- Product Grid for All Products -->
+            <div class="collapse show" id="allProducts" data-bs-parent="#productSections">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    <!-- All Products Content -->
+                    @if (Model?.Products != null && Model.Products.Any())
+                    {
+                        foreach (var product in Model.Products.Take(10))
+                        {
+                            <div class="col category-grid-product">
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                                {
+                                                    <span class="offer-badge">@product.TittleBadge</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="offer-badge-green">@product.TittleBadge %</span>
+                                                }
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                            </a>
+                                        </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                            </a>
+                                        </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.Name</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.Price > 0)
+                                            {
+                                                <del class="orignal-price">$@product.Price</del>
+                                            }
+                                            <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            <span class="badge border rounded-0 fw-normal px-1 fs-7 lh-1 custom-badge">10% OFF</span>
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <!-- Pagination -->
+                <div class="page-specific-pagination">
+                    <div class="pagination">
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <a href="@Url.Action("Index", new { product_id = Model.Products.FirstOrDefault()?.Id, pageNumber = i })"
+                               class="pagination-link @(i == ViewBag.CurrentPage ? "active" : "")">
+                                @i
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Arrivals -->
+            <div class="collapse" id="newArrivals" data-bs-parent="#productSections">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    @if (Model?.JustArrivedProducts != null && Model.JustArrivedProducts.Any())
+                    {
+                        @foreach (var product in Model.JustArrivedProducts)
+                        {
+                            <div class="col">
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                                {
+                                                    <span class="offer-badge">@product.TittleBadge</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="offer-badge-green">@product.TittleBadge %</span>
+                                                }
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                            </a>
+                                        </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                            </a>
+                                        </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.Name</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.Price > 0)
+                                            {
+                                                <del class="orignal-price">$@product.Price</del>
+                                            }
+                                            <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            <span class="badge border rounded-0 fw-normal px-1 fs-7 lh-1 custom-badge">10% OFF</span>
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <!-- Pagination -->
+                <div class="page-specific-pagination">
+                    <div class="pagination">
+                        @for (int i = 1; i <= ViewBag.TotalArrivedPages; i++)
+                        {
+                            <a href="@Url.Action("Index", new { category_id = ViewBag.Category_ID, pageNumber = i, searchQuery = ViewBag.SearchQuery })"
+                               class="pagination-link @(i == ViewBag.CurrentPage ? "active" : "")">
+                                @i
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Best Sellers -->
+            <div class="collapse" id="bestSellers" data-bs-parent="#productSections">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    <!-- Best Sellers Content -->
+                </div>
+            </div>
+
+            <!-- Discounts -->
+            <div class="collapse" id="discounts" data-bs-parent="#productSections">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    <!-- Discounts Content -->
+                </div>
+            </div>
+
+            <!-- Popular -->
+            <div class="collapse" id="popular" data-bs-parent="#productSections">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    <!-- Popular Content -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</section>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $(function () {
+            const $navWrapperRight = $(".nav-wrapper.right"),
+                $navItems = $(".nav-item"),
+                $searchWrapper = $("#searchWrapper"),
+                $searchInput = $("#searchInput"),
+                $searchExecute = $("#searchExecute");
+
+            let searchOpen = false;
+
+            $searchExecute.on("click", function (e) {
+                e.preventDefault();
+                if (searchOpen) {
+                    $navItems.toggleClass("fadeOut");
+                    $navWrapperRight.toggleClass("slideRight");
+                    $searchWrapper.toggleClass("active");
+                    searchOpen = false;
+                } else {
+                    $navItems.toggleClass("fadeOut");
+                    $navWrapperRight.toggleClass("slideRight");
+                    $searchWrapper.toggleClass("active");
+                    $searchInput.focus();
+                    searchOpen = true;
+                }
+            });
+
+            $searchInput.on("keypress", function (e) {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    const searchQuery = $searchInput.val().trim();
+                    if (searchQuery) {
+                        $("#searchForm").submit();
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+

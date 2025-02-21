@@ -1,0 +1,3021 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\Scanton.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Scanton.fq6yqmytrj.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\#Leaf.jfif",
+      "PackagePath": "staticwebassets\\images\\#Leaf.jfif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\01.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\02.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\03.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\04.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\05 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\05 (1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\05.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\06.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\07.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\240_F_924545820_QP8RO6Z0CNiw5f5HMoKnbRQ6ZwBXFvkz.jpg",
+      "PackagePath": "staticwebassets\\images\\240_F_924545820_QP8RO6Z0CNiw5f5HMoKnbRQ6ZwBXFvkz.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\3195650-uhd_3840_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\3195650-uhd_3840_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\3d-render-white-figure-typing-white-keyboard-digital-illustration-online-work-remote-work-virtual-as.zip",
+      "PackagePath": "staticwebassets\\images\\3d-render-white-figure-typing-white-keyboard-digital-illustration-online-work-remote-work-virtual-as.zip"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\54154dd6-250f-45c4-a327-6a8c0c4317bb.jpg",
+      "PackagePath": "staticwebassets\\images\\54154dd6-250f-45c4-a327-6a8c0c4317bb.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\54154dd6-250f-45c4-a327-6a8c0c4317bb.psd",
+      "PackagePath": "staticwebassets\\images\\54154dd6-250f-45c4-a327-6a8c0c4317bb.psd"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\8764039.ai",
+      "PackagePath": "staticwebassets\\images\\8764039.ai"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\8764043.eps",
+      "PackagePath": "staticwebassets\\images\\8764043.eps"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\8767246-uhd_4096_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\8767246-uhd_4096_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Account.png",
+      "PackagePath": "staticwebassets\\images\\Account.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\DIAMOND DISPOSABLE.pdf",
+      "PackagePath": "staticwebassets\\images\\DIAMOND DISPOSABLE.pdf"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Image_not_available.png",
+      "PackagePath": "staticwebassets\\images\\Image_not_available.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 01.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 01.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 02.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 02.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 05.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 05.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 06.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 06.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 07.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 07.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 08.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 08.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 09.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 09.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Mallow Fellow 10.png",
+      "PackagePath": "staticwebassets\\images\\Mallow Fellow 10.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template.html",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template.html"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\618129e98a894c54b6441fd306f038e6.thumbnail.0000000000_small.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\618129e98a894c54b6441fd306f038e6.thumbnail.0000000000_small.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_GrapefruitA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_GrapefruitA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_OystersA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_OystersA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_PrawnsC.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0000_PrawnsC.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0001_HensEggsA_3e7ad85b-4dc4-469d-8d3f-5183c91190b6.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0001_HensEggsA_3e7ad85b-4dc4-469d-8d3f-5183c91190b6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0001_PrawnsB.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0001_PrawnsB.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0002_TunaA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0002_TunaA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0002_WildRiceOptionA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0002_WildRiceOptionA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_BirdsEyeChillisA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_BirdsEyeChillisA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_DicedChickenA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_DicedChickenA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_NaturalYogurtA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_NaturalYogurtA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_RomaineA_f3ca90e2-1f5f-465e-b00b-35b58e015872.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0003_RomaineA_f3ca90e2-1f5f-465e-b00b-35b58e015872.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_GingerA_97d96c26-f3c8-48be-be14-3dd8801b0dc0.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_GingerA_97d96c26-f3c8-48be-be14-3dd8801b0dc0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_MultiseedBagelA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_MultiseedBagelA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_WatermelonA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0004_WatermelonA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0005_SteakA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0005_SteakA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_GarlicA_e7874557-b73a-4dff-ad1d-824468270aa9.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_GarlicA_e7874557-b73a-4dff-ad1d-824468270aa9.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_LobsterA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_LobsterA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_SpecialParmessanA(1).jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_SpecialParmessanA(1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_SpecialParmessanA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0006_SpecialParmessanA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0007_ParawnsA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0007_ParawnsA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0007_RigatoniA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0007_RigatoniA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0008_KaiserRollx1A_1515913e-5986-44e7-b2b4-40f693c5daa0(1).jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0008_KaiserRollx1A_1515913e-5986-44e7-b2b4-40f693c5daa0(1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0008_KaiserRollx1A_1515913e-5986-44e7-b2b4-40f693c5daa0.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0008_KaiserRollx1A_1515913e-5986-44e7-b2b4-40f693c5daa0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0009_WhiteSanwichLoafA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0009_WhiteSanwichLoafA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0010_DanishPastryA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0010_DanishPastryA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0011_MinceBeefA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0011_MinceBeefA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0011_RedOnionA_754e49bb-7d98-4c87-be72-54b870ee4691.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0011_RedOnionA_754e49bb-7d98-4c87-be72-54b870ee4691.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0043_PeachAltA.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CANOPYNaturalProductImages_0043_PeachAltA.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsBakery1200x1200_BREADSTICKS.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsBakery1200x1200_BREADSTICKS.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsCheese_Dairy1200x1200_MILK(1).jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsCheese_Dairy1200x1200_MILK(1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsCheese_Dairy1200x1200_MILK.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\CCFarmShopProductsCheese_Dairy1200x1200_MILK.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Logo_v1_LT_GRN.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Logo_v1_LT_GRN.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Logo_v1_WHT_2c.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Logo_v1_WHT_2c.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Natural_Mobile_Slider_Pizza_B_Alt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Canopy_Natural_Mobile_Slider_Pizza_B_Alt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Cheese_Alt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Cheese_Alt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Fruit_Alt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Fruit_Alt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Veg_Alt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Header_Images_Veg_Alt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Account_B.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Account_B.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Chat_B.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Chat_B.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Contact_C_43ad4003-c8da-44b0-a52c-6312b840835a.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Contact_C_43ad4003-c8da-44b0-a52c-6312b840835a.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Delivery_B.png",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\Icons_Canvas_Delivery_B.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\age-verification-pop-up.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\age-verification-pop-up.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\analytics(1).js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\analytics(1).js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\analytics.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\analytics.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\animate-on-scroll.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\animate-on-scroll.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\animate-on-scroll.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\animate-on-scroll.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\announcement.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\announcement.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\announcement.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\announcement.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\application-4187d3ef4830e9a1d9f68614021e01342ce50f347c0b40e31a5ecf136c71553c.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\application-4187d3ef4830e9a1d9f68614021e01342ce50f347c0b40e31a5ecf136c71553c.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\application-b31550425b69d2bc75682e1bbd2a5f297a1275a21d7d19b4cd42c378affd2576.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\application-b31550425b69d2bc75682e1bbd2a5f297a1275a21d7d19b4cd42c378affd2576.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\bac78c151w8bf023f7pfbfb601fmf9d3fb59m.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\bac78c151w8bf023f7pfbfb601fmf9d3fb59m.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\blur-messages.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\blur-messages.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\cart-drawer.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\cart-drawer.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\cart-items.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\cart-items.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\consent-tracking-api.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\consent-tracking-api.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\countdown-timer.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\countdown-timer.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\custom-select.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\custom-select.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\dockable-side-drawer.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\dockable-side-drawer.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\dux-3.4.1.min.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\dux-3.4.1.min.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\fashion-model-in-fur.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\fashion-model-in-fur.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\footer.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\footer.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gallery-mobile-carousel.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gallery-mobile-carousel.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gallery.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gallery.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gtm.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\gtm.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\hotspots-image.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\hotspots-image.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\hotspots-image.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\hotspots-image.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\icons-with-text.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\icons-with-text.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\installed.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\installed.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\instant-page.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\instant-page.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\inter-font-013a82a3f24b133ada787c7ed29ae12fec6fef808a104afb5332cad9be6be848.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\inter-font-013a82a3f24b133ada787c7ed29ae12fec6fef808a104afb5332cad9be6be848.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\js",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\js(1)",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\js(2)",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\light-men-s-dress-shirt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\light-men-s-dress-shirt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\load_feature-1060834584ef204397b1179782a1b090047ee4397cb627244ab89e03f65c4307.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\load_feature-1060834584ef204397b1179782a1b090047ee4397cb627244ab89e03f65c4307.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\main.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\main.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\main.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\main.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-gallery.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-gallery.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-gallery.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-gallery.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-with-text.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\media-with-text.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\modal.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\modal.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-mega-columns.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-mega-columns.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-mega-sidebar.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-mega-sidebar.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-promos.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\navigation-promos.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\pixel.modern.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\pixel.modern.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\pop-up.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\pop-up.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\popup.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\popup.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\portable-wallets.en.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\portable-wallets.en.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\predictive-search.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\predictive-search.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\predictive-search.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\predictive-search.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\preloads.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\preloads.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product-form.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product-form.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product-type-search.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product-type-search.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\product.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\promo-strip.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\promo-strip.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\promos.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\promos.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-add.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-add.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-add.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-add.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-order-list.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\quick-order-list.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\rails-f96da86d32b453b6828fe1dfc1ff0644a9adef722172398dc0433fbb81630651.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\rails-f96da86d32b453b6828fe1dfc1ff0644a9adef722172398dc0433fbb81630651.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\runtime-40cf53ff75e6ed0b0e18442adf372b4ed2da02ffc8fe21985c6844f7fe7427f1.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\runtime-40cf53ff75e6ed0b0e18442adf372b4ed2da02ffc8fe21985c6844f7fe7427f1.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\saved_resource(1).html",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\saved_resource(1).html"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\saved_resource.html",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\saved_resource.html"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\scripts.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\scripts.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\search-form.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\search-form.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\search-suggestions.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\search-suggestions.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shop_events_listener-20905db421adb60b04582abab58b285362bc2e1011d17cd3eabb3bfe05798c59.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shop_events_listener-20905db421adb60b04582abab58b285362bc2e1011d17cd3eabb3bfe05798c59.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shopify-perf-kit-1.1.0.min.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shopify-perf-kit-1.1.0.min.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1133924384_Lo.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1133924384_Lo.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_147645710_Lo.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_147645710_Lo.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1746671153_Lo_Fill_Alt_754f52a7-83cd-4d01-8ad2-b3e51459d161.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1746671153_Lo_Fill_Alt_754f52a7-83cd-4d01-8ad2-b3e51459d161.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1936200901_Lo_fdc441d8-844f-446f-b30e-048840769b4b.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_1936200901_Lo_fdc441d8-844f-446f-b30e-048840769b4b.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_2118123932_Lo.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_2118123932_Lo.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_2190001391_Lo_Fill_Alt.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_2190001391_Lo_Fill_Alt.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_413326225_Lo.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_413326225_Lo.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_413326225_Lo_Fill_2b.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_413326225_Lo_Fill_2b.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_448915267_9ee5c084-a922-43e1-b194-5450ddfdd2a8.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_448915267_9ee5c084-a922-43e1-b194-5450ddfdd2a8.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_489288454_Lo.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\shutterstock_489288454_Lo.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\slideshow.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\slideshow.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\slideshow.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\slideshow.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\speech-search.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\speech-search.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\speech-search.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\speech-search.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\swatches.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\swatches.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\tabs.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\tabs.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\tailwind-7992df8035bd43c70105f5a56a2807319c674769e7abefdf2cc9a75b054f332b.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\tailwind-7992df8035bd43c70105f5a56a2807319c674769e7abefdf2cc9a75b054f332b.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\testimonials.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\testimonials.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\text-overlay.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\text-overlay.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\trekkie.storefront.b004b8439e365cda50b40471636997447684bbe3.min.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\trekkie.storefront.b004b8439e365cda50b40471636997447684bbe3.min.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\trekkie.themestore.min.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\trekkie.themestore.min.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\variant-label.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\variant-label.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\variant-picker.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\variant-picker.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_bugsnag_js_browser_notifier_js-caches_app_node_modules_shopif-cb8390-17f11219b3e4c39656e2a0a6e84f7f670a4dbd8f3ed.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_bugsnag_js_browser_notifier_js-caches_app_node_modules_shopif-cb8390-17f11219b3e4c39656e2a0a6e84f7f670a4dbd8f3ed.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_lodash_lodash_js-caches_app_node_modules_script-loader_addScript_js-1cffee63d7f7f367f54e3cde705e6d212c062843af69.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_lodash_lodash_js-caches_app_node_modules_script-loader_addScript_js-1cffee63d7f7f367f54e3cde705e6d212c062843af69.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_shopify_marketing-assets_dist_javascripts_index_js-caches_app-5f2387-f1cf5f8fd2e09dcb623b0f7fb824174d3edd8250312.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_shopify_marketing-assets_dist_javascripts_index_js-caches_app-5f2387-f1cf5f8fd2e09dcb623b0f7fb824174d3edd8250312.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_shopify_polyfills_base_esnext-15a7de9bbd9ec158716586d662b7c9b912bb5b2615a0953adf03be7cf2ff576a.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\vendors-caches_app_node_modules_shopify_polyfills_base_esnext-15a7de9bbd9ec158716586d662b7c9b912bb5b2615a0953adf03be7cf2ff576a.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\video.css",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\video.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\video.js.download",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\video.js.download"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\womans-steampunk-sunglasses.jpg",
+      "PackagePath": "staticwebassets\\images\\Preview Natural Theme - Canopy Ecommerce Website Template_files\\womans-steampunk-sunglasses.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\SCRANTONLOGO.svg",
+      "PackagePath": "staticwebassets\\images\\SCRANTONLOGO.svg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\_Leaf-removebg-preview-removebg-preview.jpg",
+      "PackagePath": "staticwebassets\\images\\_Leaf-removebg-preview-removebg-preview.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\_Leaf-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\_Leaf-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a1-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a1-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a1.jpg",
+      "PackagePath": "staticwebassets\\images\\a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a10-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a10-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a10.jpg",
+      "PackagePath": "staticwebassets\\images\\a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a11-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a11-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a11.jpg",
+      "PackagePath": "staticwebassets\\images\\a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a12-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a12-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a12.jpg",
+      "PackagePath": "staticwebassets\\images\\a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a3.jpg",
+      "PackagePath": "staticwebassets\\images\\a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a4.jpg",
+      "PackagePath": "staticwebassets\\images\\a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a5-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a5-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a5.jpg",
+      "PackagePath": "staticwebassets\\images\\a5.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a6-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a6-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a6.jpg",
+      "PackagePath": "staticwebassets\\images\\a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a7-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a7-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a7.jpg",
+      "PackagePath": "staticwebassets\\images\\a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a8-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\a8-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a8.jpg",
+      "PackagePath": "staticwebassets\\images\\a8.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\a9.jpg",
+      "PackagePath": "staticwebassets\\images\\a9.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\256a8a6e-c77c-45c4-9ba7-d78ed9d7081d_vape.webp",
+      "PackagePath": "staticwebassets\\images\\aboutus\\256a8a6e-c77c-45c4-9ba7-d78ed9d7081d_vape.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\2788e127-6866-4d07-97a5-e8154f929495_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\2788e127-6866-4d07-97a5-e8154f929495_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\42e4eb6c-a98e-4509-9398-c10a93b59b31_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\42e4eb6c-a98e-4509-9398-c10a93b59b31_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\5c03c99b-8da0-47b1-ad47-4f6289fceb1e_top-view-packs-cigarettes_23-2148585911.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\5c03c99b-8da0-47b1-ad47-4f6289fceb1e_top-view-packs-cigarettes_23-2148585911.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\88bfa623-5298-4f83-b883-d03eba5c7ab0_images--_2024-02-15T164244.099_600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\88bfa623-5298-4f83-b883-d03eba5c7ab0_images--_2024-02-15T164244.099_600x600.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\9b3ce7f2-74ef-4a05-a8d0-d5dde0116df0_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\9b3ce7f2-74ef-4a05-a8d0-d5dde0116df0_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\9ec8ad93-710c-4044-8a10-5dbb18c15151_05.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\9ec8ad93-710c-4044-8a10-5dbb18c15151_05.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\da35e643-aafa-4531-aba6-26ed45713f5e_vape.webp",
+      "PackagePath": "staticwebassets\\images\\aboutus\\da35e643-aafa-4531-aba6-26ed45713f5e_vape.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\ea7ae8fd-57d2-4adc-ba04-a3b0e2214127_240_F_924545820_QP8RO6Z0CNiw5f5HMoKnbRQ6ZwBXFvkz.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\ea7ae8fd-57d2-4adc-ba04-a3b0e2214127_240_F_924545820_QP8RO6Z0CNiw5f5HMoKnbRQ6ZwBXFvkz.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\07edb374-24b8-4d37-802a-b6ab85b724b7_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\07edb374-24b8-4d37-802a-b6ab85b724b7_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\0c2c0ac4-df54-4f6c-9389-8c7bef96f54f_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\0c2c0ac4-df54-4f6c-9389-8c7bef96f54f_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\1f634aad-4160-4684-b3a5-8d213df5b2c1_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\1f634aad-4160-4684-b3a5-8d213df5b2c1_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\75d188d9-81f2-4f10-83fb-f9523cf81dfd_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\75d188d9-81f2-4f10-83fb-f9523cf81dfd_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\7bc27b44-aa76-4bec-b698-ed8d8d37a0e1__Leaf-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\7bc27b44-aa76-4bec-b698-ed8d8d37a0e1__Leaf-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\9862240d-37b7-44b3-8e1d-2ad0c8ca014f_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\9862240d-37b7-44b3-8e1d-2ad0c8ca014f_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\a79c0971-8246-43a6-9fbf-0c6a0c3f9343_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\a79c0971-8246-43a6-9fbf-0c6a0c3f9343_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\ba65a10e-8e08-4da8-96d6-e489b5d9ddb2_05 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\ba65a10e-8e08-4da8-96d6-e489b5d9ddb2_05 (1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\cd702996-b0fd-4085-80ce-1ba7a536001f_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\cd702996-b0fd-4085-80ce-1ba7a536001f_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\e3267d99-a865-4861-a500-b58d7e8a5cab__Leaf-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\e3267d99-a865-4861-a500-b58d7e8a5cab__Leaf-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\ed440d81-b7ec-43e4-993f-cc27ec1bb656_04.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\ed440d81-b7ec-43e4-993f-cc27ec1bb656_04.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\products\\f655b6bd-1e08-469c-8b07-51d482c5ddbc_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\products\\f655b6bd-1e08-469c-8b07-51d482c5ddbc_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aboutus\\video\\5dab13de-d62d-4d88-8dc1-54512a81b78c_3195650-uhd_3840_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\aboutus\\video\\5dab13de-d62d-4d88-8dc1-54512a81b78c_3195650-uhd_3840_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\advise.png",
+      "PackagePath": "staticwebassets\\images\\advise.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aed604f0-72fb-408b-9b6c-9dd6328bb849.jpg",
+      "PackagePath": "staticwebassets\\images\\aed604f0-72fb-408b-9b6c-9dd6328bb849.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\aed604f0-72fb-408b-9b6c-9dd6328bb849.psd",
+      "PackagePath": "staticwebassets\\images\\aed604f0-72fb-408b-9b6c-9dd6328bb849.psd"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\back.avif",
+      "PackagePath": "staticwebassets\\images\\back.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banner-1.webp",
+      "PackagePath": "staticwebassets\\images\\banner-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banner-2.webp",
+      "PackagePath": "staticwebassets\\images\\banner-2.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banner-newsletter.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-newsletter.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\1ceae6a1-42e6-4f8a-a3cc-91ef7ea55682_01.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\1ceae6a1-42e6-4f8a-a3cc-91ef7ea55682_01.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\3342322b-ea3c-4df3-a6ff-29918f97ae79_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\3342322b-ea3c-4df3-a6ff-29918f97ae79_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\360eec8b-90a1-4826-aca8-f70d215053d2_01 (2).jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\360eec8b-90a1-4826-aca8-f70d215053d2_01 (2).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\4b1ff729-fa33-4cea-926a-5e15318e5c2d_banner-2.webp",
+      "PackagePath": "staticwebassets\\images\\banners\\4b1ff729-fa33-4cea-926a-5e15318e5c2d_banner-2.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\51e11789-0aa6-42e2-8fa7-6048d498c240_02.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\51e11789-0aa6-42e2-8fa7-6048d498c240_02.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\5292d983-eb9e-4bb1-a127-58442174b754_Mallow Fellow 07.png",
+      "PackagePath": "staticwebassets\\images\\banners\\5292d983-eb9e-4bb1-a127-58442174b754_Mallow Fellow 07.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\6f5d9358-8cae-4b12-a883-10b5d5dd15f2_SCRANTON BANNER Black.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\6f5d9358-8cae-4b12-a883-10b5d5dd15f2_SCRANTON BANNER Black.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\7b1825af-4583-42cb-b462-ea993399444c_03.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\7b1825af-4583-42cb-b462-ea993399444c_03.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\8754b912-ca98-43c4-aad2-d956c530ff6b_banner-2.webp",
+      "PackagePath": "staticwebassets\\images\\banners\\8754b912-ca98-43c4-aad2-d956c530ff6b_banner-2.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\8c5c3670-8fb2-4adf-ad9a-db5ad741983b_Banne1.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\8c5c3670-8fb2-4adf-ad9a-db5ad741983b_Banne1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\97457383-913d-447f-8cc7-acfd74f86eca_banner-1.webp",
+      "PackagePath": "staticwebassets\\images\\banners\\97457383-913d-447f-8cc7-acfd74f86eca_banner-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\dbd3247b-565b-4e39-bae0-b48026c8c896_Banne1.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\dbd3247b-565b-4e39-bae0-b48026c8c896_Banne1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\e34b0a0e-2a8a-4556-adb7-ba0cc42f3282_banner-1.webp",
+      "PackagePath": "staticwebassets\\images\\banners\\e34b0a0e-2a8a-4556-adb7-ba0cc42f3282_banner-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\f87c3810-480d-406d-b44f-71b7581a2569_banner-1.webp",
+      "PackagePath": "staticwebassets\\images\\banners\\f87c3810-480d-406d-b44f-71b7581a2569_banner-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\banners\\fdc67f47-859f-4ac5-95d7-67ff32c01bdd_SCRANTON BANNER Green.jpg",
+      "PackagePath": "staticwebassets\\images\\banners\\fdc67f47-859f-4ac5-95d7-67ff32c01bdd_SCRANTON BANNER Green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\06766053-40f9-4b8f-94d1-bdb6df247324_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\06766053-40f9-4b8f-94d1-bdb6df247324_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\44896f08-9a74-4f68-8743-0cb4f20e21ea_glass-bongs.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\44896f08-9a74-4f68-8743-0cb4f20e21ea_glass-bongs.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\55998007-e9be-478b-af41-b5f52138e8c1_girl-using-dab-rig.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\55998007-e9be-478b-af41-b5f52138e8c1_girl-using-dab-rig.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\5f6e0697-b816-419c-8c74-38db0196e4b0_shutterstock_264191039_Lo.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\5f6e0697-b816-419c-8c74-38db0196e4b0_shutterstock_264191039_Lo.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\60f7087e-a4e9-440d-8705-46f3984ac337_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\60f7087e-a4e9-440d-8705-46f3984ac337_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\6f14cc4a-7fed-42ca-99bd-a6606ae7c09d_54154dd6-250f-45c4-a327-6a8c0c4317bb.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\6f14cc4a-7fed-42ca-99bd-a6606ae7c09d_54154dd6-250f-45c4-a327-6a8c0c4317bb.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\6fe1b792-8ed5-4a08-bdb8-04b9a0b3e4b6_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\6fe1b792-8ed5-4a08-bdb8-04b9a0b3e4b6_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\8db90a6f-e87e-44e3-bab9-c9b1fa4ebe53_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\8db90a6f-e87e-44e3-bab9-c9b1fa4ebe53_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\a2fcb00c-dbae-4483-8a4a-4d7cd71799ee_01 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\a2fcb00c-dbae-4483-8a4a-4d7cd71799ee_01 (1).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\a3dadd7f-f81f-47b3-bf0a-3e0c817fdd0f_01.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\a3dadd7f-f81f-47b3-bf0a-3e0c817fdd0f_01.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\c45737ae-d8fd-47df-8f39-72628ab3030d_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\c45737ae-d8fd-47df-8f39-72628ab3030d_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\c658a5e2-0b6b-4203-8f9e-7001192fbcba_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\c658a5e2-0b6b-4203-8f9e-7001192fbcba_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\c676f2b6-e115-4991-b47b-349686ead35d_e-vaporisers.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\c676f2b6-e115-4991-b47b-349686ead35d_e-vaporisers.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\defbf80f-4efb-4972-afda-f909810c0d2d_green.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\defbf80f-4efb-4972-afda-f909810c0d2d_green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\ede783b0-bec4-495b-9c6c-03d0b6818569_a15.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\ede783b0-bec4-495b-9c6c-03d0b6818569_a15.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\ef9b0a4c-c1e0-4b58-b304-7e41143c4f89_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\ef9b0a4c-c1e0-4b58-b304-7e41143c4f89_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\f300e5f2-1c41-4aa6-be9a-a124a3c80c6d_04 (3).jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\f300e5f2-1c41-4aa6-be9a-a124a3c80c6d_04 (3).jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\f82f5a4f-eeba-4a95-aa14-9aacb6222abc_shutterstock_264191039_Lo.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\f82f5a4f-eeba-4a95-aa14-9aacb6222abc_shutterstock_264191039_Lo.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\blogs\\ff60eda7-19b9-43a9-878a-b40d45946eea_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\ff60eda7-19b9-43a9-878a-b40d45946eea_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\08bcc084-8536-4f58-8063-0311625faec6_a7-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\08bcc084-8536-4f58-8063-0311625faec6_a7-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\355c3cd5-0580-4ac9-be68-99afb8f452d5_pd-2-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\category\\355c3cd5-0580-4ac9-be68-99afb8f452d5_pd-2-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\4794436c-61d5-41f2-bbbc-5d624471d62f_a7-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\4794436c-61d5-41f2-bbbc-5d624471d62f_a7-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\5d79ce88-9996-455c-bea2-b479cece804f_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\category\\5d79ce88-9996-455c-bea2-b479cece804f_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\64a26591-e4b2-407f-8a17-8cba04fd718f_a12-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\64a26591-e4b2-407f-8a17-8cba04fd718f_a12-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\92d65288-0c83-4f0c-9194-3aa6513b96dc_a11-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\92d65288-0c83-4f0c-9194-3aa6513b96dc_a11-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\9f848a01-e0b8-4f0d-84c4-3e6f6f258dc5_a3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\9f848a01-e0b8-4f0d-84c4-3e6f6f258dc5_a3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\SCRANTONLOGO.svg",
+      "PackagePath": "staticwebassets\\images\\category\\SCRANTONLOGO.svg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a1.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a10.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a11.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a3.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a4.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a5.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a5.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a6.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a7.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a8.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a8.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\a9.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\a9.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\d025fde3-a04d-45fe-b668-2b15cf085e1b_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\d025fde3-a04d-45fe-b668-2b15cf085e1b_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\d8f264e4-c99e-4b89-8bb9-42444a66f664_a11-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\d8f264e4-c99e-4b89-8bb9-42444a66f664_a11-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\edd33013-fcf1-4570-9b11-5ed5d825592f_a8-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\edd33013-fcf1-4570-9b11-5ed5d825592f_a8-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\f07257a8-854d-4777-bb41-b9abd60f8fb5_a4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\f07257a8-854d-4777-bb41-b9abd60f8fb5_a4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\f92c6079-a2ac-45bb-b81e-0197e95123d6_jar-3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\category\\f92c6079-a2ac-45bb-b81e-0197e95123d6_jar-3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\green.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\jar-0.png",
+      "PackagePath": "staticwebassets\\images\\category\\jar-0.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\jar-1.png",
+      "PackagePath": "staticwebassets\\images\\category\\jar-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\jar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\jar-2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\pd-1.png",
+      "PackagePath": "staticwebassets\\images\\category\\pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\pd-2.png",
+      "PackagePath": "staticwebassets\\images\\category\\pd-2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\category\\rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\category\\rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\cig.png",
+      "PackagePath": "staticwebassets\\images\\cig.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\close-up-multi-colored-candies-container_1048944-8865464.jpg",
+      "PackagePath": "staticwebassets\\images\\close-up-multi-colored-candies-container_1048944-8865464.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\delevery.png",
+      "PackagePath": "staticwebassets\\images\\delevery.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\ecfef03a-11f5-45ba-9a9b-eaeee26bb809_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\ecfef03a-11f5-45ba-9a9b-eaeee26bb809_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\21e07dc0-8782-432f-b33b-2e207cb019dc_pd-1.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\21e07dc0-8782-432f-b33b-2e207cb019dc_pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\40f09204-5566-48e6-b716-402c69233ac5_795952.jpg",
+      "PackagePath": "staticwebassets\\images\\flashs\\40f09204-5566-48e6-b716-402c69233ac5_795952.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\52dd44e1-db31-4fb5-99a1-51f3445be005_pd-1.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\52dd44e1-db31-4fb5-99a1-51f3445be005_pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\609aefca-64df-4557-8cbf-48579ba79eba_jar-0.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\609aefca-64df-4557-8cbf-48579ba79eba_jar-0.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\8453781a-210e-4e83-a043-486d927fa30c_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\8453781a-210e-4e83-a043-486d927fa30c_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\8c9023e0-09a0-4895-997f-b73ba52c7a4b_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\8c9023e0-09a0-4895-997f-b73ba52c7a4b_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\96896a7b-7b5c-4fa6-a12a-5246e35fed3e_2.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\96896a7b-7b5c-4fa6-a12a-5246e35fed3e_2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\9b60596f-f50a-42cb-85bb-e0ac85f47156_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\9b60596f-f50a-42cb-85bb-e0ac85f47156_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\9e52a307-25c9-431a-8ba6-3c97780fae95_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\9e52a307-25c9-431a-8ba6-3c97780fae95_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\aa81d6fa-429a-4b0b-936b-fb4ac46a6fd2_2.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\aa81d6fa-429a-4b0b-936b-fb4ac46a6fd2_2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\b5f9e878-528d-465f-9800-3a865348b30c_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\b5f9e878-528d-465f-9800-3a865348b30c_efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\bfb8899d-b722-4d09-afa8-8b47095b8652_pd-2.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\bfb8899d-b722-4d09-afa8-8b47095b8652_pd-2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\ca72f75f-6d3a-4592-b257-5a5a524de9b7_2.png",
+      "PackagePath": "staticwebassets\\images\\flashs\\ca72f75f-6d3a-4592-b257-5a5a524de9b7_2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\efada0e6-7987-4d24-b701-f35cd3d9b6e0_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\flashs\\efada0e6-7987-4d24-b701-f35cd3d9b6e0_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\flashs\\efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif",
+      "PackagePath": "staticwebassets\\images\\flashs\\efb3194c-2b76-4833-8dea-da0b2a616673_free shipping animated.gif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\front-view-scientist-wearing-equipment.jpg",
+      "PackagePath": "staticwebassets\\images\\front-view-scientist-wearing-equipment.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\girl-lets-out-smoke-from-hookah_1321-120.avif",
+      "PackagePath": "staticwebassets\\images\\girl-lets-out-smoke-from-hookah_1321-120.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\green.jpg",
+      "PackagePath": "staticwebassets\\images\\green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\human-smoker-lungs-stop-smoking-no-tobacco-harmful-effects-nicotine-drug-death-social-health-problem-bad-cancer-disease-prohibition-smoking-public-places-internal-organ-damage_771426-14819.jpg",
+      "PackagePath": "staticwebassets\\images\\human-smoker-lungs-stop-smoking-no-tobacco-harmful-effects-nicotine-drug-death-social-health-problem-bad-cancer-disease-prohibition-smoking-public-places-internal-organ-damage_771426-14819.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\images--_2024-02-15T164244.099_600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\images--_2024-02-15T164244.099_600x600.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\istockphoto-1086551016-612x612.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1086551016-612x612.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\istockphoto-1159845890-2048x2048.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1159845890-2048x2048.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-0.png",
+      "PackagePath": "staticwebassets\\images\\jar-0.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-1.png",
+      "PackagePath": "staticwebassets\\images\\jar-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\jar-2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\jar-3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\laptop-green-background-blank-magazines-notebook-with-space-text-green-background_817921-36329.avif",
+      "PackagePath": "staticwebassets\\images\\laptop-green-background-blank-magazines-notebook-with-space-text-green-background_817921-36329.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\laptop-with-cup-coffee-potted-plants-blue-desk_343170-5597.jpg",
+      "PackagePath": "staticwebassets\\images\\laptop-with-cup-coffee-potted-plants-blue-desk_343170-5597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\man-woman-smoke-together-store_85574-14614.avif",
+      "PackagePath": "staticwebassets\\images\\man-woman-smoke-together-store_85574-14614.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\minimalist-green-desk-with-office-supplies-keyboard_641503-302987.jpg",
+      "PackagePath": "staticwebassets\\images\\minimalist-green-desk-with-office-supplies-keyboard_641503-302987.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\minus-button.png",
+      "PackagePath": "staticwebassets\\images\\minus-button.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\no-image.png",
+      "PackagePath": "staticwebassets\\images\\no-image.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\out-of-stock-1.png",
+      "PackagePath": "staticwebassets\\images\\out-of-stock-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\out-of-stock-product-category.png",
+      "PackagePath": "staticwebassets\\images\\out-of-stock-product-category.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\out-of-stock.png",
+      "PackagePath": "staticwebassets\\images\\out-of-stock.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\21c06592-cf28-414d-a905-89ab87c41143_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\21c06592-cf28-414d-a905-89ab87c41143_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\3155a66a-ead9-489f-b0ed-282777be0c3a_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\3155a66a-ead9-489f-b0ed-282777be0c3a_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\5f6817b9-27a3-4cca-8c78-7178a4c2c0c6_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\5f6817b9-27a3-4cca-8c78-7178a4c2c0c6_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\66debec7-d6e5-4500-9910-1132087675fa_a7-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\66debec7-d6e5-4500-9910-1132087675fa_a7-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\6ab26eb9-d916-4398-9f9c-3ee07e3fa1e9_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\6ab26eb9-d916-4398-9f9c-3ee07e3fa1e9_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\7fae6db8-dd0a-461a-ae2c-b8a3156960e6_a6-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\7fae6db8-dd0a-461a-ae2c-b8a3156960e6_a6-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\88f03fa2-ed81-40fe-9b76-bd1d12f5ba64_jar-3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\88f03fa2-ed81-40fe-9b76-bd1d12f5ba64_jar-3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\8bc2a443-2e87-493f-a7c5-f9446432628c_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\8bc2a443-2e87-493f-a7c5-f9446432628c_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\8f4c6905-97cf-4aaa-9554-399281c0ca56_a12-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\8f4c6905-97cf-4aaa-9554-399281c0ca56_a12-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\b1d02fa6-caf8-4910-bf8a-e15656a040a8_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\b1d02fa6-caf8-4910-bf8a-e15656a040a8_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\bbd7a8d7-c47e-4d46-8f50-3e2690947d18_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\bbd7a8d7-c47e-4d46-8f50-3e2690947d18_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\e27e68ef-105a-4337-bf28-8e168de670c7_pd-2-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\e27e68ef-105a-4337-bf28-8e168de670c7_pd-2-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\parent\\category\\ed0756f6-7628-424c-8f01-67cddfb304a3_a4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\parent\\category\\ed0756f6-7628-424c-8f01-67cddfb304a3_a4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\pd-1.png",
+      "PackagePath": "staticwebassets\\images\\pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\pd-2-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\pd-2-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\pd-2.png",
+      "PackagePath": "staticwebassets\\images\\pd-2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\plus-button.png",
+      "PackagePath": "staticwebassets\\images\\plus-button.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\02d5ef27-35bb-4c47-a7a6-e6b20dbaaac1_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\products\\02d5ef27-35bb-4c47-a7a6-e6b20dbaaac1_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\0890199f-f550-4a38-8244-7fc43bdfd467_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0890199f-f550-4a38-8244-7fc43bdfd467_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\09edf38c-69b7-42d2-984a-ef884c02b422_jar-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\09edf38c-69b7-42d2-984a-ef884c02b422_jar-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\1750d8e3-ac8e-43a0-ba02-2c85f9bcaefc_Mallow Fellow 05.png",
+      "PackagePath": "staticwebassets\\images\\products\\1750d8e3-ac8e-43a0-ba02-2c85f9bcaefc_Mallow Fellow 05.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\188e9ca5-f22e-408b-bbca-6e0ec8f86d89_jar-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\188e9ca5-f22e-408b-bbca-6e0ec8f86d89_jar-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\1ea6a986-9d27-4034-abc5-9c10ddbe2a59_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1ea6a986-9d27-4034-abc5-9c10ddbe2a59_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\201f7720-c27e-4bc4-baea-b279e882588c_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\products\\201f7720-c27e-4bc4-baea-b279e882588c_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\21609613-410d-47e9-93f4-0b2d9f422ab4_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\21609613-410d-47e9-93f4-0b2d9f422ab4_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\243e2a2d-c0e8-4d2b-a39f-e0e465e6dfe0_jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\243e2a2d-c0e8-4d2b-a39f-e0e465e6dfe0_jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3150e760-2c25-4a5b-b317-fb9ae4c2e73f_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\3150e760-2c25-4a5b-b317-fb9ae4c2e73f_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\33ea30c7-ea28-4dc2-aa58-3cd99e0f5572_18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\33ea30c7-ea28-4dc2-aa58-3cd99e0f5572_18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\34eb8a16-6f26-4901-a8ff-0cf4adbcf047_pd-2-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\34eb8a16-6f26-4901-a8ff-0cf4adbcf047_pd-2-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3532a7ba-7198-4c42-9ca9-3ba2ea5caf21_a17.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3532a7ba-7198-4c42-9ca9-3ba2ea5caf21_a17.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\363c28d6-fcc0-4d54-b71b-b610bd183cd7_Mallow Fellow 02.png",
+      "PackagePath": "staticwebassets\\images\\products\\363c28d6-fcc0-4d54-b71b-b610bd183cd7_Mallow Fellow 02.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\36ffe6ba-3e9f-4e70-a1c7-7d1790552984_a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\36ffe6ba-3e9f-4e70-a1c7-7d1790552984_a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\37e29ec1-066f-4001-856e-fc7936c4e367_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\37e29ec1-066f-4001-856e-fc7936c4e367_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3af4fc09-6b14-4393-9b90-620b165ec780_a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3af4fc09-6b14-4393-9b90-620b165ec780_a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3b2abc5e-ada6-4958-b93d-8cb5185ff844_Mallow Fellow 07.png",
+      "PackagePath": "staticwebassets\\images\\products\\3b2abc5e-ada6-4958-b93d-8cb5185ff844_Mallow Fellow 07.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3b501cd5-7f38-4491-8017-564b4c6780e8_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3b501cd5-7f38-4491-8017-564b4c6780e8_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3c3adf81-6fef-4905-a9cd-a5ca1dc26892_pd-2.png",
+      "PackagePath": "staticwebassets\\images\\products\\3c3adf81-6fef-4905-a9cd-a5ca1dc26892_pd-2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\3f2f0f14-3fed-47ee-8280-0ff60793a3d3_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\3f2f0f14-3fed-47ee-8280-0ff60793a3d3_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\40919e10-e681-4953-ba67-68c0a3942804_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\40919e10-e681-4953-ba67-68c0a3942804_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\41045606-54f7-4a8c-95bc-8c525f8dd3b8_green.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41045606-54f7-4a8c-95bc-8c525f8dd3b8_green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\4d5ddc0c-7533-4809-a2f0-e635f7a7dd07_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4d5ddc0c-7533-4809-a2f0-e635f7a7dd07_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\50e11eac-d799-43b6-8a21-ace42fbc94b4_jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\50e11eac-d799-43b6-8a21-ace42fbc94b4_jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\51f49dc9-2100-4c06-a31e-bd261779fd0e_jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51f49dc9-2100-4c06-a31e-bd261779fd0e_jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\52d9c506-1ba0-425f-a790-185c2e4e0317_1.png",
+      "PackagePath": "staticwebassets\\images\\products\\52d9c506-1ba0-425f-a790-185c2e4e0317_1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\585f8381-a6b5-478a-9c70-120c343ad2ce_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\585f8381-a6b5-478a-9c70-120c343ad2ce_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\5998aa1e-7b78-4745-938a-c2352ab1fb0c_Mallow Fellow 09.png",
+      "PackagePath": "staticwebassets\\images\\products\\5998aa1e-7b78-4745-938a-c2352ab1fb0c_Mallow Fellow 09.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\5b8c6b19-38fd-477d-a3a7-56b542fb1856_4.png",
+      "PackagePath": "staticwebassets\\images\\products\\5b8c6b19-38fd-477d-a3a7-56b542fb1856_4.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\5c88266e-226d-4064-a53b-6cc1e0ab72cb_jar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\5c88266e-226d-4064-a53b-6cc1e0ab72cb_jar-2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\5f9df3c5-08da-4d90-8eea-1bea9d05c887_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\5f9df3c5-08da-4d90-8eea-1bea9d05c887_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\6aaf0742-3886-4ca7-98aa-8a3c014b7cf5_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\products\\6aaf0742-3886-4ca7-98aa-8a3c014b7cf5_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\6d0b79ea-1068-45cd-b09a-d08faeab4e6c_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6d0b79ea-1068-45cd-b09a-d08faeab4e6c_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\6dd263c0-e58b-4aa3-b8bb-11b878556227_green.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6dd263c0-e58b-4aa3-b8bb-11b878556227_green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\6de531b4-7c0e-47c4-a219-20f6ba1c6d9e_f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6de531b4-7c0e-47c4-a219-20f6ba1c6d9e_f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\6e14845a-804d-484a-b442-cf77b534be14_f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6e14845a-804d-484a-b442-cf77b534be14_f95cb889-543a-4f3e-9723-26bb73c41244_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\73cfcb6d-3cf6-43cb-be97-ebbe3d7fcfb5_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\73cfcb6d-3cf6-43cb-be97-ebbe3d7fcfb5_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\748a1667-f7f2-4094-aee8-31f3be68cbd2_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\748a1667-f7f2-4094-aee8-31f3be68cbd2_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\79148d19-becb-4fd1-a3d8-8ae584587df0_a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\79148d19-becb-4fd1-a3d8-8ae584587df0_a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\792df16c-0b83-42f6-b2ab-8d947c4290f4_AK 47.png",
+      "PackagePath": "staticwebassets\\images\\products\\792df16c-0b83-42f6-b2ab-8d947c4290f4_AK 47.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\7971a028-3d9e-48b2-a20b-3511b27e8590_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\7971a028-3d9e-48b2-a20b-3511b27e8590_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\7a45665d-f343-40ca-bde7-0f3ecfae193d_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7a45665d-f343-40ca-bde7-0f3ecfae193d_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\812b6c4f-2144-4dcd-b75c-3d3cdc9db606_pd-2-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\812b6c4f-2144-4dcd-b75c-3d3cdc9db606_pd-2-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\84341d87-4d7e-4960-8c37-815f30de9fea_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\84341d87-4d7e-4960-8c37-815f30de9fea_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\87864fb3-58fe-43cd-ac9a-3614af4e2f43_a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\87864fb3-58fe-43cd-ac9a-3614af4e2f43_a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\8c2b0c32-e66f-4fc9-9dc2-5f0137c5149f_green.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8c2b0c32-e66f-4fc9-9dc2-5f0137c5149f_green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\8d10245b-f333-4307-ba80-730848f604e0_a12-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\8d10245b-f333-4307-ba80-730848f604e0_a12-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\8fd83c33-cc9c-42f6-91c5-9329d784ec5c_01.png",
+      "PackagePath": "staticwebassets\\images\\products\\8fd83c33-cc9c-42f6-91c5-9329d784ec5c_01.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\90fb941a-704b-4222-bf31-4ec5609d16a3_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\90fb941a-704b-4222-bf31-4ec5609d16a3_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\912d12a4-3ec6-4cf7-8499-9f5e7a7cde26_banner-newsletter.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\912d12a4-3ec6-4cf7-8499-9f5e7a7cde26_banner-newsletter.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\92cbe676-9621-4b04-97fc-9522592f3acc_a9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\92cbe676-9621-4b04-97fc-9522592f3acc_a9.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\931824f3-1fe1-4fa8-ae11-ef4d1212c2d9_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\931824f3-1fe1-4fa8-ae11-ef4d1212c2d9_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\93ec4bd2-505d-44e5-b9f3-4b2c151b2651_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\93ec4bd2-505d-44e5-b9f3-4b2c151b2651_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\9910349e-a492-4629-9ec1-ee44ec700cb3_Mallow Fellow 09.png",
+      "PackagePath": "staticwebassets\\images\\products\\9910349e-a492-4629-9ec1-ee44ec700cb3_Mallow Fellow 09.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\9d235075-501d-4b69-a043-220c1f9798b0_18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9d235075-501d-4b69-a043-220c1f9798b0_18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\9dcfbac9-a54d-402c-9da6-ad9364689f63_a4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\9dcfbac9-a54d-402c-9da6-ad9364689f63_a4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a15b84ae-c922-4814-b883-19b0715885ce_jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a15b84ae-c922-4814-b883-19b0715885ce_jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a2180637-afde-428b-977c-6f5e71247ab1_a6-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\a2180637-afde-428b-977c-6f5e71247ab1_a6-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a25b8f37-9c59-40b8-81a3-25a98d9000e4_a9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a25b8f37-9c59-40b8-81a3-25a98d9000e4_a9.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a2d54373-483b-4452-a17c-975ce808bbcc_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\products\\a2d54373-483b-4452-a17c-975ce808bbcc_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a7365509-b8a7-483d-807c-5c89ea844280_4.png",
+      "PackagePath": "staticwebassets\\images\\products\\a7365509-b8a7-483d-807c-5c89ea844280_4.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a747a9bb-04e7-49a0-a4c8-9efb81b69af8_a5-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\a747a9bb-04e7-49a0-a4c8-9efb81b69af8_a5-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\a90735cd-6108-4bcf-827d-b5d3192021f4_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a90735cd-6108-4bcf-827d-b5d3192021f4_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\aae51528-449e-4fc5-86f8-7e904e3ec3b4_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\aae51528-449e-4fc5-86f8-7e904e3ec3b4_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\abf64e28-f2c2-42e3-849c-14e1e165d9d8_20.png",
+      "PackagePath": "staticwebassets\\images\\products\\abf64e28-f2c2-42e3-849c-14e1e165d9d8_20.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\ad1ed26a-a338-4488-a2d5-d008e9f51bf5_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ad1ed26a-a338-4488-a2d5-d008e9f51bf5_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\adddb53e-4294-4ed9-989b-919a73d9ff1b_Mallow Fellow 07.png",
+      "PackagePath": "staticwebassets\\images\\products\\adddb53e-4294-4ed9-989b-919a73d9ff1b_Mallow Fellow 07.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\b2873e42-3b34-400e-87c1-c28a3eef217f_Mallow Fellow 10.png",
+      "PackagePath": "staticwebassets\\images\\products\\b2873e42-3b34-400e-87c1-c28a3eef217f_Mallow Fellow 10.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\b32f98b7-e1f0-4d96-8c9e-2b2a2871b97e_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b32f98b7-e1f0-4d96-8c9e-2b2a2871b97e_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\b4127039-c525-411a-8d43-d78bcdb23cca_a5-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\b4127039-c525-411a-8d43-d78bcdb23cca_a5-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\b6211397-bbe4-4bde-81ab-f228271906a8_jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b6211397-bbe4-4bde-81ab-f228271906a8_jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\b9298e1f-ca58-4339-9e7b-ffc1e7881021_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b9298e1f-ca58-4339-9e7b-ffc1e7881021_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\bb367ff3-efdc-40a2-b362-f968741a7109_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\bb367ff3-efdc-40a2-b362-f968741a7109_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\bb8d9155-3238-4b4a-a147-75fb83e003f3_a5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\bb8d9155-3238-4b4a-a147-75fb83e003f3_a5.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\bfcf6034-8b88-47c6-a98e-5ce62d918507_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\bfcf6034-8b88-47c6-a98e-5ce62d918507_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\c0669fd9-0c1a-4355-8c85-110662ab93fe_jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\c0669fd9-0c1a-4355-8c85-110662ab93fe_jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\c0909669-869f-421a-913f-68fc2a00c5b0_2.png",
+      "PackagePath": "staticwebassets\\images\\products\\c0909669-869f-421a-913f-68fc2a00c5b0_2.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\c2405580-195e-44ff-9204-a6fe05c581c4_jar-2.jpg.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\c2405580-195e-44ff-9204-a6fe05c581c4_jar-2.jpg.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\c3c5b092-5cfe-4e54-b3e9-7b14bb9f7433_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\c3c5b092-5cfe-4e54-b3e9-7b14bb9f7433_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\c4d27b08-a2a3-4e79-b01b-4337f8d42099_Mallow Fellow 03.png",
+      "PackagePath": "staticwebassets\\images\\products\\c4d27b08-a2a3-4e79-b01b-4337f8d42099_Mallow Fellow 03.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\cb34f564-1cbe-4fed-8408-6b622666baea_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\cb34f564-1cbe-4fed-8408-6b622666baea_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\d0f28fcc-62bf-400f-8fe0-792fb373ad32_a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\d0f28fcc-62bf-400f-8fe0-792fb373ad32_a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\d893a209-4c6e-4bc3-84cc-12041f9163f4_73cfcb6d-3cf6-43cb-be97-ebbe3d7fcfb5_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\d893a209-4c6e-4bc3-84cc-12041f9163f4_73cfcb6d-3cf6-43cb-be97-ebbe3d7fcfb5_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\ddab05e4-efee-4f84-889c-9817c4536378_jar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ddab05e4-efee-4f84-889c-9817c4536378_jar-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\e3207e94-2ca4-40ef-b770-0e405e689280_Mallow Fellow 01.png",
+      "PackagePath": "staticwebassets\\images\\products\\e3207e94-2ca4-40ef-b770-0e405e689280_Mallow Fellow 01.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\e5402073-5443-4c79-a695-e573e2cb52dc_pd-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\e5402073-5443-4c79-a695-e573e2cb52dc_pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\e816a016-5b52-4c9d-bb8e-1e2216ef8869_a11-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\e816a016-5b52-4c9d-bb8e-1e2216ef8869_a11-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\e93d76b3-0874-4bba-a54d-992d007da66f_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e93d76b3-0874-4bba-a54d-992d007da66f_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\ea3a3fa7-fb8b-469d-96e7-f001e2b3f379_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ea3a3fa7-fb8b-469d-96e7-f001e2b3f379_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\ea3f70a6-1864-4893-b4f5-c15bc9c24848_AK 47.png",
+      "PackagePath": "staticwebassets\\images\\products\\ea3f70a6-1864-4893-b4f5-c15bc9c24848_AK 47.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f522749b-e595-4e4c-9472-4bc995b732be_2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f522749b-e595-4e4c-9472-4bc995b732be_2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f5912cc1-10f8-4c3b-8a5f-a185fa10d319_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\f5912cc1-10f8-4c3b-8a5f-a185fa10d319_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f68c70dc-eb29-4171-8cc5-24643a1a9f9e_jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f68c70dc-eb29-4171-8cc5-24643a1a9f9e_jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f7065e13-8dca-4fa6-8444-d2ba8127fef0_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f7065e13-8dca-4fa6-8444-d2ba8127fef0_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f72b7e23-4e19-41b1-8b84-a2bc0c645136_efada0e6-7987-4d24-b701-f35cd3d9b6e0_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f72b7e23-4e19-41b1-8b84-a2bc0c645136_efada0e6-7987-4d24-b701-f35cd3d9b6e0_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\f8d004b3-0585-4ca7-a509-d9d5b839836b_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f8d004b3-0585-4ca7-a509-d9d5b839836b_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\fc767ff5-501b-4e92-b7eb-c053cd99ab50_jar-3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\fc767ff5-501b-4e92-b7eb-c053cd99ab50_jar-3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\038ee3fe-91e3-4d0d-9dec-a88cf12b576b_jar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\038ee3fe-91e3-4d0d-9dec-a88cf12b576b_jar-2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\03c86dee-16fc-486a-a987-b128ae583984_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\03c86dee-16fc-486a-a987-b128ae583984_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\048fb259-bd61-4b36-a9fb-e8394171264c_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\048fb259-bd61-4b36-a9fb-e8394171264c_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\0c02f82b-e09f-4d09-abc2-6a8335dcd9d1_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\0c02f82b-e09f-4d09-abc2-6a8335dcd9d1_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\0cca7a42-9da1-464d-bc13-58972b4031da_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\0cca7a42-9da1-464d-bc13-58972b4031da_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\0f8975b8-5a47-4cc8-b35d-313dcd789dd0_18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\0f8975b8-5a47-4cc8-b35d-313dcd789dd0_18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\107654da-1c87-4ba2-97aa-a47dd79c9936_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\107654da-1c87-4ba2-97aa-a47dd79c9936_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\186289b1-79b0-460e-9dfc-2e1ae3b7981a_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\186289b1-79b0-460e-9dfc-2e1ae3b7981a_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\18da2c33-35d5-4eeb-a61e-e6cf9d366ecf_a12-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\18da2c33-35d5-4eeb-a61e-e6cf9d366ecf_a12-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\1ce6d652-78ea-4bf8-af95-8971ebe4b099_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\1ce6d652-78ea-4bf8-af95-8971ebe4b099_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\1d27a727-d9f2-415e-9148-32cd659004c3_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\1d27a727-d9f2-415e-9148-32cd659004c3_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\1d481d1c-93a3-4806-9c6d-9810491370fe_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\1d481d1c-93a3-4806-9c6d-9810491370fe_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\1d557a6e-4073-491f-b384-b57a1a0cf380_Mallow Fellow 05.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\1d557a6e-4073-491f-b384-b57a1a0cf380_Mallow Fellow 05.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\217f3237-7b14-46d5-b2f5-8781109addd0_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\217f3237-7b14-46d5-b2f5-8781109addd0_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\234e1aa9-a632-4487-8de7-9d7fad38516f_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\234e1aa9-a632-4487-8de7-9d7fad38516f_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\2a23e9c9-0d92-4236-a64e-91622453fbde_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\2a23e9c9-0d92-4236-a64e-91622453fbde_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\2bf7b561-b787-436d-8525-85653d9bc914_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\2bf7b561-b787-436d-8525-85653d9bc914_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\2c1a6099-f30e-4222-aa76-1cf54a315275_b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\2c1a6099-f30e-4222-aa76-1cf54a315275_b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\353e9bd6-71e0-4f1e-8c08-9b75ef6d4c16_a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\353e9bd6-71e0-4f1e-8c08-9b75ef6d4c16_a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\38677806-c9e6-4f0f-8577-58b863ec568b_a11-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\38677806-c9e6-4f0f-8577-58b863ec568b_a11-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\39103d29-b889-45e8-ad92-7a97f17b6e67_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\39103d29-b889-45e8-ad92-7a97f17b6e67_2672be0e-e5a8-4ecc-b754-6458da4680c2_a7.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\48e97bae-6a39-4d30-81ed-b0c048003600_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\48e97bae-6a39-4d30-81ed-b0c048003600_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\49b22d98-4692-41ec-b0b2-4c7fabceb1bf_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\49b22d98-4692-41ec-b0b2-4c7fabceb1bf_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\4a0edf26-082a-47b7-a087-664f45dc01c7_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\4a0edf26-082a-47b7-a087-664f45dc01c7_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\4bc43b6f-5fd5-46c3-9e5a-e044714fb0fa_a5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\4bc43b6f-5fd5-46c3-9e5a-e044714fb0fa_a5.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\4e603cec-77dd-441c-99c1-b9df9b4615fe_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\4e603cec-77dd-441c-99c1-b9df9b4615fe_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\4f18a3bb-dce2-4b86-852a-429a5560bc20_a6-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\4f18a3bb-dce2-4b86-852a-429a5560bc20_a6-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\4fca9193-9139-4ec5-9537-9b0f9f2aad4c_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\4fca9193-9139-4ec5-9537-9b0f9f2aad4c_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\545fca6f-bccb-4da7-ac7f-032e7febe6ef_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\545fca6f-bccb-4da7-ac7f-032e7febe6ef_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\57937241-f6e4-400f-b831-76b81ee9bac1_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\57937241-f6e4-400f-b831-76b81ee9bac1_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5a912831-a340-41ee-bfc7-26f12f204a43_pd-1.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5a912831-a340-41ee-bfc7-26f12f204a43_pd-1.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5b0578e2-76f4-4d47-b683-ea6cdb595367_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5b0578e2-76f4-4d47-b683-ea6cdb595367_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5cb7d9a7-2a98-40df-961e-8c2e7995cde0_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5cb7d9a7-2a98-40df-961e-8c2e7995cde0_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5d43b5c9-3335-4663-afde-3c3919dcf691_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5d43b5c9-3335-4663-afde-3c3919dcf691_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5ed038c1-2baf-464c-99ab-373a2acc01e5_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5ed038c1-2baf-464c-99ab-373a2acc01e5_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\5f8feec7-f2d1-47e9-a356-8496670e04b8_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\5f8feec7-f2d1-47e9-a356-8496670e04b8_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\627719fd-021e-4560-a957-ab2d206190e2_18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\627719fd-021e-4560-a957-ab2d206190e2_18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\6a0ac9cc-0e8d-41af-80db-ed49b6e32c12_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\6a0ac9cc-0e8d-41af-80db-ed49b6e32c12_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\6ad59ddb-1492-4dab-904b-916b617af31a_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\6ad59ddb-1492-4dab-904b-916b617af31a_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\6b083564-8a2c-421e-aa29-9ba67876e4d8_jar-0.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\6b083564-8a2c-421e-aa29-9ba67876e4d8_jar-0.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\6d0bda29-51f5-4270-b356-58568d183595_jar-2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\6d0bda29-51f5-4270-b356-58568d183595_jar-2-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\6d24c3f2-18f9-41d3-840a-8ec8bb3c4cde_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\6d24c3f2-18f9-41d3-840a-8ec8bb3c4cde_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\73239a6d-b903-4fcf-a20e-05f1591f7f20_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\73239a6d-b903-4fcf-a20e-05f1591f7f20_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\73b35189-0d86-4f32-85ff-27d92f0ac710_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\73b35189-0d86-4f32-85ff-27d92f0ac710_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\768ead39-bff6-4244-a17f-5201d2fe67ce_green.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\768ead39-bff6-4244-a17f-5201d2fe67ce_green.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\784eb80d-dbf9-4c18-8ac5-91471f7cc424_a11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\784eb80d-dbf9-4c18-8ac5-91471f7cc424_a11.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\788e71e7-2912-47c7-a830-0d7a2f309898_a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\788e71e7-2912-47c7-a830-0d7a2f309898_a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\79d20507-a0e3-4e7e-8568-54906e383c63__Leaf-removebg-preview-removebg-preview.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\79d20507-a0e3-4e7e-8568-54906e383c63__Leaf-removebg-preview-removebg-preview.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\843f9286-e6a0-4f6a-be82-24e011118f13_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\843f9286-e6a0-4f6a-be82-24e011118f13_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\86fcca4e-c0e2-40b8-89f5-7b206ce479fb_a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\86fcca4e-c0e2-40b8-89f5-7b206ce479fb_a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\879d439c-526b-4635-aa63-eb6da9a694fb_Mallow Fellow 09.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\879d439c-526b-4635-aa63-eb6da9a694fb_Mallow Fellow 09.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\87d73d66-4d90-4cdb-a4ec-179795f3aecf_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\87d73d66-4d90-4cdb-a4ec-179795f3aecf_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\8980305b-025d-43fb-b1ff-f578e7b1f856_a1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\8980305b-025d-43fb-b1ff-f578e7b1f856_a1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\8c781b5a-4414-43b0-bc9e-d8b158e6d01d_a6-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\8c781b5a-4414-43b0-bc9e-d8b158e6d01d_a6-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\915cefaa-f3a3-4d2f-a441-40727cefb4de_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\915cefaa-f3a3-4d2f-a441-40727cefb4de_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a0ad63e3-4354-4cbd-b928-edd4b98e5637_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a0ad63e3-4354-4cbd-b928-edd4b98e5637_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a0fbec18-c605-4e1b-8fa4-bc5bdebefaed_Mallow Fellow 08.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a0fbec18-c605-4e1b-8fa4-bc5bdebefaed_Mallow Fellow 08.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a320a5ea-ddf4-45a0-984f-bebdf0d21620_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a320a5ea-ddf4-45a0-984f-bebdf0d21620_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a6f3374f-ff47-4afc-9917-990bec51a521_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a6f3374f-ff47-4afc-9917-990bec51a521_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a780b17f-8794-48cb-b1f5-5ad9507eca31_Mallow Fellow 02.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a780b17f-8794-48cb-b1f5-5ad9507eca31_Mallow Fellow 02.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\a920d1fa-2a6a-4fb6-adfa-8ded948de8ec_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\a920d1fa-2a6a-4fb6-adfa-8ded948de8ec_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\ada63f3e-34cd-4ba1-b53d-de963ef19d02_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\ada63f3e-34cd-4ba1-b53d-de963ef19d02_742f2566-9592-475a-b218-cc6ae6dc0b78_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\ae9e1fd3-7930-4c0a-89b2-4baa11222907_b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\ae9e1fd3-7930-4c0a-89b2-4baa11222907_b3486d6d-7b9d-4247-b921-502f160d2f15_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\aec9cba9-6eaa-4e28-adb2-4ed3c9a6f548_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\aec9cba9-6eaa-4e28-adb2-4ed3c9a6f548_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\aece8de7-1e0b-4281-8e5f-b8826dc4efcf_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\aece8de7-1e0b-4281-8e5f-b8826dc4efcf_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\afa589ed-8ed0-4d7a-b74f-37233e97abd9_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\afa589ed-8ed0-4d7a-b74f-37233e97abd9_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\b80ebf36-effd-4c36-8d07-41fd093d6ae2_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\b80ebf36-effd-4c36-8d07-41fd093d6ae2_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\b89e3e22-bec0-414a-9c2e-19cc4c596cb3_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\b89e3e22-bec0-414a-9c2e-19cc4c596cb3_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\b93b01f4-54e6-40d1-8ef2-74c10822ac65_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\b93b01f4-54e6-40d1-8ef2-74c10822ac65_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\c7ae16f1-8950-4257-9d48-c72302a71242_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\c7ae16f1-8950-4257-9d48-c72302a71242_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\c8db7de1-eaab-4c48-99c9-b77440d35c86_jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\c8db7de1-eaab-4c48-99c9-b77440d35c86_jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\d03e7d53-3945-45a0-b682-c9fece81875a_a3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\d03e7d53-3945-45a0-b682-c9fece81875a_a3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\d254c6c8-1352-4722-9fe9-cfaf2a460712_a8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\d254c6c8-1352-4722-9fe9-cfaf2a460712_a8.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\d30d300a-c9b0-4734-a779-901fc01b7540_a8-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\d30d300a-c9b0-4734-a779-901fc01b7540_a8-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\d557e2cf-b8b4-4da7-ab9b-481db97fe900_jar-3-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\d557e2cf-b8b4-4da7-ab9b-481db97fe900_jar-3-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\db643b7c-b4a3-47c6-b535-945783120e1b_Mallow Fellow 10.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\db643b7c-b4a3-47c6-b535-945783120e1b_Mallow Fellow 10.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\de2fe665-316c-451c-b14a-48a9a0396841_jar -4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\de2fe665-316c-451c-b14a-48a9a0396841_jar -4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e05ce0be-731d-4b8c-b09a-bb1ee4c404b5_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e05ce0be-731d-4b8c-b09a-bb1ee4c404b5_46ea8666-8962-4ba3-a745-f95e11af4bbb_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e1b69edc-0228-44df-bd7b-b4c27940b150_a4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e1b69edc-0228-44df-bd7b-b4c27940b150_a4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e50dc3f2-ec23-4ae2-8ca9-2dabdcec1042_jar_-4-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e50dc3f2-ec23-4ae2-8ca9-2dabdcec1042_jar_-4-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e54d0105-8ae4-4f16-8959-a77d15b5b1f3_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e54d0105-8ae4-4f16-8959-a77d15b5b1f3_81d2cef9-14e3-404f-ad92-19e6b6a73b43_812857.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e5b0b10c-a347-4fa9-a0cc-503a173720d6_pd-1-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e5b0b10c-a347-4fa9-a0cc-503a173720d6_pd-1-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\e6858e4d-13c5-40f9-b4f0-a13795b9d073_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\e6858e4d-13c5-40f9-b4f0-a13795b9d073_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\ef1c37fe-3176-43e9-a014-2ee7746dcbab_a6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\ef1c37fe-3176-43e9-a014-2ee7746dcbab_a6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\f03b5a1f-54bb-44ba-8b9d-aed1ee65c6d2_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\f03b5a1f-54bb-44ba-8b9d-aed1ee65c6d2_443169f1-2e78-496f-8ed8-b4f5f5948a4e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\f13b9841-5c1b-4d9d-9d40-a84882e0ef43_Mallow Fellow 06.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\f13b9841-5c1b-4d9d-9d40-a84882e0ef43_Mallow Fellow 06.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\f1b8b70a-88af-46df-91aa-ee58ba72dfea_Mallow Fellow 04.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\f1b8b70a-88af-46df-91aa-ee58ba72dfea_Mallow Fellow 04.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\f5b6c6d4-ec59-4cf6-a6e3-47a29f0a6aae_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\f5b6c6d4-ec59-4cf6-a6e3-47a29f0a6aae_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\f7915c42-c524-4637-8b88-ac6f6a409f87_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\f7915c42-c524-4637-8b88-ac6f6a409f87_5694a90d-0e7a-4092-ad60-78d586467d7f_a10.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\fa6c328d-3bb7-4779-b509-a6869e811842_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\fa6c328d-3bb7-4779-b509-a6869e811842_66880aa1-4ced-4c72-8df2-7e8b091bb107_a12.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\faf68e06-58ea-4955-8e59-126f475c3ed0_Mallow Fellow 05.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\faf68e06-58ea-4955-8e59-126f475c3ed0_Mallow Fellow 05.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\fd387020-bf8f-4d6a-810e-0bc309e92ce5_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\fd387020-bf8f-4d6a-810e-0bc309e92ce5_69eca5c1-241c-499c-8e6b-a6b1a75b1ee5_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\products\\gallery\\fda7c49e-dc67-4bde-9afa-c0ce05009845_a7-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\products\\gallery\\fda7c49e-dc67-4bde-9afa-c0ce05009845_a7-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\programmer.png",
+      "PackagePath": "staticwebassets\\images\\programmer.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\question-mark-query-information-support-service-graphic.jpg",
+      "PackagePath": "staticwebassets\\images\\question-mark-query-information-support-service-graphic.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rolex-1.webp",
+      "PackagePath": "staticwebassets\\images\\rolex-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rolex-3.jfif",
+      "PackagePath": "staticwebassets\\images\\rolex-3.jfif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rolex-3.jpg",
+      "PackagePath": "staticwebassets\\images\\rolex-3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rolex22.jfif",
+      "PackagePath": "staticwebassets\\images\\rolex22.jfif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\rolex22.jpg",
+      "PackagePath": "staticwebassets\\images\\rolex22.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\s1.jpg",
+      "PackagePath": "staticwebassets\\images\\s1.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\s2.jpg",
+      "PackagePath": "staticwebassets\\images\\s2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\s3.jpg",
+      "PackagePath": "staticwebassets\\images\\s3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\s4.jpg",
+      "PackagePath": "staticwebassets\\images\\s4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\s5.jpg",
+      "PackagePath": "staticwebassets\\images\\s5.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\sexy-girl-black-dress-smoking-electronic-cigarette-dark-wall_231208-3625.avif",
+      "PackagePath": "staticwebassets\\images\\sexy-girl-black-dress-smoking-electronic-cigarette-dark-wall_231208-3625.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-1.webp",
+      "PackagePath": "staticwebassets\\images\\shop-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-2.webp",
+      "PackagePath": "staticwebassets\\images\\shop-2.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-3.jpeg",
+      "PackagePath": "staticwebassets\\images\\shop-3.jpeg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-4 - Copy.jpg",
+      "PackagePath": "staticwebassets\\images\\shop-4 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-4.jpg",
+      "PackagePath": "staticwebassets\\images\\shop-4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-6 - Copy.jpg",
+      "PackagePath": "staticwebassets\\images\\shop-6 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shop-6.jpg",
+      "PackagePath": "staticwebassets\\images\\shop-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shorbanner-2.webp",
+      "PackagePath": "staticwebassets\\images\\shorbanner-2.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shorbanner-4.webp",
+      "PackagePath": "staticwebassets\\images\\shorbanner-4.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\13f0263d-fda9-403f-bc5b-739916e240d9_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\13f0263d-fda9-403f-bc5b-739916e240d9_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\160982d8-f12a-4558-a8bf-60e6c3172790_shutterstock_264191039_Lo.webp",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\160982d8-f12a-4558-a8bf-60e6c3172790_shutterstock_264191039_Lo.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\5604b40f-5312-4707-8ba7-ac6b12a6d0d2_white-smoke-black-background-texture-smoke-clubs-white-smoke-dark-background-overlay_494741-10373.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\5604b40f-5312-4707-8ba7-ac6b12a6d0d2_white-smoke-black-background-texture-smoke-clubs-white-smoke-dark-background-overlay_494741-10373.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\5835be66-00ce-4103-84c9-d7e0c90ad58c_banner-newsletter.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\5835be66-00ce-4103-84c9-d7e0c90ad58c_banner-newsletter.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\741c5364-d7bc-4cbf-a1c4-66dba4e34923_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\741c5364-d7bc-4cbf-a1c4-66dba4e34923_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\8e00ce20-b293-4b61-b121-1e53c462cd71_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\8e00ce20-b293-4b61-b121-1e53c462cd71_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\cae40e74-7286-433e-a642-46a00483c8df_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\cae40e74-7286-433e-a642-46a00483c8df_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\ce5c1067-e91b-4935-9a63-17671819258e_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\ce5c1067-e91b-4935-9a63-17671819258e_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\d6a9c559-3693-44c3-b572-b022be5e5a15_close-up-multi-colored-candies-container_1048944-8865464.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\d6a9c559-3693-44c3-b572-b022be5e5a15_close-up-multi-colored-candies-container_1048944-8865464.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\short\\banner\\f84ab5b6-96b4-4716-a226-7da4daf43ace_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\short\\banner\\f84ab5b6-96b4-4716-a226-7da4daf43ace_small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shortbanner-1.webp",
+      "PackagePath": "staticwebassets\\images\\shortbanner-1.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shortbanner-3.webp",
+      "PackagePath": "staticwebassets\\images\\shortbanner-3.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\shutterstock_264191039_Lo.webp",
+      "PackagePath": "staticwebassets\\images\\shutterstock_264191039_Lo.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg",
+      "PackagePath": "staticwebassets\\images\\small-grocery-cart-with-black-friday-sale-inscription_23-2147957597.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\smoking-brand-name-cigarette-pack-black-wooden-background-banner-copy-space-3d-illustration_771335-14768.jpg",
+      "PackagePath": "staticwebassets\\images\\smoking-brand-name-cigarette-pack-black-wooden-background-banner-copy-space-3d-illustration_771335-14768.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\009f087b-b775-4389-958d-3c152ebca565_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\009f087b-b775-4389-958d-3c152ebca565_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\021bf68c-f8fb-4b28-b033-923207dfe7c7_a4.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\021bf68c-f8fb-4b28-b033-923207dfe7c7_a4.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\12879264-0871-49d6-a60c-ff0903d7943e_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\12879264-0871-49d6-a60c-ff0903d7943e_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\1a11468c-2d0d-4142-9bac-d1fbc32b3e1e_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\1a11468c-2d0d-4142-9bac-d1fbc32b3e1e_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\1ac13797-739c-49ed-91c5-2221ebb6b4af_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\1ac13797-739c-49ed-91c5-2221ebb6b4af_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\24769a79-0f36-4c2e-a6a4-56493f62cb0a_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\24769a79-0f36-4c2e-a6a4-56493f62cb0a_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\35e1c439-4a78-4e8f-ac83-4166644f25d5_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\35e1c439-4a78-4e8f-ac83-4166644f25d5_5a91cd34-3636-43c3-b7ac-8b49e733a854_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\3682995a-590a-4401-9465-08a99acb31db_18fa7800-7729-406a-947e-776404546cab_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\3682995a-590a-4401-9465-08a99acb31db_18fa7800-7729-406a-947e-776404546cab_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\4ba0e6e6-ecf8-4bf3-bcd4-cf9c55612c4c_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\4ba0e6e6-ecf8-4bf3-bcd4-cf9c55612c4c_96201f64-d56e-432a-89c4-c4628a4b9dec_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\51c4784c-05ea-440f-b24e-92dce89f6218_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\51c4784c-05ea-440f-b24e-92dce89f6218_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\58549703-2b8d-42e6-85dc-4e508ec9f3eb_rb_2150395188.png",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\58549703-2b8d-42e6-85dc-4e508ec9f3eb_rb_2150395188.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\68daf227-c104-42eb-bc4c-a02a1c1cd5e8_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\68daf227-c104-42eb-bc4c-a02a1c1cd5e8_22507c56-c6cb-4dff-aab0-876df18a60d0_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\78f3085a-87b2-4094-b679-f294f18d8e7b_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\78f3085a-87b2-4094-b679-f294f18d8e7b_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\b59bb82d-ae2e-49b0-857b-e91f120b45bd_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\b59bb82d-ae2e-49b0-857b-e91f120b45bd_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\b7176518-25df-48cf-a025-a228b68e4d2d_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\b7176518-25df-48cf-a025-a228b68e4d2d_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\cc8c3ccc-cf5c-4db3-b8e4-f09fe7c6f95b_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\cc8c3ccc-cf5c-4db3-b8e4-f09fe7c6f95b_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\cd29b036-1248-4d2c-9762-bcb0bfacf5d7_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\cd29b036-1248-4d2c-9762-bcb0bfacf5d7_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\d5a14cdb-cd32-455c-890f-ff5a91c93bca_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\d5a14cdb-cd32-455c-890f-ff5a91c93bca_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\dc864e8a-0405-4de9-a90d-48fba461e99a_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\dc864e8a-0405-4de9-a90d-48fba461e99a_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\df7b1e90-9e54-45d8-ae48-2eef7dfb931c_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\df7b1e90-9e54-45d8-ae48-2eef7dfb931c_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banner\\df8da2a0-f0bd-4906-9495-a34b40f6705c_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banner\\df8da2a0-f0bd-4906-9495-a34b40f6705c_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\0708a644-e7c1-4ba1-bfd7-a31293fb6987_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\0708a644-e7c1-4ba1-bfd7-a31293fb6987_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\0aa339f2-3f1d-4695-84d8-764d23e6b6b3_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\0aa339f2-3f1d-4695-84d8-764d23e6b6b3_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\1504f8ea-97b5-4556-92c0-2af84de1fc19_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\1504f8ea-97b5-4556-92c0-2af84de1fc19_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\20050b75-3ea0-4185-a052-2b05bcbc2ab6_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\20050b75-3ea0-4185-a052-2b05bcbc2ab6_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\282cd7fc-0d00-42a9-ad4c-29113969cafd_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\282cd7fc-0d00-42a9-ad4c-29113969cafd_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\3682a57c-b007-404f-ae5a-d31a097476fe_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\3682a57c-b007-404f-ae5a-d31a097476fe_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\40d6318b-184d-4778-8e09-b7bed9f23c57_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\40d6318b-184d-4778-8e09-b7bed9f23c57_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\41d99690-384a-4f1a-8f62-93129feebfb4_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\41d99690-384a-4f1a-8f62-93129feebfb4_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\4424866f-daee-46ed-b32d-5eebf3b7252b_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\4424866f-daee-46ed-b32d-5eebf3b7252b_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\5316db03-465b-4511-868e-b9e32475f12d_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\5316db03-465b-4511-868e-b9e32475f12d_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\53703beb-6ce9-4dce-826b-cb853b7895c2_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\53703beb-6ce9-4dce-826b-cb853b7895c2_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\54f34294-18cc-4ba2-bace-3f69e6864a46_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\54f34294-18cc-4ba2-bace-3f69e6864a46_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\6499dac7-c2c9-4ca0-8fa5-a1bc1aadee41_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\6499dac7-c2c9-4ca0-8fa5-a1bc1aadee41_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\6ab5e444-e70e-4343-b241-9d1ca8e35fd6_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\6ab5e444-e70e-4343-b241-9d1ca8e35fd6_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\7065855b-f117-4fb0-af12-4d80a70c7067_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\7065855b-f117-4fb0-af12-4d80a70c7067_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\71e36a14-30e1-451b-b9ea-eb9580fb02a1_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\71e36a14-30e1-451b-b9ea-eb9580fb02a1_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\71f5c5a3-d4a1-4bf3-82e1-4cc676051f5b_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\71f5c5a3-d4a1-4bf3-82e1-4cc676051f5b_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\730df542-9d54-4dc1-9445-b5bc17c2c9b2_h2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\730df542-9d54-4dc1-9445-b5bc17c2c9b2_h2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\76d20003-833c-43b3-8f62-d884442a64a4_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\76d20003-833c-43b3-8f62-d884442a64a4_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\7b804a8e-09a4-4fab-9565-8aff2b69aff2_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\7b804a8e-09a4-4fab-9565-8aff2b69aff2_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\7dcdafba-bc53-4420-9f40-9a577ea866b9_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\7dcdafba-bc53-4420-9f40-9a577ea866b9_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\85b437a8-2305-4837-a889-795a89c70427_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\85b437a8-2305-4837-a889-795a89c70427_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\8b008f12-16c8-47a9-b85f-958a0034f11f_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\8b008f12-16c8-47a9-b85f-958a0034f11f_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\9442bd48-c103-4287-8a30-23b09542bc84_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\9442bd48-c103-4287-8a30-23b09542bc84_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\9df09d30-4640-4c2b-a8fa-e55d391a002c_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\9df09d30-4640-4c2b-a8fa-e55d391a002c_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\9fa8b5a6-9139-4182-8312-f437a6d366e6_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\9fa8b5a6-9139-4182-8312-f437a6d366e6_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\9fdf7b72-4124-4dc6-9028-e770fad9cf98_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\9fdf7b72-4124-4dc6-9028-e770fad9cf98_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\a0461c0e-b37a-41ab-bfef-6c9a8c3cc0c5_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\a0461c0e-b37a-41ab-bfef-6c9a8c3cc0c5_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\b0a8e4fc-a1e6-4241-a413-9e3191f94eef_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\b0a8e4fc-a1e6-4241-a413-9e3191f94eef_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\c4e60b12-ead4-4c33-876c-3dac4b36c1bc_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\c4e60b12-ead4-4c33-876c-3dac4b36c1bc_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\c6b80203-7075-4a7c-8d5c-af28d5809feb_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\c6b80203-7075-4a7c-8d5c-af28d5809feb_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\cfed1763-e6bc-4e55-8081-2ca4c7bef6b3_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\cfed1763-e6bc-4e55-8081-2ca4c7bef6b3_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\d09b7432-5402-4322-b338-bc99f63a38bb_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\d09b7432-5402-4322-b338-bc99f63a38bb_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\daa393a6-7152-407c-a6d2-75d0a464c070_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\daa393a6-7152-407c-a6d2-75d0a464c070_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\db01deb7-3c9a-45a1-befd-93512cae2c2c_Banner0.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\db01deb7-3c9a-45a1-befd-93512cae2c2c_Banner0.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\f7a5098e-d214-4937-89f5-3a58a4855aab_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\f7a5098e-d214-4937-89f5-3a58a4855aab_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\f9e86154-71b1-4305-89a3-4020485c01b2_Banne2.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\f9e86154-71b1-4305-89a3-4020485c01b2_Banne2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\soft\\banners\\ff7af6c6-c47d-4e9d-8e86-d027e7b3250e_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\soft\\banners\\ff7af6c6-c47d-4e9d-8e86-d027e7b3250e_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\softbanners\\5ae13697-9ac2-44f2-a168-ffd557d14de3_Banne3.jpg",
+      "PackagePath": "staticwebassets\\images\\softbanners\\5ae13697-9ac2-44f2-a168-ffd557d14de3_Banne3.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\softbanners\\64936b9b-a2f8-4660-9453-500e728c986a_b2.jpg",
+      "PackagePath": "staticwebassets\\images\\softbanners\\64936b9b-a2f8-4660-9453-500e728c986a_b2.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\softbanners\\c251278b-2be2-450c-b669-74851d921d7f_category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\images\\softbanners\\c251278b-2be2-450c-b669-74851d921d7f_category-thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\supporgreaan.png",
+      "PackagePath": "staticwebassets\\images\\supporgreaan.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\support.png",
+      "PackagePath": "staticwebassets\\images\\support.png"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\top-view-packs-cigarettes_23-2148585911.jpg",
+      "PackagePath": "staticwebassets\\images\\top-view-packs-cigarettes_23-2148585911.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\top-view-smartphone-with-mockup-screen-device-3d-rendering_67155-15045.jpg",
+      "PackagePath": "staticwebassets\\images\\top-view-smartphone-with-mockup-screen-device-3d-rendering_67155-15045.jpg"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\vape-vape-liquid-bottles-against-black-background_93675-150870.avif",
+      "PackagePath": "staticwebassets\\images\\vape-vape-liquid-bottles-against-black-background_93675-150870.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\vape.webp",
+      "PackagePath": "staticwebassets\\images\\vape.webp"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\3da6a68e-1f98-4eb6-b076-d295b0377cd8_3195650-uhd_3840_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\3da6a68e-1f98-4eb6-b076-d295b0377cd8_3195650-uhd_3840_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\57f9af15-48f7-48dc-82de-eb894a00a9d4_6973187-hd_1920_1080_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\57f9af15-48f7-48dc-82de-eb894a00a9d4_6973187-hd_1920_1080_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\6a4d97b3-3b58-45e5-81d7-275c6dcbb4e1_7218230-hd_1920_1080_24fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\6a4d97b3-3b58-45e5-81d7-275c6dcbb4e1_7218230-hd_1920_1080_24fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\74c9dbd4-9c67-49a6-bf9e-6c705fe84c2c_Youtube video Seq.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\74c9dbd4-9c67-49a6-bf9e-6c705fe84c2c_Youtube video Seq.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\a7ff431b-9bd9-404e-90fa-6f9c3f0b3fae_3195650-uhd_3840_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\a7ff431b-9bd9-404e-90fa-6f9c3f0b3fae_3195650-uhd_3840_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\acbbf79a-bf55-4487-a890-581e2b176a7c_11814766-uhd_4096_2160_30fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\acbbf79a-bf55-4487-a890-581e2b176a7c_11814766-uhd_4096_2160_30fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\videos\\bcdd33d6-ffa6-41c1-b602-862cf0d4d862_7218230-hd_1920_1080_24fps.mp4",
+      "PackagePath": "staticwebassets\\images\\videos\\bcdd33d6-ffa6-41c1-b602-862cf0d4d862_7218230-hd_1920_1080_24fps.mp4"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\yellow-cartoon-character-holds-large-yellow-megaphone-ready-make-announcement-share-important-news.zip",
+      "PackagePath": "staticwebassets\\images\\yellow-cartoon-character-holds-large-yellow-megaphone-ready-make-announcement-share-important-news.zip"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\images\\young-beautiful-brunette-woman-with-fashion-makeup-bar-with-with-vapor-from-electronic-cigarette_391937-1977.avif",
+      "PackagePath": "staticwebassets\\images\\young-beautiful-brunette-woman-with-fashion-makeup-bar-with-with-vapor-from-electronic-cigarette_391937-1977.avif"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Scanton\\Scanton\\Scanton\\wwwroot\\web.config",
+      "PackagePath": "staticwebassets\\web.config"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Scanton.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Scanton.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Scanton.props",
+      "PackagePath": "build\\Scanton.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Scanton.props",
+      "PackagePath": "buildMultiTargeting\\Scanton.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Scanton.props",
+      "PackagePath": "buildTransitive\\Scanton.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

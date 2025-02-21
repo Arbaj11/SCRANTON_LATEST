@@ -1,0 +1,416 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+    var userdetails = ViewBag.CheckOutUserDetails as Scanton.Models.IndexViewModel.CustomerDetail;
+    
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Scanton.styles.css" asp-append-version="true" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+<section class="check-out-banner" style="background-image: url('@Url.Content("~/images/visa master cardsss.jpg")'); background-size: cover; background-position: center;">
+    <div class="banner-content" style="padding: 50px 20px;">
+        <!-- Add content here -->
+    </div>
+</section>
+<section class="check-out-box-section">
+    <div class="payment-section">
+        <div class="payment-container">
+            <div class="payment-brands">
+                <div class="brand-logo">
+                    <img src="~/images/Visa.png" alt="Visa">
+                </div>
+                <div class="brand-logo">
+                    <img src="~/images/Master card.png" alt="MasterCard">
+                </div>
+                <div class="brand-logo">
+                    <img src="~/images/Rupay.png" alt="Rupay">
+                </div>
+                <div class="brand-logo">
+                    <img src="~/images/Amerciacn.png" alt="American Express">
+                </div>
+            </div>
+            <div class="payment-methods">
+                <div class="payment-option">
+                    <div class="payment-icon">
+                        <div class="icon-wrapper">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="none" style="font-size: 52px; color:#0b4930;">
+                                    <g clip-path="url(#method_card_blue_svg__a)">
+                                        <path fill="#0b4930" d="M22 10v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10h20Zm0-2H2V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v4Zm-7 8v2h4v-2h-4Z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="method_card_blue_svg__a">
+                                            <path fill="#fff" d="M0 0h24v24H0z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="payment-label">
+                                <span class="label-text">Debit & Credit Card</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: rgb(248, 249, 250); height: 100%;"></div>
+            </div>
+
+            <form method="post" action="@Url.Action("ProcessPayment", "ViewCart")" onsubmit="return validateForm()">
+                <input type="hidden" name="TotalAmount" value="@ViewBag.SubTotal" />
+                <div class="payment-form">
+                    <!-- Card Number Input -->
+                    <div class="input-field">
+                        <label for="cardNumber" class="input-label">Enter Card Number</label>
+                        <input id="cardNumber" type="text" inputmode="numeric" class="input" placeholder="Enter your card number" required pattern="\d{16}" maxlength="16">
+                        <span class="error-message" id="cardNumberError"></span>
+                    </div>
+
+                    <!-- Expiry Date and CVV Input -->
+                    <div class="expiry-cvv-grid">
+                        <!-- Expiry Date -->
+                        <div class="input-field">
+                            <label for="expiry" class="input-label">Valid Through (MM/YY)</label>
+                            <input id="expiry" type="text" maxlength="5" class="input" placeholder="MM/YY" required pattern="(0[1-9]|1[0-2])\/\d{2}">
+                            <span class="error-message" id="expiryError"></span>
+                        </div>
+
+                        <!-- CVV -->
+                        <div class="input-field">
+                            <label for="cvv" class="input-label">CVV</label>
+                            <input id="cvv" type="password" inputmode="numeric" maxlength="4" class="input" placeholder="CVV" required pattern="\d{3,4}">
+                            <span class="error-message" id="cvvError"></span>
+                            <div class="cvv-tooltip">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 20 20" stroke="none" style="font-size: 24px;">
+                                    <path stroke="#8F98A9" stroke-linecap="round" stroke-linejoin="round" d="M10 16.667a6.667 6.667 0 1 0 0-13.334 6.667 6.667 0 0 0 0 13.334Z"></path>
+                                    <path stroke="#8F98A9" stroke-linecap="round" stroke-linejoin="round" d="M9.445 9.444H10v3.89h.556"></path>
+                                    <path fill="#8F98A9" d="M9.861 7.778a.833.833 0 1 0 0-1.667.833.833 0 0 0 0 1.667Z"></path>
+                                </svg>
+                                <span class="tooltip-text">Last 3 digits on the back of the card</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Name on Card Input -->
+                    <div class="input-field">
+                        <label for="cardName" class="input-label">Name on the Card</label>
+                        <input id="cardName" type="text" class="input" placeholder="Enter the name on the card" required>
+                        <span class="error-message" id="cardNameError"></span>
+                    </div>
+
+                    <!-- Save Card Option -->
+                    <div class="save-card-option">
+                        <label class="save-card-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="none" style="font-size: 22px;">
+                                <rect width="18" height="18" x="3" y="3" fill="#207BB4" rx="2"></rect>
+                                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 11.5 2.5 3L16 9"></path>
+                            </svg>
+                            <span class="save-card-text">Save your card for future transactions</span>
+                        </label>
+                        <p class="save-card-disclaimer">By saving this card you can avoid entering the card details every time for transaction on Bewakoof. We don't save your CVV number.</p>
+                    </div>
+
+                    <!-- Payment Button -->
+                    <div class="payment-button">
+                        <button type="submit" class="pay-button">
+                            <span>PAY $@ViewBag.SubTotal</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="order-section">
+        <div class="order-accordion">
+            <div class="order-container">
+                <div class="order-header">
+                    <div class="order-details flex gap-4">
+                        <div class="order-info flex flex-col">
+                            <div class="order-title flex items-center gap-2">
+                                <div class="order-text flex-1">
+                                    <span class="order-recipient font-semibold text-sm text-[#292D35]">
+                                        Delivering order to @userdetails.Name
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-icon" style="transition: transform 0.3s ease-in-out; transform: rotate(0deg);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 8.5 7 7 7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="address_address_expanded__stAzN" style="display: none;">
+                    <div class="address_address_details__9dTTk">
+                        <span variant="medium" type="sm" color="#292D35" class="sc-f48c17b3-0 dA-Drpt">@userdetails.Name</span>
+                        <span variant="medium" type="sm" color="#4E5664" class="sc-f48c17b3-0 MzeMS">
+                            @userdetails.Address
+                        </span>
+                    </div>
+                    <button class="address_address_change__fVJAE">CHANGE</button>
+                </div>
+                <div class="order-content" style="height: 0px; overflow: hidden; transition: height 0.3s ease-in-out; padding: 0px;"></div>
+
+                <!-- Items List Section -->
+                <div class="item-list">
+                    <div class="item-container">
+                        <div class="item-header" onclick="toggleItemContent()">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center gap-2">
+                                        <span class="item-title flex-1">
+                                            <div>
+                                                <span class="item-count">Items (@Model.Products.Count)</span>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-icon" style="transition: transform 0.3s ease-in-out;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="none" style="font-size: 20px;">
+                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 8.5 7 7 7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="sc-c5ad7663-3 ciZBQr">
+                                <div>
+                                    <div class="item-list_item_list_Wrapper_desktop__l_iej">
+                                        @foreach (var product in Model.Products)
+                                        {
+                                            <div class="sc-a30ed679-2 bTuYyv">
+                                                <div class="w-[12%] relative">
+                                                    <img class="item-products-img" src="@product.ImagePath">
+                                                    @* <p class="product-line-item_qty_badge__CSRJk">@product.Price</p> *@
+                                                </div>
+                                                <div class="flex-[8] flex flex-col gap-[6px] justify-center">
+                                                    <span variant="medium" type="xs" color="#737E93" class="sc-f48c17b3-0 esDyjj">@product.Name</span>
+                                                    <span variant="regular" type="xs" color="#737373" class="sc-f48c17b3-0 exGaYA">
+                                                        Estimated delivery by <span variant="medium" type="xs" color="#2CA003" class="sc-f48c17b3-0 haJxfU">@product.Created_Date.ToString("dd MMM yyyy")</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- End Items List Section -->
+                <!-- Order Summary Section -->
+                <div class="order-summary">
+                    <div class="summary-container">
+                        <div pagetype="checkout" hasbkcash="undefined" class="summary-details">
+                            <p class="summary-title">PRICE SUMMARY</p>
+                            <div class="summary-items">
+                                <div class="summary-item">
+                                    <span class="summary-label">Total Price</span>
+                                    <span class="summary-value">$@ViewBag.TotalPrice</span>
+                                </div>
+                                @*  <div class="summary-item">
+                                    <span class="summary-label">Bag Discount</span>
+                                    <span class="summary-discount">-₹7,800</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">
+                                        Combo Offer Discount
+                                        <a class="summary-link" href="/contact-us">T&amp;C</a>
+                                    </span>
+                                    <span class="summary-discount">-₹499</span>
+                                </div> *@
+                                <div class="summary-item">
+                                    <div class="flex gap-[5px] items-center">
+                                        <span class="summary-label">Delivery Charges</span>
+                                    </div>
+                                    <span class="summary-discount">$50</span>
+                                </div>
+                            </div>
+                            <div class="summary-total">
+                                <span class="total-label">Subtotal</span>
+                                <span class="total-value">$@ViewBag.SubTotal</span>
+                            </div>
+                            <div class="item-list-footer">
+                                <div class="bottom-items-logos">
+                                    <div class="secure-payment">
+                                        <img class="secure-img" src="~/images/100- payment.png" alt="100% Secure Payment" />
+                                        <p class="secure-subtitle">100% SECURE mPAYMENT</p>
+                                    </div>
+                                    <div class="secure-payment">
+                                        <img class="secure-img" src="~/images/easy return.png" alt="Easy Returns & Instant Refunds" />
+
+                                        <p class="secure-subtitle">EASY RETURNS & INSTANT REFUNDS</p>
+                                    </div>
+                                    <div class="secure-payment">
+                                        <img class="secure-img" src="~/images/100 - genuine.png" alt="100% Genuine Product" />
+                                        <p class="secure-subtitle"> 100% GENUINE PRODUCT</p>
+                                    </div>
+                                </div>
+                                <div class="items-center trust-banner">
+                                    <hr style="height:1px;" class="line">
+                                    <p class="text">We Accept</p>
+                                    <hr style="height:1px;" class="line">
+                                </div>
+                            </div>
+
+                            <div class="creadit-card-last-logos">
+                                <img class="credit-logos" src="~/images/visaaaaaa-removebg-preview.png" />
+                                <img class="credit-logos" src="~/images/mastercardlogo-removebg-preview.png" />
+                                <img class="credit-logos" src="~/images/paypalllllllll-removebg-preview.png" />
+                                <img class="credit-logos" src="~/images/American-Express-Color-removebg-preview.png" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Order Summary Section -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Order Successful!</h2>
+            </div>
+            <div class="popup-body">
+                <p>Your payment was successful! You can view your orders from your account.</p>
+            </div>
+            <div class="popup-footer">
+                <a href="@Url.Action("UserProfile","Home")" id="viewOrderDetails" class="btn">View Order Details</a>
+                <button id="closePopup" class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+       document.getElementById('expiry').addEventListener('input', function (e) {
+        let value = e.target.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+
+        if (value.length > 2 && value.length <= 4) {
+            e.target.value = value.slice(0, 2) + '/' + value.slice(2, 4); // Insert / after the first two digits
+        } else {
+            e.target.value = value.slice(0, 2) + value.slice(2, 4); // Ensure no extra characters are added
+        }
+    });
+
+
+    document.querySelector('.order-header').addEventListener('click', function() {
+        const expandedContent = document.querySelector('.address_address_expanded__stAzN');
+        const icon = document.querySelector('.order-icon svg');
+
+        // Toggle visibility of the expanded content
+        expandedContent.style.display = expandedContent.style.display === 'none' ? 'block' : 'none';
+
+        // Rotate the icon when clicked
+        if (expandedContent.style.display === 'block') {
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            icon.style.transform = 'rotate(0deg)';
+        }
+    });
+
+
+    function toggleItemContent() {
+        const itemContent = document.querySelector('.item-content');
+        const itemIcon = document.querySelector('.item-icon svg');
+
+        // Toggle the height of the item content
+        if (itemContent.style.height === '0px' || itemContent.style.height === '') {
+            itemContent.style.height = itemContent.scrollHeight + 'px'; // Set height to content height
+            itemIcon.style.transform = 'rotate(180deg)'; // Rotate the arrow
+        } else {
+            itemContent.style.height = '0px'; // Collapse the content
+            itemIcon.style.transform = 'rotate(0deg)'; // Reset arrow rotation
+        }
+    }
+
+      function validateForm() {
+        let isValid = true;
+
+        // Card Number Validation
+        const cardNumber = document.getElementById('cardNumber').value;
+        const cardNumberError = document.getElementById('cardNumberError');
+        if (!/^\d{16}$/.test(cardNumber)) {
+            cardNumberError.textContent = 'Please enter a valid 16-digit card number.';
+            isValid = false;
+        } else {
+            cardNumberError.textContent = '';
+        }
+
+        // Expiry Date Validation
+        const expiry = document.getElementById('expiry').value;
+        const expiryError = document.getElementById('expiryError');
+        if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiry)) {
+            expiryError.textContent = 'Please enter a valid expiry date in MM/YY format.';
+            isValid = false;
+        } else {
+            expiryError.textContent = '';
+        }
+
+        // CVV Validation
+        const cvv = document.getElementById('cvv').value;
+        const cvvError = document.getElementById('cvvError');
+        if (!/^\d{3,4}$/.test(cvv)) {
+            cvvError.textContent = 'Please enter a valid CVV (3 or 4 digits).';
+            isValid = false;
+        } else {
+            cvvError.textContent = '';
+        }
+
+
+        const cardName = document.getElementById('cardName').value;
+        const cardNameError = document.getElementById('cardNameError');
+        if (cardName.trim() === '') {
+            cardNameError.textContent = 'Please enter the name on the card.';
+            isValid = false;
+        } else {
+            cardNameError.textContent = '';
+        }
+
+        return isValid;
+    }
+    $(document).ready(function () {
+         debugger;
+         var paymentSuccess = '@TempData["PaymentSuccess"]';
+         console.log("Payment Success Value:", paymentSuccess); // Debugging
+
+         if (paymentSuccess.trim().toLowerCase() === 'true') {
+              // Show the custom popup
+           $('#popupOverlay').addClass('active');
+          }
+    });
+
+            // Close popup when clicking the close button or outside the popup
+            const popupOverlay = document.getElementById('popupOverlay');
+            const closePopupBtn = document.getElementById('closePopup');
+
+            closePopupBtn.addEventListener('click', () => {
+                popupOverlay.classList.remove('active');
+            });
+
+            popupOverlay.addEventListener('click', (e) => {
+                if (e.target === popupOverlay) {
+                    popupOverlay.classList.remove('active');
+                }
+            });
+
+            
+</script>

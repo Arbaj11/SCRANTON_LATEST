@@ -1,0 +1,62 @@
+﻿@model Scanton.Models.Category
+@{
+    Layout = "_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "Edit Category";
+    var parentCategories = ViewBag.ParentCategories as List<Scanton.Models.ParentCategory>;
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Edit Category</h2>
+    <hr />
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div class="row g-3">
+            <!-- Product Name -->
+            <div class="col-md-6">
+                <label asp-for="Name" class="form-label fw-bold">Product Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <!-- Description -->
+            <div class="col-md-6">
+                <label asp-for="Description" class="form-label fw-bold">Description</label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <!-- Price -->
+            <div class="mb-3">
+                <label>Parent Category</label>
+                <select name="parentCategoryId" class="form-select" required>
+                    <option value="">Select Parent Category</option>
+                    @foreach (var parent in parentCategories)
+                    {
+                        <option value="@parent.Id">@parent.Name</option>
+                    }
+                </select>
+            </div>      
+            <!-- Image Upload -->
+            <div class="col-md-12">
+                <label for="ImageFile">Upload Image</label>
+                <input type="file" name="imageFile" class="form-control" id="ImageFile" required />
+            </div>
+        </div>
+
+        <div class="mt-4 text-end">
+            <button type="submit" class="btn btn-success me-2">
+                <i class="bi bi-check-circle"></i> Save Changes
+            </button>
+            <a asp-action="List" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+
+    </form>
+</div>
+

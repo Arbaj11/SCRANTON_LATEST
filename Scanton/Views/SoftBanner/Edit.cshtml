@@ -1,0 +1,51 @@
+﻿@model Scanton.Models.SoftBanner
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add New Soft Banners";
+}
+
+<h2 class="text-center my-4">Add New Soft Banners</h2>
+
+<div class="container">
+    <form asp-action="Edit" enctype="multipart/form-data" method="post">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-cloud-upload-fill me-2"></i> Upload Banner Images</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <!-- Upload Banner Image 1 -->
+                    <div class="col-md-4">
+                        <label for="ImageFile1" class="form-label">
+                            <i class="bi bi-image me-2"></i> Banner Image 1
+                        </label>
+                        <input type="file" class="form-control" id="ImageFile1" name="imageFile" />
+                    </div>
+
+                    <!-- Upload Banner Image 2 -->
+                    <div class="col-md-4">
+                        <label for="ImageFile2" class="form-label">
+                            <i class="bi bi-image me-2"></i> Banner Image 2
+                        </label>
+                        <input type="file" class="form-control" id="ImageFile2" name="imageFile" />
+                    </div>
+
+                    <!-- Upload Banner Image 3 -->
+                    <div class="col-md-4">
+                        <label for="ImageFile3" class="form-label">
+                            <i class="bi bi-image me-2"></i> Banner Image 3
+                        </label>
+                        <input type="file" class="form-control" id="ImageFile3" name="imageFile" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-save-fill me-2"></i> Save
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

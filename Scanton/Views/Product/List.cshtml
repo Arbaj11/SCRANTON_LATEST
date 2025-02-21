@@ -1,0 +1,116 @@
+﻿@model IEnumerable<Scanton.Models.Product>
+
+@{
+    Layout = "_AdminLayout";
+    var sno = 1;
+}
+
+@{
+    ViewData["Title"] = "Product List";
+}
+<style>
+    btn-lg {
+        font-size: 1.5rem; /* Increase font size */
+        padding: 0.75rem 1.5rem; /* Adjust padding for better button size */
+    }
+
+    .fa-toggle-on, .fa-toggle-off {
+        font-size: 2rem; /* Increase icon size */
+    }
+</style>
+
+<h2 class="text-center mt-4">Product List</h2>
+
+<div class="container mt-4">
+    <table class="table table-bordered table-hover text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>S.no</th>
+                <th>PRODUCT NAME</th>
+                <th>PRICE ($)</th>
+                <th>IMAGE</th>
+                <th>SubImage</th>
+                <th>WEIGHT (kg)</th>
+                <th>STRAIN</th>
+                <th>Badge</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@sno</td>
+                        <td>@product.Name</td>
+                        <td>@product.Price.ToString("F2")</td>
+                      
+@*                         <td>@product.StoreName</td>
+                        <td>@product.StoreZipCode</td> *@
+                        <td>
+                            @if (!string.IsNullOrEmpty(product.ImagePath))
+                            {
+                                <img src="@Url.Content(product.ImagePath)" alt="Product Image" style="width: 60px; height: auto;" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No Image</span>
+                            }
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(product.SubImage_1))
+                            {
+                                <img src="@Url.Content(product.SubImage_1)" alt="Product Image" style="width: 60px; height: auto;" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No Image</span>
+                            }
+                        </td>
+                        <td>@product.Weight</td>
+                        <td>@product.Stain</td>
+                        <td>
+                            <a asp-action="Activate"
+                               asp-route-id="@product.Id"
+                               asp-route-isActive="@((product.BadgeIsActive) ? "false" : "true")"
+                               class="me-2 btn-lg">
+                                @if (product.BadgeIsActive)
+                                {
+                                    <i class="fa-solid fa-toggle-on" style="color:green"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-toggle-off" style="color:red"></i>
+                                }
+                            </a>
+
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning btn-sm me-2">
+                                <i class="bi bi-pencil"></i> Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?');">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                    sno++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center">No products available.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Product
+        </a>
+    </div>
+</div>
+

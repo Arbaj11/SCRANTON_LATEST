@@ -1,0 +1,50 @@
+﻿@model Scanton.Models.IndexViewModel
+
+<div class="custom-modal-body">
+    <div class="custom-store-list-modal">
+        <div class="custom-header-container">
+            <h2>Select Store</h2>
+
+            <!-- Search Component -->
+            <div class="pip-search pip-store-list-modal__search-store">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-search__icon pip-search__left-icon">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9804 15.3946c-1.0361.7502-2.3099 1.1925-3.6869 1.1925C6.8177 16.5871 4 13.7694 4 10.2935 4 6.8177 6.8177 4 10.2935 4c3.4759 0 6.2936 2.8177 6.2936 6.2935 0 1.377-.4423 2.6508-1.1925 3.6869l4.6016 4.6016-1.4142 1.4142-4.6016-4.6016zm.6067-5.1011c0 2.3713-1.9223 4.2936-4.2936 4.2936C7.9223 14.5871 6 12.6648 6 10.2935 6 7.9223 7.9223 6 10.2935 6c2.3713 0 4.2936 1.9223 4.2936 4.2935z"></path>
+                </svg>
+                <input id="store-list-modal-search" type="search" placeholder="Search by location" class="pip-search__input">
+            </div>
+        </div>
+
+        <!-- Store List -->
+        <div class="custom-store-list">
+            <ul>
+                @if (Model?.StoreProfiles != null && Model.StoreProfiles.Any())
+                {
+                    @foreach (var store in Model.StoreProfiles)
+                    {
+                        <a href="@Url.Action("AvailableProductsByStore", "SingleProduct", new { store_id = store.Id })" class="custom-store-link" style="text-decoration:none">
+                        <li class="custom-store-item">
+                            <button type="button">
+                                <span class="custom-store-info">
+                                    <h3 class="city-name">
+                                            @store.City
+                                    </h3>
+                                    <span class="custom-store-name">@store.StoreName</span>
+                                    <span>@store.Address</span>
+                                    <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click &amp; Collect - Available</span>
+                                    <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                                </span>
+                            </button>
+                        </li>
+                      </a>
+                    }
+                }
+                else
+                {
+                    <li class="custom-store-item">
+                        <span>No stores available</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

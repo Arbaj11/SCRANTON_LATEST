@@ -1,0 +1,36 @@
+﻿@model Scanton.Models.IndexViewModel
+<div class="shopping-cart">
+    <div class="shopping-cart-header">
+        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+        <div class="shopping-cart-total">
+            @if(Model.Products != null)
+            {
+                <span class="lighter-text">Total:</span>
+                <span class="main-color-text">$@ViewBag.TotalCartItem</span>
+            }
+        </div>
+    </div>
+    @if (Model?.Products != null && Model.Products.Any())
+    {
+        <ul class="shopping-cart-items">
+            @foreach (var product in Model.Products.Take(3))
+            {
+                <li class="clearfix">
+                    <img class="view-cart-first-list" src="@product.ImagePath" alt="@product.Name" />
+                    <div class="item-subdetails">
+                        <span class="item-name">@product.Name</span>
+                        <span class="item-price">@product.PriceWithDiscount</span>
+                        <span class="item-quantity">Quantity: 1</span>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <div class="empty-cart-message">
+            <p>Your cart is empty. Add some products to your cart!</p>
+        </div>
+    }
+    <a href="@Url.Action("Index","ViewCart")" class="button checkout-btn" style="color:white"><i class="fa-solid fa-cart-shopping"></i>View Cart</a>
+</div>

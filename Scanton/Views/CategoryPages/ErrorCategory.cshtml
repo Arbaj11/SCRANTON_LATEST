@@ -1,0 +1,80 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Not Available</title>
+    <style>
+        #errorPageContainer {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #errorContent {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #errorImage {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 8%;
+        }
+
+        #errorTitle {
+            font-size: 2em;
+            color: #ff6347;
+            margin-bottom: 15px;
+        }
+
+        #errorMessage {
+            font-size: 1.2em;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+
+        #goBackButton {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            #goBackButton:hover {
+                background-color: #ff4500;
+            }
+    </style>
+</head>
+<body>
+    <div id="errorPageContainer">
+        <div id="errorContent">
+            <img id="errorImage"
+                  src="~/images/out-of-stock-product-category.png"
+                  alt="Error Image">
+            <h1 id="errorTitle">Oops! Product Not Available Yet</h1>
+            <p id="errorMessage">We apologize, but the product you are looking for is currently not available. Please check back later.</p>
+            <button id="goBackButton" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+</body>
+</html>

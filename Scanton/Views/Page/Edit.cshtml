@@ -1,0 +1,52 @@
+﻿@model Scanton.Models.Page
+@{
+    Layout = "_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "Edit Page";
+ 
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Edit Page Section</h2>
+    <hr />
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="CustomPageld" />
+
+        <h3 class="text-center text-primary fw-bold mb-4">Static Page</h3>
+
+
+        <div class="mb-2">
+            <label asp-for="CustomePageTittle" class="form-label fw-bold text-dark">Tittle</label>
+            <input asp-for="CustomePageTittle" class="form-control rounded-pill border-primary shadow-sm" placeholder="Enter Tittle" />
+            <span asp-validation-for="CustomePageTittle" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-2">
+            <label asp-for="PageUrl" class="form-label fw-bold text-dark">Page Url</label>
+            <input asp-for="PageUrl" class="form-control rounded-pill border-primary shadow-sm" placeholder="Enter Page Url" />
+            <span asp-validation-for="PageUrl" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CustomePageData" class="form-label fw-bold text-dark">Details</label>
+            <!-- TinyMCE-Enabled Textarea -->
+            <textarea id="editor" name="CustomePageData" class="form-control" rows="5" style="min-height: 150px;">@Model.CustomePageData</textarea>
+            <span asp-validation-for="CustomePageData" class="text-danger small"></span>
+        </div>
+
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary rounded-pill px-4 shadow-sm submit-model custom-button">
+                Submit
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+
+    </form>
+</div>
+

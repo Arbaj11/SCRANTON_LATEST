@@ -1,0 +1,14 @@
+﻿@model Scanton.Models.ParentCategory
+
+<form method="post" asp-action="Edit">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="Name" class="form-control" value="@Model.Name" required />
+    </div>
+    <div class="mb-3">
+        <label>Description</label>
+        <textarea name="Description" class="form-control">@Model.Description</textarea>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Save Changes</button>
+</form>

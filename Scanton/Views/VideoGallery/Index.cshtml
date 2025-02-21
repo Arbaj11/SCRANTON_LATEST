@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Scanton.Models.VideoGallery>
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Manage Gallery Videos";
+}
+
+<h2 class="text-center my-4">Manage Gallery Videos</h2>
+
+<div class="text-end mb-4">
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Add New Gallery Videos
+    </a>
+</div>
+
+<table class="table table-bordered table-hover text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Title</th>
+            <th>SubTitle</th>
+            <th>Video</th>
+            <th>Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            foreach (var video in Model)
+            {
+                <tr>
+                    <td>@video.Title</td>
+                    <td>@video.SubTitle</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(video.VideoPath))
+                        {
+                            <video width="100%" controls style="height:100px;width:195px">
+                                <source src="@Url.Content(video.VideoPath)" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No Video Available</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Activate"
+                           asp-route-id="@video.Id"
+                           asp-route-isActive="@((video.Is_Active) ? "false" : "true")"
+                           class="me-2 btn-lg">
+                            @if (video.Is_Active)
+                            {
+                                <i class="fa-solid fa-toggle-on" style="color:green"></i>
+                            }
+                            else
+                            {
+                                <i class="fa-solid fa-toggle-off" style="color:red"></i>
+                            }
+                        </a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@video.Id" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this video?');">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No videos available.</td>
+            </tr>
+        }
+    </tbody>
+</table>

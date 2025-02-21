@@ -1,0 +1,244 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+    var faqTypes = Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList();
+}
+}
+<style>
+
+    body {     
+    padding: 0;
+    }
+
+
+    ::marker {
+    color: white;
+    }
+</style>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Scanton.styles.css" asp-append-version="true" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+
+
+
+<div class="tpt-section_container color-scheme-1 gradient">
+    <div class="tpt-section_content">
+        <div class="tpt-section-body">
+            <div class="simple-breadcrumbs">
+
+                <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                    <ol>
+                        <li>
+                            <a href="/" title="Home">Home</a>
+                        </li>
+
+                        <li>
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.5L6.5 6.5L1.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </li>
+
+
+                        <li>
+                            <span href="/pages/faqs" aria-current="page">Faqs</span>
+                        </li>
+
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="faq-banner-section" style="background-image: url('@Url.Content("~/images/question-mark-query-information-support-service-graphic.jpg")');">
+    <div class="faq-banner-wrapper">
+        <div class="faq-banner-content">
+            @* <h2 class="faq-banner-title">Frequently Asked Questions</h2>
+            <p class="faq-banner-subtitle">Find answers to common questions and help with our services.</p>
+            <div class="faq-banner-buttons">
+                <a href="#faq" class="faq-banner-btn-secondary">Browse FAQs</a>
+            </div> *@
+        </div>
+    </div>
+</div>
+
+<div class="faq-title-section">
+    <h2 class="faq-title">FAQ?</h2>
+</div>
+
+<div class="faq-container">
+
+    <div class="faq-head">
+        <h1 class="faq-heading-tittle">Your Question Answered Here</h1>
+        <div class="faq-sidebar">
+            <div class="faq-button-row">
+                @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+                {
+                    @if (faqType == "About Scanton Store")
+                    {
+                        <button class="faq-nav-item" data-target="how-to-order">@faqType</button>
+                    }
+                    @if (faqType == "Product Information")
+                    {
+                        <button class="faq-nav-item" data-target="return-refunds">@faqType</button>
+                    }
+                }
+            </div>
+
+            <div class="faq-button-row">
+                @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+                {
+                    @if (faqType == "Shipping & Delivery")
+                    {
+                        <button class="faq-nav-item" data-target="payment">@faqType</button>
+                    }
+                    @if (faqType == "Customer Support")
+                    {
+                        <button class="faq-nav-item" data-target="deliveries">@faqType</button>
+                    }
+                }
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="faq-content">
+        <div id="how-to-order" class="faq-group-title">
+            @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+            {
+                @if(faqType == "About Scanton Store")
+                {
+                    <h2>@faqType</h2>
+
+                    @foreach (var fqs in Model.FAQs.Where(fq => fq.FAQs_Type == faqType))
+                    {
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                               @fqs.Question
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-data">@Html.Raw(fqs.Answer)</div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+
+        <div id="return-refunds" class="faq-group-title" style="display: none;">
+            @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+            {
+                @if (faqType == "Product Information")
+                {
+                    <h2>@faqType</h2>
+
+                    @foreach (var fqs in Model.FAQs.Where(fq => fq.FAQs_Type == faqType))
+                    {
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                @fqs.Question
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-data">@Html.Raw(fqs.Answer)</div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+
+        <div id="payment" class="faq-group-title" style="display: none;">
+            @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+            {
+                @if (faqType == "Shipping & Delivery")
+                {
+                    <h2>@faqType</h2>
+
+                    @foreach (var fqs in Model.FAQs.Where(fq => fq.FAQs_Type == faqType))
+                    {
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                @fqs.Question
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-data">@Html.Raw(fqs.Answer)</div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+
+        <div id="deliveries" class="faq-group-title" style="display: none;">
+            @foreach (var faqType in Model.FAQs.Select(f => f.FAQs_Type).Distinct().ToList())
+            {
+                @if (faqType == "Customer Support")
+                {
+                    <h2>@faqType</h2>
+
+                    @foreach (var fqs in Model.FAQs.Where(fq => fq.FAQs_Type == faqType))
+                    {
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                @fqs.Question
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-data">@Html.Raw(fqs.Answer)</div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".accordion-title").on("click", function () {
+            var $accordionItem = $(this).closest(".accordion-item");
+
+            // Collapse all other accordion items except the clicked one
+            $(".accordion-item").not($accordionItem).removeClass("active").find(".accordion-data").slideUp();
+            $(".accordion-item").not($accordionItem).find(".accordion-toggle").text("+");
+
+            // Toggle the clicked accordion item
+            if ($accordionItem.hasClass("active")) {
+                $accordionItem.removeClass("active");
+                $accordionItem.find(".accordion-data").slideUp();
+                $accordionItem.find(".accordion-toggle").text("+");
+            } else {
+                $accordionItem.addClass("active");
+                $accordionItem.find(".accordion-data").slideDown();
+                $accordionItem.find(".accordion-toggle").text("-");
+            }
+        });
+
+        $(".faq-nav-item").on("click", function () {
+            var target = $(this).data("target");
+
+            $(".faq-accordion .faq-group-title").hide();
+            $("#" + target).fadeIn();
+
+            $(".faq-nav-item").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        $(".faq-nav-item").on("click", function() {
+            var target = $(this).data("target");
+
+            $(".faq-group-title").hide();
+            $("#" + target).show();
+        });
+    });
+</script>
+

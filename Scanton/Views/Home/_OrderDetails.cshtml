@@ -1,0 +1,53 @@
+﻿@model List<OrderDetailsViewModel>
+
+@if (Model != null && Model.Any())
+{
+    var firstOrder = Model.First();
+    <div class="custom-order-card-container-long-class-name">
+        <div class="custom-order-card-header-long-class-name">
+            <p><strong>Order No:</strong> <span class="text-primary">@firstOrder.OrderNo</span></p>
+            <p><strong>Status:</strong> <span class="badge bg-danger">@firstOrder.OrderStatus</span></p>
+            <p><strong>Date:</strong> <span class="text-muted">@firstOrder.CreatedDate.ToString("dd-MMM-yyyy")</span></p>
+        </div>
+        <div class="custom-order-card-details-long-class-name">
+            <p><strong>Store:</strong> <span class="fw-bold">@firstOrder.StoreName</span> <span class="text-muted">(@firstOrder.StoreZipCode)</span></p>
+            <p><strong>Total Quantity:</strong> <span class="fw-bold text-primary">@Model.Sum(o => o.Quantity)</span></p>
+            <p><strong>Total Price:</strong> <span class="fw-bold text-danger">$@Model.Sum(o => o.TotalPriceWithQuantity).ToString("F2")</span></p>
+        </div>
+    </div>
+
+    <div class="custom-order-table-container-long-class-name">
+        <table class="table table-bordered align-middle custom-order-table-long-class-name">
+            <thead class="table-dark">
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td class="text-center">
+                            <img src="@product.ProductImage" alt="@product.ProductName" class="img-thumbnail custom-product-image-class-long" width="60" height="60">
+                        </td>
+                        <td>@product.ProductName</td>
+                        <td class="text-center">@product.Quantity</td>
+                        <td class="text-center text-primary">$@product.ProductPrice</td>
+                       
+                        <td class="text-center text-danger fw-bold">$@(product.Quantity * product.ProductPrice) </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning text-center custom-no-order-details-long-class-name">
+        No order details found.
+    </div>
+}

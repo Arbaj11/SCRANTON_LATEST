@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Scanton.Models.Category>
+@{
+    Layout = "_AdminLayout";
+}
+@{
+    var parentCategories = ViewBag.ParentCategories as List<Scanton.Models.ParentCategory>;
+}
+
+<div class="container">
+    <h1>  </h1>
+    <div class="row">
+        <!-- Add Category -->
+        <div class="col-md-6">
+            <h4>Add Category</h4>
+            <form method="post" asp-action="Create" enctype="multipart/form-data">
+                
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label>Description</label>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label>Parent Category</label>
+                    <select name="parentCategoryId" class="form-select" required>
+                        <option value="">Select Parent Category</option>
+                        @foreach (var parent in parentCategories)
+                        {
+                            <option value="@parent.Id">@parent.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="ImageFile">Upload Image</label>
+                    <input type="file" name="imageFile" class="form-control" id="ImageFile" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+
+        <!-- List Categories -->
+        <div class="col-md-6">
+            <h4>Categories</h4>
+            <table class="table table-bordered table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Parent Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var category in Model)
+                    {
+                        <tr>
+                            <td>@category.Name</td>
+                            <td>
+                                <img src="@category.ImagePath" alt="Category Image" style="width: 100px; height: auto;" />
+                            </td>
+                            <td>@category.ParentCategory?.Name</td>
+                            <td>
+                                <form method="get" asp-action="Edit" asp-route-id="@category.Id" style="display:inline;">
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                </form>
+                                <form method="post" asp-action="Delete" asp-route-id="@category.Id" style="display:inline;">
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+﻿@model Scanton.Models.IndexViewModel
+<style>
+    td {
+        font-weight: 600;
+
+    }
+
+    .Order-table-list td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    
+</style>
+<section class="Order-table-list">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Order No</th>
+                    <th>Order Status</th>
+                    <th>Total Products</th>
+                    <th>Total Quantity</th>
+                    <th>Total Price</th>
+                    <th>Order Date</th>
+                    <th>View Items</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.OrderDetailsMasters != null && Model.OrderDetailsMasters.Any())
+                {
+                    int srNo = 1;
+                    foreach (var order in Model.OrderDetailsMasters)
+                    {
+                        <tr>
+                            <td>@srNo</td>
+                            <td>@order.OrderNo</td>
+                            <td>@order.OrderStatus</td>
+                            <td>@order.TotalProducts</td>
+                            <td>@order.Quantity</td>
+                            <td>$@order.TotalPriceWithQuantity.ToString("F2")</td>
+                            <td>@order.CreatedDate.ToString("dd-MMM-yyyy")</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" onclick="viewOrder('@order.OrderId')">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        srNo++;
+                    }   
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" style="text-align:center;">No orders found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</section>  
+
+
+
+
+<div class="modal fade" id="orderPopupModal" tabindex="-1" role="dialog" aria-labelledby="orderPopupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="custom-modal-wrapper">
+            <!-- Unique wrapper instead of modal-content -->
+            <div class="custom-modal-header">
+                <h5 class="custom-modal-title" id="orderPopupModalLabel">Order Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="custom-modal-body" id="orderPopupDetails">
+                <!-- Order details will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function viewOrder(orderId) {
+          
+           console.log("View Order:", orderId);
+    }
+     function viewOrder(orderId) {
+        $.ajax({
+            url: '@Url.Action("GetOrderDetails", "Home")',
+            type: 'GET',
+            data: { id: orderId },
+            success: function(response) {
+                $('#orderPopupDetails').html(response); // Update the correct modal content
+                $('#orderPopupModal').modal('show'); // Show the correct modal
+            },
+            error: function() {
+                alert("Failed to fetch order details.");
+            }
+        });
+    }
+
+
+</script>

@@ -1,0 +1,674 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+}
+
+<section class="breadscrumb-section pt-0">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadscrumb-contain">
+                    <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="shop.aspx?0">Shop</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">@ViewBag.SingleProduct.CategoryName</li>
+                            </ol>
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-details-section py-3">
+    <div class="container-fluid-lg">
+        <div class="product-row">
+            <!-- Product Image (Left Side) -->
+
+            <div class=" product-class">
+                <div class="product-image-box">
+                    <img id="main-image" src="@ViewBag.SingleProduct.ImagePath" alt="Product Image" class="img-fluid">
+                </div>
+
+                <div class="sub-image-gallery">
+                    @if (!string.IsNullOrEmpty(ViewBag.SingleProduct.ImagePath))
+                    {
+                        <button class="sub-image-button" onclick="changeMainImage('@ViewBag.SingleProduct.ImagePath')">
+                            <img src="@ViewBag.SingleProduct.ImagePath" alt="Main Image" class="img-fluid">
+                        </button>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.SingleProduct.SubImage_1))
+                    {
+                        <button class="sub-image-button" onclick="changeMainImage('@ViewBag.SingleProduct.SubImage_1')">
+                            <img src="@ViewBag.SingleProduct.SubImage_1" alt="Sub Image 1" class="img-fluid">
+                        </button>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.SingleProduct.SubImage_2))
+                    {
+                        <button class="sub-image-button" onclick="changeMainImage('@ViewBag.SingleProduct.SubImage_2')">
+                            <img src="@ViewBag.SingleProduct.SubImage_2" alt="Sub Image 2" class="img-fluid">
+                        </button>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.SingleProduct.SubImage_3))
+                    {
+                        <button class="sub-image-button" onclick="changeMainImage('@ViewBag.SingleProduct.SubImage_3')">
+                            <img src="@ViewBag.SingleProduct.SubImage_3" alt="Sub Image 3" class="img-fluid">
+                        </button>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.SingleProduct.SubImage_4))
+                    {
+                        <button class="sub-image-button" onclick="changeMainImage('@ViewBag.SingleProduct.SubImage_4')">
+                            <img src="@ViewBag.SingleProduct.SubImage_4" alt="Sub Image 4" class="img-fluid">
+                        </button>
+                    }
+                </div>
+            </div>
+
+
+            <!-- Product Details (Middle) -->
+            <div class="product-details-box">
+                <h2 class="product-title">@ViewBag.SingleProduct.Name</h2>
+                <p class="product-price">$@ViewBag.SingleProduct.Price</p>
+                <p class="product-description">
+                    @Html.Raw(ViewBag.SingleProduct.Description)
+                </p>
+                <div class="product-info">
+                    <ul class="product-info-list">
+                        <li><i class="fa-solid fa-cannabis product-icons"></i> Type: <a href="javascript:void(0)">THC-A</a></li>
+                        <li><i class="fa-solid fa-dollar-sign product-icons"></i> Unit Price: <a href="javascript:void(0)">@ViewBag.SingleProduct.Price</a></li>
+                        <li><i class="fa-solid fa-weight-scale product-icons"></i> Weight: <a href="javascript:void(0)">@ViewBag.SingleProduct.Weight</a></li>
+                        <li><i class="fa-solid fa-boxes-stacked product-icons"></i> Qty: <a href="javascript:void(0)">@ViewBag.SingleProduct.PricePerPcs pcs/box</a></li>
+                    </ul>
+                </div>
+                <div class="pip-section-group__content">
+                    <!-- Delivery Section -->
+                    <button class="pip-section pip-delivery-section js-delivery-section" aria-live="polite" aria-busy="false">
+                        <div class="pip-section__content--wrapper">
+                            <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-section__icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h15v3h3.0246l3.9793 5.6848V18h-2.6567c-.4218 1.3056-1.6473 2.25-3.0933 2.25-1.446 0-2.6715-.9444-3.0932-2.25h-3.9044c-.4217 1.3056-1.6472 2.25-3.0932 2.25S4.4916 19.3056 4.0698 18H1V4zm3.0698 12c.4218-1.3056 1.6473-2.25 3.0933-2.25 1.446 0 2.6715.9444 3.0932 2.25H14V6H3v10h1.0698zM16 14.0007a3.24 3.24 0 0 1 1.2539-.2507c1.446 0 2.6715.9444 3.0933 2.25h.6567v-2.6848L17.9833 9H16v5.0007zM7.163 15.75c-.6903 0-1.25.5596-1.25 1.25s.5597 1.25 1.25 1.25c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25zm10.0909 0c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25 1.25-.5596 1.25-1.25-.5596-1.25-1.25-1.25z"></path>
+                            </svg>
+                            <div class="pip-section__content">
+                                <strong class="pip-section__header">Delivery</strong> Check availability
+                            </div>
+                        </div>
+                        <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-section__icon pip-section__icon--right">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="m15.5996 12.0007-5.785 5.7857-1.4143-1.4141 4.3711-4.3716L8.4003 7.629l1.4143-1.4142 5.785 5.7859z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- In Store Section -->
+                    <button class="pip-section pip-store-section js-store-section pip-store__section" aria-live="polite" aria-busy="false">
+                        <div class="pip-section__content--wrapper">
+                            <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-section__icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4v16h20V4H2zm2 4V6h16v2H4zm0 2v8h3v-6h10v6h3v-8H4zm11 4h-2v4h2v-4zm-4 0H9v4h2v-4z"></path>
+                            </svg>
+                            <div class="pip-section__content">
+                                <strong class="pip-section__header">In Store</strong> Check in-store stock
+                            </div>
+                        </div>
+                        <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-section__icon pip-section__icon--right">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="m15.5996 12.0007-5.785 5.7857-1.4143-1.4141 4.3711-4.3716L8.4003 7.629l1.4143-1.4142 5.785 5.7859z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="background-container">
+                    <button class="addtocart">
+                        <div class="pretext">
+                            <i class="fas fa-cart-plus"></i> ADD TO CART
+                        </div>
+
+                        <div class="pretext done">
+                            <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
+                        </div>
+
+                    </button>
+                </div>
+            </div>
+            
+           
+            
+        </div>
+    </div>
+</section>
+
+<div id="deliveryModal" class="modal" aria-modal="true" role="dialog" tabindex="-1">
+    <div class="modal-header">
+        <button type="button" aria-label="Close" class="btn btn-close">
+            <span class="btn-icon">
+                <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="m12 13.4142 4.9497 4.9497 1.4142-1.4142L13.4142 12l4.9497-4.9498-1.4142-1.4142L12 10.5857 7.0502 5.636 5.636 7.0502 10.5857 12 5.636 16.9497l1.4142 1.4142L12 13.4142z"></path>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <div role="document" tabindex="0" class="modal-content-wrapper" data-autofocus="true">
+        <div class="modal-body">
+            <div>
+                <h2 class="use-location">Use your location</h2>
+                <p class="update-info">Get updated information about product delivery and stock availability for your area.</p>
+                <div class="form-field">
+                    <div class="input-field label-wrapper text-input zip-val">
+                        <label for="postalcode">Enter a PIN code</label>
+                        <div class="input-field-wrapper">
+                            <input type="text" id="postalcode" required aria-describedby="postalcode-helper">
+                            <span class="validation-border"></span>
+                        </div>
+                    </div>
+                    <div class="form-field-content">
+                        <span id="postalcode-helper-eg" class="helper-text">e.g. 560075</span>
+                    </div>
+                </div>
+                <p class="postalcode-picker-consent">
+                    We use cookies to provide this service. Read more about how we use cookies in
+                    <a href="https://www.ikea.com/in/en/customer-service/cookie-policy/" target="_blank" class="link-block">
+                        our policy
+                        <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-label="Opens a new window" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9989 4.9961v-1h-1l-4.9969.0001v2h2.5827l-5.296 5.2962 1.4143 1.4141 5.2959-5.2961v2.5887h2V4.996zM4.0019 19.9993v-16h8.0001v2H6.0019v12H18.002v-6h2v8H4.0019z"></path>
+                        </svg>
+                    </a>. Please note that your location won’t be shared.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <a href="@Url.Action("ShopDetailsProduct","SingleProduct")"
+                   id="saveZipCode"
+                   class="btn-primary zip-code-submit-btn">Save</a>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+
+<div role="dialog" tabindex="-1" class="custom-modal">
+    <div class="custom-modal-header">
+        <button type="button" class="custom-close-button" aria-label="Close">
+            <span>X</span>
+        </button>
+    </div>
+    <div id="shopDetailsContainer" role="document" tabindex="0" class="custom-modal-content">
+        @Html.Partial("_ShopDetailsProduct", Model)
+    </div>
+</div>
+
+
+<!-- Product Left Sidebar End -->
+<!-- Continuous Product Slider Section -->
+<section class="product-slider-container">
+    <div class="also-like-section">
+    <h2 class="section-title">You May Also Like</h2>
+        <div class="d-flex align-items-center view-all-products">
+            <a href="#" class="btn btn-primary me-2 view-btn">View All</a>
+            <div class="swiper-buttons">
+                <button class="swiper-prev product-carousel-prev btn btn-yellow">❮</button>
+                <button class="swiper-next product-carousel-next btn btn-yellow">❯</button>
+            </div>
+        </div>
+    </div>
+    <div class="slider-container position-relative swiper-container">
+        <div id="productCarousel" class="slider-wrapper swiper-wrapper">
+            @if (Model?.Products != null && Model.Products.Any())
+            {
+                foreach (var product in Model.Products.Take(10))
+                {
+                    <div class="swiper-slide product-slide flex-shrink-0" style="width: 20%;">
+                        <div class="product-item">
+                            @if (product.BadgeIsActive == true)
+                            {
+                                <figure>
+                                    <a href="index.html" title="@product.Name">
+                                        @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                        {
+                                            <span class="offer-badge">@product.TittleBadge</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="offer-badge-green">@product.TittleBadge %</span>
+                                        }
+                                        <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                    </a>
+                                </figure>
+                            }
+                            else
+                            {
+                                <figure>
+                                    <a href="index.html" title="@product.FeaturedProducts">
+                                        <img src="@product.ImagePath" alt="img-not-found" class="tab-image">
+                                    </a>
+                                </figure>
+                            }
+
+                            <div class="d-flex flex-column text-center">
+                                <h3 class="fs-6 fw-bold">@product.Name</h3>
+                                <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                <div>
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </span>
+                                    <span>(222)</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    @if (product.Price > 0)
+                                    {
+                                        <del class="orignal-price">$@product.Price</del>
+                                    }
+                                    <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                    <span class="badge border rounded-0 fw-normal px-1 fs-7 lh-1 custom-badge">10% OFF</span>
+                                </div>
+                                <div class="button-area p-3 pt-0">
+                                    <div class="row g-1 mt-2 justify-content-start">
+                                        <div class="col-6 d-flex justify-content-between align-items-center">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <div class="shop-all-btn-container">
+        <a href="https://www.hempstarproducts.com" class="shop-all-btn">Shop All Products</a>
+    </div>
+</section>
+
+
+
+<section class="product-tabs-section">
+    <div class="container">
+        <div class="col-12">
+            <!-- Tab Navigation -->
+            <ul class="nav nav-tabs custom-nav" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
+                        Description
+                    </button>
+                </li>
+
+                
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+                        Review
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content custom-tab" id="productTabContent">
+                <!-- Description Tab -->
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <div class="product-description">
+                        <p>
+                            @Html.Raw(ViewBag.SingleProduct.ShortDescription)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Review Tab -->
+
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <div class="review-box colorful-theme">
+                        <h4 class="fw-bold text-center">Add a Review</h4>
+                        <form id="reviewForm" class="review-form">
+                            <!-- Name and Email Fields -->
+                            <div class="mb-3">
+                                <label for="reviewerName" class="form-label">Your Name</label>
+                                <input type="text" id="reviewerName" class="form-control form-review" placeholder="Name *" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label">Email Address</label>
+                                <input type="email" id="emailAddress" class="form-control form-review" placeholder="Email *" required>
+                            </div>
+
+                            <!-- Rating Section -->
+                            <div class="mb-3">
+                                <div class="review-box colorful-theme">
+                                    <h1>Review and Rating</h1>
+                                    <h2>How was your experience with our product?</h2>
+
+                                    <div class="rating-component">
+                                        <div class="status-msg">
+                                            <label>
+                                                <input class="rating_msg" type="hidden" name="rating_msg" value="" />
+                                            </label>
+                                        </div>
+
+                                        <div class="stars-box">
+                                            <i class="star fa fa-star" title="1 star" data-message="Poor" data-value="1"></i>
+                                            <i class="star fa fa-star" title="2 stars" data-message="Too bad" data-value="2"></i>
+                                            <i class="star fa fa-star" title="3 stars" data-message="Average quality" data-value="3"></i>
+                                            <i class="star fa fa-star" title="4 stars" data-message="Nice" data-value="4"></i>
+                                            <i class="star fa fa-star" title="5 stars" data-message="Very good quality" data-value="5"></i>
+                                        </div>
+
+                                        <div class="starrate">
+                                            <label>
+                                                <input class="ratevalue" type="hidden" name="rate_value" value="" />
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="feedback-tags">
+                                        <div class="tags-container" data-tag-set="1">
+                                            <div class="question-tag">
+                                                Why was your experience so bad?
+                                            </div>
+                                        </div>
+                                        <div class="tags-container" data-tag-set="2">
+                                            <div class="question-tag">
+                                                Why was your experience so bad?
+                                            </div>
+                                        </div>
+                                        <div class="tags-container" data-tag-set="3">
+                                            <div class="question-tag">
+                                                Why was your average rating experience?
+                                            </div>
+                                        </div>
+                                        <div class="tags-container" data-tag-set="4">
+                                            <div class="question-tag">
+                                                Why was your experience good?
+                                            </div>
+                                        </div>
+                                        <div class="tags-container" data-tag-set="5">
+                                            <div class="make-compliment">
+                                                <div class="compliment-container">
+                                                    Give a compliment
+                                                    <div>
+                                                        <i class="far fa-smile-wink"></i>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tags-box">
+                                            <input type="text" class="tag form-control" name="comment" id="inlineFormInputName" placeholder="Please enter your review" required />
+                                            <input type="hidden" name="product_id" value="{{ product.id }}" />
+                                        </div>
+                                    </div>
+
+                                    <div class="button-box">
+                                        <input type="submit" class="done btn btn-warning" disabled="disabled" value="Add Review" />
+                                    </div>
+
+                                    <div class="submited-box">
+                                        <div class="loader"></div>
+                                        <div class="success-message">
+                                            Thank you!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+           function changeMainImage(imageSrc) {
+        const mainImage = document.getElementById('main-image');
+        mainImage.src = imageSrc;
+    }
+
+
+     if (!window.productCarousel || !(window.productCarousel instanceof Swiper)) {
+            window.productCarousel = new Swiper('.swiper-container', {
+                speed: 400,
+                spaceBetween: 30,
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+                loop: false, // Disable loop mode
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.product-carousel-next',
+                    prevEl: '.product-carousel-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+     }
+
+         // Handle rating hover and click events
+    $(".rating-component .star").on("mouseover", function () {
+      var onStar = parseInt($(this).data("value"), 10);
+      $(this).parent().children("i.star").each(function (e) {
+        if (e < onStar) {
+          $(this).addClass("hover");
+        } else {
+          $(this).removeClass("hover");
+        }
+      });
+    }).on("mouseout", function () {
+      $(this).parent().children("i.star").each(function (e) {
+        $(this).removeClass("hover");
+      });
+    });
+
+    // Handle rating selection and update hidden input values
+    $(".rating-component .stars-box .star").on("click", function () {
+      var onStar = parseInt($(this).data("value"), 10);
+      var stars = $(this).parent().children("i.star");
+      var ratingMessage = $(this).data("message");
+
+      // Set the selected rating value
+      $('.rating-component .starrate .ratevalue').val(onStar);
+
+      $(".fa-smile-wink").show();
+      $(".button-box .done").show();
+
+      if (onStar === 5) {
+        $(".button-box .done").removeAttr("disabled");
+      } else {
+        $(".button-box .done").attr("disabled", "true");
+      }
+
+      // Update selected stars
+      stars.removeClass("selected");
+      for (var i = 0; i < onStar; i++) {
+        $(stars[i]).addClass("selected");
+      }
+
+      // Set the rating message
+      $(".status-msg .rating_msg").val(ratingMessage);
+      $(".status-msg").html(ratingMessage);
+      $("[data-tag-set]").hide();
+      $("[data-tag-set=" + onStar + "]").show();
+    });
+
+    // Handle feedback tag selection
+    $(".feedback-tags .feedback-tag").on("click", function () {
+      var choosedTagsLength = $(this).parent("div.tags-box").find(".choosed").length;
+
+      if ($(this).hasClass("choosed")) {
+        $(this).removeClass("choosed");
+        choosedTagsLength--;
+      } else {
+        $(this).addClass("choosed");
+      }
+
+      // Enable or disable submit button based on tag selection
+      if (choosedTagsLength > 0) {
+        $(".button-box .done").removeAttr("disabled");
+      } else {
+        $(".button-box .done").attr("disabled", "true");
+      }
+    });
+
+    // Handle compliment section click
+    $(".compliment-container .fa-smile-wink").on("click", function () {
+      $(this).fadeOut("slow", function () {
+        $(".list-of-compliment").fadeIn();
+      });
+    });
+
+    // Handle form submission (this part may include sending the data to a server)
+    $(".done").on("click", function (e) {
+      e.preventDefault();
+
+      // Process form submission and show success message
+      $(".rating-component").hide();
+      $(".feedback-tags").hide();
+      $(".button-box").hide();
+      $(".submited-box").show();
+      $(".submited-box .loader").show();
+
+      setTimeout(function () {
+        $(".submited-box .loader").hide();
+        $(".submited-box .success-message").show();
+      }, 1500);
+    });
+
+
+    // Select the button and the modal
+    const deliveryButton = document.querySelector('.js-delivery-section');
+    const modal = document.getElementById('deliveryModal');
+    const closeButton = document.querySelector('.btn-close');
+
+    // Open modal when the button is clicked
+    deliveryButton.addEventListener('click', function () {
+        modal.classList.add('show');  // Show the modal immediately (no slide)
+    });
+
+    // Close modal when the close button is clicked
+    closeButton.addEventListener('click', function () {
+        modal.classList.remove('show');  // Hide the modal
+    });
+
+
+
+
+       // Ensure that the variables are only declared once with new names
+    let buttonTrigger = document.querySelector('.js-store-section');  // Button to trigger the modal
+    let storePopup = document.querySelector('.custom-modal');  // Modal container
+    let closePopupButton = document.querySelector('.custom-close-button');  // Close button inside the modal
+
+    // Open store popup when the button is clicked
+    if (buttonTrigger) {
+        buttonTrigger.addEventListener('click', function () {
+            storePopup.classList.add('show');  // Show the modal (add 'show' class to display it)
+        });
+    }
+
+    // Close store popup when the close button is clicked
+    if (closePopupButton) {
+        closePopupButton.addEventListener('click', function () {
+            storePopup.classList.remove('show');  // Hide the modal (remove 'show' class)
+        });
+    }
+
+
+    const button = document.querySelector(".addtocart");
+    const done = document.querySelector(".done");
+    console.log(button);
+    let added = false;
+    button.addEventListener('click',()=>{
+      if(added){
+        done.style.transform = "translate(-110%) skew(-40deg)";
+        added = false;
+      }
+      else{
+        done.style.transform = "translate(0px)";
+        added = true;
+      }
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var saveButton = document.getElementById("saveZipCode");
+
+        if (saveButton) {
+            saveButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default navigation
+
+                var zipCodeInput = document.getElementById("postalcode");
+                var deliveryModal = document.getElementById("deliveryModal");
+                var customModal = document.querySelector(".custom-modal");
+
+                if (zipCodeInput) {
+                    var zipCode = zipCodeInput.value.trim();
+                    if (zipCode) {
+                        // Make AJAX call to fetch shop details
+                        fetch(`/SingleProduct/ShopDetailsProduct?zipCode=${encodeURIComponent(zipCode)}`, {
+                            method: "GET",
+                            headers: {
+                                "X-Requested-With": "XMLHttpRequest"
+                            }
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById("shopDetailsContainer").innerHTML = data;
+
+                            // Hide the delivery modal
+                            if (deliveryModal) {
+                                deliveryModal.style.display = "none";
+                            }
+
+                            // Show the custom modal
+                            if (customModal) {
+                                customModal.style.display = "block";
+                                customModal.classList.add("show"); // Ensure modal is visible
+                            }
+                        })
+                        .catch(error => console.error("Error loading shop details:", error));
+                    } else {
+                        alert("Please enter a valid PIN code.");
+                    }
+                } else {
+                    console.error("ZIP code input field not found.");
+                }
+            });
+        } else {
+            console.error("Save button not found.");
+        }
+    });
+
+
+
+
+
+
+</script>
+
+
+

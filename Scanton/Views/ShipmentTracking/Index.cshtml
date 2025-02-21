@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Scanton.Models.ShipmentTracking>
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Shipment Tracking";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary">Shipment Tracking</h2>
+    <p class="text-center text-muted">Manage and track all shipments</p>
+
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Shipment
+        </a>
+    </div>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-primary">
+            <tr>
+                <th>#</th>
+                <th>Tracking Number</th>
+                <th>Carrier</th>
+                <th>Status</th>
+                <th>Shipped Date</th>
+                <th>Estimated Delivery</th>
+                <th>Destination</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var shipment in Model)
+            {
+                <tr>
+                    <td>@shipment.Id</td>
+                    <td>@shipment.TrackingNumber</td>
+                    <td>@shipment.Carrier</td>
+                    <td>@shipment.Status</td>
+                    <td>@shipment.ShippedDate.ToShortDateString()</td>
+                    <td>@shipment.EstimatedDeliveryDate?.ToShortDateString()</td>
+                    <td>@shipment.Destination</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

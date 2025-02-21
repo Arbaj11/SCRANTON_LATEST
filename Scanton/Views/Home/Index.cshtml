@@ -1,0 +1,1351 @@
+﻿@model Scanton.Models.IndexViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Carousel</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/ bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        .swiper-prev, .swiper-next {
+        cursor: pointer;
+        font-size: 1.5rem;
+        }
+
+        .swiper-wrapper {
+        display: flex;
+        }
+
+        .custom-slide {
+        width: 189.75px !important;
+        margin-right: 30px !important;
+        }
+
+        .btn-primary:hover {
+        background-color: #f7a422;
+        border-color: #f7a422; 
+        color: #ffffff; 
+        }
+
+        .category-title
+        {
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+
+        }
+
+        .container-fluid
+        {
+        padding:0;
+        }
+    </style>
+</head>
+<body>
+
+    @*   <div class="banner-section">
+        <div class="banner-carousel" id="bannerCarousel">
+            @if (ViewBag.Banners != null)
+            {
+                foreach (var banner in ViewBag.Banners)
+                {
+                    <div class="banner-item" style="background-image: url('@banner.ImagePath');">
+                        <div class="banner-content-titles">
+                            <p class="banner-subtitle">@banner.TittleParagraph1</p>
+                            <h2 class="banner-title">@banner.Title</h2>
+                            <p class="banner-description-head">@banner.TittleParagraph2</p>
+                            <div class="banner-buttons">
+                                <a href="#" class="banner-btn">Explore More</a>
+                                <a href="#" class="banner-btn-secondary">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="banner-item" style="background-color: #555;">
+                    <p style="color: white; text-align: center; padding-top: 150px;">No banners available.</p>
+                </div>
+            }
+        </div>
+        <button class="slider-btn prev" id="prevBtn" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn" onclick="nextSlide()">&#10095;</button>
+    </div>
+ *@
+
+
+
+  
+
+
+    <div class="responsive-banner-section">
+        <div class="responsive-banner-carousel" id="responsiveBannerCarousel">
+            @if (ViewBag.Banners != null)
+            {
+                foreach (var banner in ViewBag.Banners)
+                {
+                    <div class="responsive-banner-item" style="background-image: url('@banner.ImagePath');">
+                        <div class="responsive-banner-content-titles">
+                            <p class="responsive-banner-subtitle">@banner.TittleParagraph1</p>
+                            <h2 class="responsive-banner-title">@banner.Title</h2>
+                            <p class="responsive-banner-description-head">@banner.TittleParagraph2</p>
+                            <div class="responsive-banner-buttons">
+                                <a href="#" class="responsive-banner-btn">Explore More</a>
+                                <a href="#" class="responsive-banner-btn-secondary">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="responsive-banner-item" style="background-color: #555;">
+                    <p style="color: white; text-align: center; padding-top: 150px;">No banners available.</p>
+                </div>
+            }
+        </div>
+        <button class="slider-btn prev" id="prevBtn" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn" onclick="nextSlide()">&#10095;</button>
+        <!-- Bubble Buttons -->
+        <div class="bubble-buttons" id="bubbleButtons"></div>
+    </div>
+
+  @* 
+    <section class="py-5 overflow-hidden section-body">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+                        <h2 class="section-title" style="margin-left: 20px; margin-right: 10px;">Category</h2>
+
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-primary me-2">View All</a>
+
+                            <div class="swiper-buttons">
+                                <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
+                                <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="category-carousel swiper">
+                        <div class="swiper-wrapper">
+                            @if (Model?.Categories != null && Model.Categories.Any())
+                            {
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <a href="@Url.Action("Index", "CategoryPages", new { category_id = category.Id })" class="nav-link swiper-slide text-center custom-slide categories-img">
+                                        <img src="@category.ImagePath" class="rounded-circle" alt="@category.Name">
+                                        <h4 class="category-title">@category.Name</h4>
+                                    </a>
+                                }
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> *@
+
+
+
+
+    <section class="py-3 overflow-hidden responsive-category-swiper responsive-category">
+        <div class="container-lg responsive-category">
+            <div class="row responsive-category">
+                <div class="col-md-12 responsive-category">
+                    <div class="section-header d-flex flex-wrap justify-content-between mb-2 responsive-category">
+                        <h2 class="section-title responsive-category">Category</h2>
+                        <div class="d-flex align-items-center responsive-category">
+                            <a href="#" class="btn btn-primary me-2 responsive-category">View All</a>
+                            <div class="swiper-buttons responsive-category">
+                                <button class="swiper-prev category-carousel-prev btn btn-yellow responsive-category">❮</button>
+                                <button class="swiper-next category-carousel-next btn btn-yellow responsive-category">❯</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row responsive-category">
+                <div class="col-md-12 responsive-category">
+                    <div class="category-carousel swiper responsive-category">
+                        <div class="swiper-wrapper responsive-category">
+                            @if (Model?.Categories != null && Model.Categories.Any())
+                            {
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <a href="@Url.Action("Index", "CategoryPages", new { category_id = category.Id })" class="nav-link swiper-slide text-center custom-slide categories-img responsive-category">
+                                        <img src="@category.ImagePath" class="rounded-circle responsive-category" alt="@category.Name">
+                                        <h4 class="category-title responsive-category">@category.Name</h4>
+                                    </a>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12 banner-container">
+                    <div class="banner-layout d-flex gap-3">
+                        <!-- Left Banner -->
+
+                        <div class="right-banners d-flex flex-column gap-3">
+                            <!-- Top Right Banner -->
+                            <div class="banner-ad"
+                            style="background: url('/images/06.jpg') no-repeat center; background-size: cover;">
+                                <div class="banner-content p-3">
+                                    <div class="content-wrapper text-light">
+                                        <h3 class="banner-title fw-bold fs-4">Combo Offers</h3>
+                                        <p class="fs-6 mb-2">Discounts up to 50%</p>
+                                        <a href="#" class="btn btn-outline-light px-3 py-1">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Right Banner -->
+                            <div class="banner-ad"
+                            style="background: url('/images/07.jpg') no-repeat center; background-size: cover;">
+                                <div class="banner-content p-3">
+                                    <div class="content-wrapper text-light">
+                                        <h3 class="banner-title fw-bold fs-4">Discount Coupons</h3>
+                                        <p class="fs-6 mb-2">Discounts up to 40%</p>
+                                        <a href="#" class="btn btn-outline-light px-3 py-1">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Banners -->
+                        <div class="left-banner banner-ad"
+                        style="background: url('/images/05.jpg') no-repeat center; background-size: cover;">
+                            <div class="banner-content p-5">
+                                <div class="content-wrapper text-light">
+                                    <h3 class="banner-title fw-bold fs-2">Items on SALE</h3>
+                                    <p class="fs-5 mb-3">Discounts up to 30%</p>
+                                    <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-progress-slider">
+        <div class="slider-container">
+            <div class="custom-slider-container">
+                <!-- Updated slider content -->
+                <div class="respo-slides"><img src="/images/05.jpg" alt="Image 1"></div>
+                <div class="respo-slides"><img src="/images/05.jpg" alt="Image 2"></div>
+                <div class="respo-slides"><img src="/images/05.jpg" alt="Image 3"></div>
+                <div class="respo-slides"><img src="/images/05.jpg" alt="Image 4"></div>
+                <div class="respo-slides"><img src="/images/05.jpg" alt="Image 5"></div>
+            </div>
+        </div>
+
+        <!-- Bubble Navigation -->
+        <div class="bubble-navigation">
+            <span class="bubble active" data-index="0"></span>
+            <span class="bubble" data-index="1"></span>
+            <span class="bubble" data-index="2"></span>
+            <span class="bubble" data-index="3"></span>
+            <span class="bubble" data-index="4"></span>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="py-3 overflow-hidden">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- Section Header -->
+                    <div class="section-header d-flex flex justify-content-between">
+                        <h2 class="section-title" style="margin-left: 20px; margin-right: 10px;">Best Selling Products</h2>
+
+                        <div class=" d-flex align-items-center">
+                            <a href="#" class="btn btn-primary me-2">View All</a>
+                            <div class="swiper-buttons">
+                                <button class="swiper-prev product-carousel-prev btn btn-yellow">❮</button>
+                                <button class="swiper-next product-carousel-next btn btn-yellow">❯</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @if (Model?.Products != null && Model.Products.Any())
+                    {
+                        foreach (var product in Model.Products.Take(10))
+                        {
+                            <div class="swiper-slide">  
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                                {
+                                                    <span class="offer-badge">@product.TittleBadge</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="offer-badge-green">@product.TittleBadge %</span>
+                                                }
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.Name</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.BadgeIsActive == true)
+                                            {
+                                                @if (product.Price > 0)
+                                                {
+                                                    <del class="orignal-price">$@product.Price</del>
+                                                }
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }       
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-product-id="@product.Id">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    @*  <section class="py-3">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12 banner-container">
+                    <div class="banner-layout d-flex gap-3">
+                        @foreach (var banner in Model.SoftBanners.Where(b => b.IsActive))
+                        {
+                            if (Model.SoftBanners.Count(b => b.IsActive) == 1)
+                            {
+                                <div class="left-banner banner-ad"
+                                     style="background: url('@banner.BannerImage') no-repeat center; background-size: cover;">
+                                    <div class="banner-content p-5">
+                                        <div class="content-wrapper text-light">
+                                            <h3 class="banner-title fw-bold fs-2">@banner.Title</h3>
+                                            <p class="fs-5 mb-3">@banner.Description</p>
+                                            <a href="@banner.ButtonUrl" class="btn btn-outline-light px-4 py-2">@banner.ButtonText</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="right-banners d-flex flex-column gap-3">
+                                    <div class="banner-ad"
+                                         style="background: url('@banner.BannerImage') no-repeat center; background-size: cover;">
+                                        <div class="banner-content p-3">
+                                            <div class="content-wrapper text-light">
+                                                <h3 class="banner-title fw-bold fs-4">@banner.Title</h3>
+                                                <p class="fs-6 mb-2">@banner.Description</p>
+                                                <a href="@banner.ButtonUrl" class="btn btn-outline-light px-3 py-1">@banner.ButtonText</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> *@
+
+    @* <div class="showcase-container">
+        @foreach (var shortBanner in Model.ShortBanners.Where(b => b.Is_Active).Take(1))
+        {
+            @* <section class="showcase" style="background-image: url('@shortBanner.Short_Banner'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+                <div class="overlay-can">
+                    <h2>@shortBanner.Heading_Tittle</h2>
+                    <p>
+                        @shortBanner.Sub_Tittle_Heading
+                    </p>
+                </div>
+            </section> *@
+        
+       
+    @* </div> *@
+
+
+    <section class="smoke-img-container">
+        @foreach (var shortBanner in Model.ShortBanners.Where(b => b.Is_Active).Take(1))
+        {
+            <img id="smoke-img" src="@shortBanner.Short_Banner" alt="">
+            <h2 class="smoke-img-h2">@shortBanner.Heading_Tittle</h2>
+            <p class="smoke-img-p">@shortBanner.Sub_Tittle_Heading</p>
+        }
+        
+    </section>
+   
+
+
+    @* <div class="single-banner-container">
+
+        <!-- Left Side Content -->
+        <div class="left-side">
+            <h2 class="banner-heading">@ViewBag.RecentBlogs.Title</h2>
+            <p class="banner-description">
+                @Html.Raw(ViewBag.RecentBlogs.Content);
+            </p>
+            <a href="#" class="shop-now-button">Shop Now</a>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="right-side">
+            <img src="@ViewBag.RecentBlogs.ImagePath" alt="Banner Image">
+        </div>
+
+    </div> *@
+
+    <div class="single-banner-cont-title">
+        <span>More Reasons to Shop at Scranton</span>
+    </div>
+
+    <div class="single-banner-container">
+        <div class="left-box">
+    
+            <h2>@ViewBag.RecentBlogs.Title</h2>
+            <p>
+                @Html.Raw(ViewBag.RecentBlogs.Content);
+            </p>
+            <button><a href="">Shop Now</a></button>
+        </div>
+        <div class="right-box">
+            <img src="@ViewBag.RecentBlogs.ImagePath"
+                 alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    @* <section>
+        <div class="container-lg  short-banner  w-100">
+
+            @foreach (var shortBanner in Model.ShortBanners.Where(b => b.Is_Active).Take(1))
+            {
+                <div class="bg-secondary text-light py-5 my-5 banner-style" style="background: url('@shortBanner.Short_Banner') no-repeat; background-size: cover;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 p-3 head-tittle">
+                                <div class="section-header heading-text">
+                                    <h2 class="section-title display-5 text-light heading-text">@shortBanner.Heading_Tittle</h2>
+                                </div>
+                                <p class="sub-heading-text">@shortBanner.Sub_Tittle_Heading</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </section> *@
+
+@*     <section class="py-3">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12 banner-container">
+                    <div class="banner-layout d-flex gap-3">
+                        @foreach (var softBanner in Model.SoftBanners.Where(b => b.Is_Active).Take(1))
+                        {
+                            <!-- Left Banner -->
+                            <div class="left-banner banner-ad"
+                            style="background: url('@softBanner.Banner_Image_1') no-repeat center; background-size: cover;">
+                                <div class="banner-content p-5">
+                                    <div class="content-wrapper text-light">
+                                        <h3 class="banner-title fw-bold fs-2">Items on SALE</h3>
+                                        <p class="fs-5 mb-3">Discounts up to 30%</p>
+                                        <a href="#" class="btn btn-outline-light px-4 py-2">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Banners -->
+                            <div class="right-banners d-flex flex-column gap-3">
+                                <!-- Top Right Banner -->
+                                <div class="banner-ad"
+                                style="background: url('@softBanner.Banner_Image_2') no-repeat center; background-size: cover;">
+                                    <div class="banner-content p-3">
+                                        <div class="content-wrapper text-light">
+                                            <h3 class="banner-title fw-bold fs-4">Combo Offers</h3>
+                                            <p class="fs-6 mb-2">Discounts up to 50%</p>
+                                            <a href="#" class="btn btn-outline-light px-3 py-1">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bottom Right Banner -->
+                                <div class="banner-ad"
+                                style="background: url('@softBanner.Banner_Image_3') no-repeat center; background-size: cover;">
+                                    <div class="banner-content p-3">
+                                        <div class="content-wrapper text-light">
+                                            <h3 class="banner-title fw-bold fs-4">Discount Coupons</h3>
+                                            <p class="fs-6 mb-2">Discounts up to 40%</p>
+                                            <a href="#" class="btn btn-outline-light px-3 py-1">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ *@
+
+
+
+
+    <section class="   overflow-hidden">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- Section Header -->
+                    <div class="section-header d-flex flex-wrap justify-content-between">
+                        <h2 class="section-title" style="margin-left: 20px; margin-right: 10px;">Featured Products</h2>
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-primary me-2">View All</a>
+                            <div class="swiper-buttons">
+                                <button class="swiper-prev product-carousel-prev btn btn-yellow">❮</button>
+                                <button class="swiper-next product-carousel-next btn btn-yellow">❯</button>
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product Slider -->
+            <div class="slider-container position-relative swiper-container">
+                <div id="productCarousel" class="slider-wrapper swiper-wrapper">
+                    @if (Model?.Products != null && Model.Products.Any())
+                    {
+                        foreach (var product in Model.Products.Take(10))
+                        {
+                            <div class="swiper-slide product-slide flex-shrink-0" style="width: 20%;">
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                                {
+                                                    <span class="offer-badge">@product.TittleBadge</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="offer-badge-green">@product.TittleBadge %</span>
+                                                }
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.FeaturedProducts</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.BadgeIsActive == true)
+                                            {
+                                                @if (product.Price > 0)
+                                                {
+                                                    <del class="orignal-price">$@product.Price</del>
+                                                }
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="hero-section">
+        <div class="hero-video-wrapper">
+            @foreach (var video in Model.VideoGalleries.Where(v => v.Is_Active).Take(1))
+            {
+                <video autoplay muted loop class="background-video">
+                    <source src="@video.VideoPath" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-content">
+                    <h2 class="hero-title">@video.Title</h2>
+                    <p class="hero-subtitle">@video.SubTitle</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="hero-btn">Shop Now</a>
+                    </div>
+                </div>
+            }
+            
+        </div>
+    </div>
+    <section class="py-3 overflow-hidden">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- Section Header -->
+                    <div class="section-header d-flex flex-wrap justify-content-between">
+                        <h2 class="section-title" style="margin-left: 20px; margin-right: 10px;">Just Arrived</h2>
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-primary me-2">View All</a>
+                            <div class="swiper-buttons">
+                                <button class="swiper-prev product-carousel-prev btn btn-yellow">❮</button>
+                                <button class="swiper-next product-carousel-next btn btn-yellow">❯</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product Slider -->
+            <div class="slider-container position-relative swiper-container">
+                <div id="productCarousel" class="slider-wrapper swiper-wrapper">
+                    @if (Model?.Products != null && Model.Products.Any())
+                    {
+                        foreach (var product in Model.Products.Take(10))
+                        {
+                            <div class="swiper-slide product-slide flex-shrink-0" style="width: 20%;">
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                                {
+                                                    <span class="offer-badge">@product.TittleBadge</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="offer-badge-green">@product.TittleBadge %</span>
+                                                }
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                            <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                                <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                                @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                                {
+                                                    <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-image">
+                                                }
+                                            </a>
+                                        </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.JustArrivedProducts</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.BadgeIsActive == true)
+                                            {
+                                                @if (product.Price > 0)
+                                                {
+                                                    <del class="orignal-price">$@product.Price</del>
+                                                }
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            }
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="section" id="testimonials-section">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <div class="slideshow">
+                    @foreach (var rating in Model.UserRatings)
+                    {
+                        <div class="slide @(rating == Model.UserRatings.First() ? "is-active" : "")" aria-label="@rating.Id">
+                            <div class="stars">
+                                @for (int i = 0; i < rating.Rating; i++)
+                                {
+                                    <span>★</span>
+                                }
+                                @for (int i = rating.Rating; i < 5; i++)
+                                {
+                                    <span>☆</span>
+                                }
+                            </div>
+                            <blockquote>
+                                <p>"@rating.Comments"</p>
+                            </blockquote>
+                            <div class="author">
+                                <div class="user-info">
+                                    <img src="~/images/programmer.png" alt="@rating.UserName">
+                                    <p><strong>@rating.UserName</strong></p>
+                                </div>
+                                <div class="location">
+                                    <p>Location</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <div class="slideshow-nav">
+        <button class="nav-btn prev" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left arrow"></i>
+        </button>
+        <span class="counter">1 / @Model.UserRatings.Count |</span>
+        <button class="nav-btn pause-play pause" aria-label="Pause">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+        <button class="nav-btn pause-play play" aria-label="Play" style="display: none;">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="nav-btn next" aria-label="Next">
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </button>
+    </div>
+
+
+ 
+
+    <div class="detail-container">
+      
+
+        <!-- Product Details -->
+        <div class="product-detail">
+            <!-- Images -->
+            <div class="product-images">
+                <img id="main-image" src="@Url.Content(ViewBag.RecentProduct.ImagePath)" alt="Main Product Image" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="@Url.Content(ViewBag.RecentProduct.SubImage_1)" alt="Thumbnail 1" class="sub-image" onclick="changeMainImage('@Url.Content(ViewBag.RecentProduct.SubImage_1)')">
+                    <img src="@Url.Content(ViewBag.RecentProduct.SubImage_2)" alt="Thumbnail 2" class="sub-image" onclick="changeMainImage('@Url.Content(ViewBag.RecentProduct.SubImage_2)')">
+                    <img src="@Url.Content(ViewBag.RecentProduct.SubImage_3)" alt="Thumbnail 3" class="sub-image" onclick="changeMainImage('@Url.Content(ViewBag.RecentProduct.SubImage_3)')">
+                    <img src="@Url.Content(ViewBag.RecentProduct.SubImage_4)" alt="Thumbnail 4" class="sub-image" onclick="changeMainImage('@Url.Content(ViewBag.RecentProduct.SubImage_4)')">
+                    <img src="@Url.Content(ViewBag.RecentProduct.ImagePath)" alt="Thumbnail 5" class="sub-image" onclick="changeMainImage('@Url.Content(ViewBag.RecentProduct.ImagePath)')">
+                </div>
+            </div>
+
+        
+            <div class="product-info">
+                <h1>@ViewBag.RecentProduct.Name</h1>
+                <p class="price">$@ViewBag.RecentProduct.Price</p>
+                <div>
+                    <span class="rating-tab">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <span>(222)</span>
+                </div>
+                <div class="product-info">
+                    <ul class="product-info-list">
+                        <li><i class="fa-solid fa-cannabis product-icons"></i> Type: <a href="javascript:void(0)">THC-A</a></li>
+                        <li><i class="fa-solid fa-dollar-sign product-icons"></i> Unit Price: <a href="javascript:void(0)">$@ViewBag.RecentProduct.Price</a></li>
+                        <li><i class="fa-solid fa-weight-scale product-icons"></i> Weight: <a href="javascript:void(0)">@ViewBag.RecentProduct.Weight g</a></li>
+                        <li><i class="fa-solid fa-boxes-stacked product-icons"></i> Qty: <a href="javascript:void(0)">@ViewBag.RecentProduct.PricePerPcs pcs/box</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <p>
+                        @Html.Raw(ViewBag.RecentProduct.Description);
+                    </p>
+                </div>
+
+                <div class="actions_wrraper">
+                    <button class="cart-btns">Add to Cart</button>
+                    <button class="now-buy">Buy Now</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section id="latest-blog" class="pb-2">
+        <div class="container-lg">
+            <div class="row">
+                <div class="section-header d-flex align-items-center justify-content-between ">
+                    <h2 class="section-title">Our Recent Blog</h2>
+                    <a href="#" class="btn btn-primary">View All</a>
+                </div>
+            </div>
+            <div class="row">
+                @if (Model?.Blogs != null && Model.Blogs.Any())
+                {
+                    foreach (var blog in Model.Blogs.Take(3))
+                    {
+                        <div class="col-md-4">
+                            <article class="post-item card border-0 shadow-sm p-3">
+                                <div class="image-holder zoom-effect">
+                                    <a href="#">
+                                        <img src="@blog.ImagePath" alt="post" class="card-img-top">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                                        <div class="meta-date">
+                                            <i class="fa-regular fa-calendar"></i> @blog.PublishedDate.ToString("dd MMM yyyy")
+                                        </div>
+                                        <div class="meta-categories">
+                                            <i class="fa-regular fa-folder"></i> @blog.Blog_Category
+                                        </div>
+                                    </div>
+                                    <div class="post-header">
+                                        <h3 class="post-title">
+                                            <a href="#" class="text-decoration-none">@blog.Title</a>
+                                        </h3>
+                                        <p class="post-content" style="overflow: hidden; max-height: 4.5em;">
+                                            @blog.Content
+                                        </p>
+                                        <a href="javascript:void(0);" class="read-more text-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-md-12 text-center">
+                        <p>No blogs are currently available.</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+
+    <script>
+        let currentSlide = 0;
+        let slidesPerView = 3; // Ensure this is defined
+        let carousel;  // Declare carousel globally
+
+        function prevSlide() {
+            console.log("Previous slide");
+            const slides = carousel.children;
+            currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+            updateCarousel();
+        }
+
+        function nextSlide() {
+            console.log("Next slide");
+            const slides = carousel.children;
+            currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const slides = carousel.children;
+            const offset = -currentSlide * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            carousel = document.getElementById("bannerCarousel"); // Initialize carousel
+            const slides = carousel.children;
+
+            setInterval(() => {
+                nextSlide();
+            }, 3000);
+
+            updateCarousel(); // Initial call to update carousel
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper('.category-carousel', {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.category-carousel-next',
+                    prevEl: '.category-carousel-prev',
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 4 },
+                },
+            });
+        });
+
+        if (!window.productCarousel || !(window.productCarousel instanceof Swiper)) {
+            window.productCarousel = new Swiper('.swiper-container', {
+                speed: 400,
+                spaceBetween: 0,
+                slidesPerView: 6,
+                slidesPerGroup: 1,
+                loop: false,
+                autoplay: { delay: 5000 },
+                navigation: {
+                    nextEl: '.product-carousel-next',
+                    prevEl: '.product-carousel-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.read-more').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const content = this.previousElementSibling;
+                    if (content.style.webkitLineClamp === "3") {
+                        content.style.webkitLineClamp = "unset";
+                        content.style.maxHeight = "none";
+                        this.textContent = "Read Less";
+                    } else {
+                        content.style.webkitLineClamp = "3";
+                        content.style.maxHeight = "4.5em";
+                        this.textContent = "Read More";
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function() {
+            $('figure a').on('mouseenter', function() {
+                $(this).find('.main-image').css('opacity', '0');
+                $(this).find('.hover-image').css('opacity', '1');
+            }).on('mouseleave', function() {
+                $(this).find('.main-image').css('opacity', '1');
+                $(this).find('.hover-image').css('opacity', '0');
+            });
+
+            let currentIndex = 0;
+            const slides = $(".slide");
+            const totalSlides = slides.length;
+            const counter = $(".counter");
+            let autoSlideInterval;
+
+            function updateSlides() {
+                slides.removeClass("is-active");
+                slides.eq(currentIndex).addClass("is-active");
+                counter.text((currentIndex + 1) + " / " + totalSlides);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(function() {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateSlides();
+                }, 5000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            $(".next").click(function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlides();
+            });
+
+            $(".prev").click(function() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlides();
+            });
+
+            $(".pause").click(function() {
+                stopAutoSlide();
+                $(this).hide();
+                $(".play").show();
+            });
+
+            $(".play").click(function() {
+                startAutoSlide();
+                $(this).hide();
+                $(".pause").show();
+            });
+
+            updateSlides();
+            startAutoSlide();
+
+            const decrementButton = $('.decrement');
+            const incrementButton = $('.increment');
+            const quantityInput = $('.quantity-input');
+
+            incrementButton.on('click', function () {
+                let currentValue = parseInt(quantityInput.val(), 10) || 0;
+                quantityInput.val(currentValue + 1);
+            });
+
+            decrementButton.on('click', function () {
+                let currentValue = parseInt(quantityInput.val(), 10) || 0;
+                if (currentValue > 1) {
+                    quantityInput.val(currentValue - 1);
+                }
+            });
+
+            quantityInput.on('input', function () {
+                let currentValue = parseInt(quantityInput.val(), 10);
+                if (isNaN(currentValue) || currentValue < 1) {
+                    quantityInput.val(1);
+                }
+            });
+
+
+            let cartCount = 0;
+
+            $(document).on("click", ".btn-cart", function (event) {
+                event.preventDefault();
+
+                let $button = $(this);
+                let btnOffset = $button.offset();
+                let $cart = $("#cart");
+                let cartOffset = $cart.offset();
+
+                // Create a clone of the cart icon
+                let $clone = $("<i>")
+                    .addClass("fa-solid fa-cart-shopping flying-cart")
+                    .css({
+                        position: "absolute",
+                        left: btnOffset.left + "px",
+                        top: btnOffset.top + "px",
+                        fontSize: "40px", // Increased size
+                        color: "#ff6600",
+                        zIndex: "1000",
+                        opacity: 1,
+                    })
+                    .appendTo("body");
+
+                // Animate the cloned icon to the cart (Slower animation - 1.5s)
+                $clone.animate(
+                    {
+                        left: cartOffset.left + 10,
+                        top: cartOffset.top + 10,
+                        opacity: 0,
+                        transform: "scale(0.7)", // Makes it slightly shrink
+                    },
+                    1500, // Slower transition (1.5 seconds)
+                    function () {
+                        $(this).remove(); // Remove the icon after animation
+                        cartCount++;
+                        $("#cart-count").text(cartCount).fadeIn();
+                    }
+                );
+            });
+
+          $(document).on("click", ".btn-cart", function (e) {
+            e.preventDefault(); // Prevent default anchor action
+
+            let productId = $(this).data("product-id");
+
+            $.post("/ViewCart/AddToCart", { product_id: productId }, function (response) {
+                
+            });
+          });
+
+        });
+
+        function changeMainImage(imagePath) {
+            document.getElementById('main-image').src = imagePath;
+        }
+
+
+
+        // Banner top  new js
+             document.addEventListener("DOMContentLoaded", function () {
+            let carousel = document.getElementById("responsiveBannerCarousel");
+            let slides = carousel.children;
+            let currentSlide = 0;
+            let bubbleButtonsContainer = document.getElementById("bubbleButtons");
+
+            // Create bubble buttons
+            for (let i = 0; i < slides.length; i++) {
+                let bubble = document.createElement("div");
+                bubble.classList.add("bubble");
+                bubble.addEventListener("click", () => goToSlide(i));
+                bubbleButtonsContainer.appendChild(bubble);
+            }
+
+            // Highlight the active bubble
+            function updateBubbles() {
+                let bubbles = bubbleButtonsContainer.children;
+                for (let i = 0; i < bubbles.length; i++) {
+                    bubbles[i].classList.remove("active");
+                }
+                bubbles[currentSlide].classList.add("active");
+            }
+
+            // Update carousel position
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+                updateBubbles();
+            }
+
+            // Go to a specific slide
+            function goToSlide(index) {
+                currentSlide = index;
+                updateCarousel();
+            }
+
+            // Next slide
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateCarousel();
+            }
+
+            // Previous slide
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateCarousel();
+            }
+
+            // Auto-slide every 3 seconds
+            setInterval(nextSlide, 3000);
+
+            // Add event listeners for manual navigation
+            document.getElementById("prevBtn").addEventListener("click", prevSlide);
+            document.getElementById("nextBtn").addEventListener("click", nextSlide);
+
+            // Initialize
+            updateCarousel();
+        });
+
+
+            $(document).ready(function () {
+            var swiper = new Swiper(".category-carousel", {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".category-carousel-next",
+                    prevEl: ".category-carousel-prev",
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        });
+
+
+        const customSlider = document.querySelector('.custom-slider-container');
+        const bubbles = document.querySelectorAll('.bubble');
+        const slides = document.querySelectorAll('.respo-slides');
+
+        function updateActiveBubble() {
+            let index = Math.round(customSlider.scrollLeft / (customSlider.scrollWidth / slides.length));
+            bubbles.forEach(b => b.classList.remove('active'));
+            if (bubbles[index]) {
+                bubbles[index].classList.add('active');
+            }
+        }
+
+        customSlider.addEventListener('scroll', updateActiveBubble);
+
+        bubbles.forEach((bubble, index) => {
+            bubble.addEventListener('click', () => {
+                customSlider.scrollLeft = index * (customSlider.scrollWidth / slides.length);
+                updateActiveBubble();
+            });
+        });
+    </script>
+
+
+</body>
+</html>

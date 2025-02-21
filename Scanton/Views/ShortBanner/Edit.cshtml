@@ -1,0 +1,49 @@
+﻿@model Scanton.Models.ShortBannner
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Edit  Short Banners";
+}
+
+<h2 class="text-center my-4">Edit Short Banners</h2>
+
+<div class="container">
+    <form asp-action="Edit" enctype="multipart/form-data" method="post">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-cloud-upload-fill me-2"></i> Upload Short Banner Images</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <!-- Upload Banner Image 1 -->
+                    <div class="mb-3">
+                        <label for="Heading_Tittle" class="form-label">Heading</label>
+                        <input asp-for="Heading_Tittle" class="form-control" />
+                        <span asp-validation-for="Heading_Tittle" class="text-danger"></span>
+                    </div>
+
+                    <!-- Upload Banner Image 2 -->
+                    <div class="mb-3">
+                        <label for="Sub_Tittle_Heading" class="form-label">Short Heading</label>
+                        <input asp-for="Sub_Tittle_Heading" class="form-control" />
+                        <span asp-validation-for="Sub_Tittle_Heading" class="text-danger"></span>
+                    </div>
+
+                    <!-- Upload Banner Image 3 -->
+                    <div class="col-md-4">
+                        <label for="ImageFile" class="form-label">
+                            <i class="bi bi-image me-2"></i> Short Banner
+                        </label>
+                        <input type="file" class="form-control" id="ImageFile3" name="imageFile" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-save-fill me-2"></i> Save
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

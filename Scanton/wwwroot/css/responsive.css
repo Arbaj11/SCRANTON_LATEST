@@ -1,0 +1,242 @@
+﻿@media (max-width: 1400px) {
+    .user-profile-forms-details .woocommerce-MyAccount-content p {
+        font-size: 22px !important;
+        line-height: 1.45 !important;
+    }
+
+    .user-profile-forms-details .dashboard-links {
+        margin: 20px 0 !important;
+    }
+
+        .user-profile-forms-details .dashboard-links li a {
+            font-size: 20px !important;
+            padding: 7px !important;
+            margin: 10px !important;
+        }
+
+    .address-details {
+        max-width: 340px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .user-profile-forms-details .woocommerce-MyAccount-content p {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+    }
+
+    .user-profile-forms-details .dashboard-links {
+        margin: 18px 0 !important;
+    }
+
+        .user-profile-forms-details .dashboard-links li a {
+            font-size: 18px !important;
+            padding: 8px !important;
+            margin: 12px !important;
+        }
+
+    
+}
+
+@media (max-width: 1200px) {
+    .user-profile-forms-details .woocommerce-MyAccount-content p {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+
+    .user-profile-forms-details .dashboard-links {
+        margin: 18px 0 !important;
+    }
+
+        .user-profile-forms-details .dashboard-links li a {
+            font-size: 18px !important;
+            padding: 8px !important;
+            margin: 12px !important;
+        }
+
+    .u-columns.woocommerce-Addresses.col2-set.addresses {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    
+}
+
+@media (max-width: 1000px) {
+    .woocommerce-Button[name="save_account_details"]::before {
+        content: "Save";
+        font-size: 20px;
+    }
+
+    .woocommerce-Button[name="save_account_details"] {
+        color: transparent; /* Hide original text */
+        position: relative;
+    }
+
+        .woocommerce-Button[name="save_account_details"]::before {
+            color: #fff; /* Set the desired text color */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    .woocommerce-EditAccountForm .button {
+        
+        font-size: 21px;
+        
+    }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+    #dashboard {
+        display: none !important;
+    }
+
+    .user-profile-forms-details .large-3.col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-right: none;
+        padding-right: 20px;
+    }
+}
+
+
+   
+
+@media (max-width: 1200px) {
+    .new-blog-detail-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-5 {
+        display: none;
+    }
+
+    .col-lg-7 {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .new-blog-image-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    li.breadcrumb-item.active {
+        font-size: 1rem;
+    }
+
+    .new-blog-detail-image {
+        height: 250px;
+    }
+
+    .new-blog-content {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    li.breadcrumb-item.active {
+        font-weight: 500;
+    }
+
+    .new-blog-detail-image {
+        height: 200px;
+    }
+
+    .custom-similar-posts select {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .accordion-h span, .faq-head span {
+        font-size: 1.7rem;
+    }
+
+    .faq-content {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:480px) {
+
+    .accordion-h span, .faq-head span {
+        font-size: 1.4rem;
+    }
+
+    .accordion-title {
+        font-size: 1rem;
+        text-align: left
+    }
+
+
+
+    .faq-title {
+        font-size: 85px;
+    }
+
+    .faq-title-section {
+        padding: 16px 0;
+    }
+
+    .faq-banner-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .faq-head span {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    button.faq-nav-item {
+        width: 85%;
+        padding: 5px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lab-row {
+        justify-content: center;
+    }
+
+    .lab-display {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .connect-about-us-banner-section {
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 5%;
+        min-height: 300px;
+    }
+
+    .connect-about-us-banner-wrapper {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .connect-about-us-banner-title {
+        font-size: 1.8rem;
+    }
+
+    .connect-about-us-banner-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+
+    

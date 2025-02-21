@@ -1,0 +1,41 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+
+}
+
+<div class="lab-section" style="background-image: url('@Url.Content("~/images/front-view-scientist-wearing-equipment.jpg")');">
+    <div class="lab-result-content">
+        <span>LAB TEST RESULTS</span>
+        <p>SCRANTON ST & SAFETY!</p>
+    </div>
+</div>
+<div class="lav-content">
+    <span>GET IN THE KNOW</span>
+    <p>
+        Get in the know and stay out of the unknown. With HempStar 3rd party full panel lab test,
+        you can take a deeper dive into understanding the potency and safety of your products.
+        We want to share the love of cannabis with our customers, which is why we believe it's so
+        important to be completely transparent in mir lab testing, production, and manufacturing processes.
+        We truly believe we're the best in the business and we're ready to prove it at every step.
+    </p>
+</div>
+<div class="lab-products">
+    <div class="lab-pro-title">
+        <span>SELECT A TEST CATEGORY</span>
+    </div>
+    <div class="lab-row">
+        @foreach (var item in Model.COAs)
+        {
+            <div class="lab-display">
+                <a href="@Url.Content(item.Pdf_Path)" target="_blank">
+                    <img src="@Url.Content(item.Product_image)" alt="@item.Product_name">
+                    <div>
+                        <span>@item.Product_name</span>
+                        <span>VIEW</span>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>

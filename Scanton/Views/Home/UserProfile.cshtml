@@ -1,0 +1,690 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+    var user = ViewBag.UserProfile as Scanton.Models.IndexViewModel.CustomerDetail;
+}
+
+
+
+<section class="my-account-section">
+    <div class="my-account-header page-title normal-title">
+        <div class="page-title-inner flex-row containe text-left">
+            <div class="flex-col flex-grow text-center">
+                <div class="user-flag-content">
+                    <i class="fa-solid fa-flag flag-account"></i>
+                    <h1 class="uppercase mb-0">MY ACCOUNT</h1>
+                    <i class="fa-solid fa-flag flag-account"></i> 
+                </div>
+                <small class="uppercase">SUBSCRIPTION</small>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="user-profile-forms-details">
+    <div class="page-wrapper my-account mb">
+        <div class="container" role="main">
+            <div class="row vertical-tabs">
+                <div class="large-3 col col-border">
+                    <div class="account-user circle">
+                        <span class="image mr-half inline-block">
+                            @if (user.Attachment != null)
+                            {
+                                <div class="avatar-container">
+                                    <img alt="" src="@user.Attachment" srcset="@user.Attachment 2x" class="avatar avatar-70 photo" height="70" width="70" decoding="async">
+                                    <label for="upload-input" class="camera-icon">
+                                        <i class="fas fa-camera"></i> <!-- Font Awesome camera icon -->
+                                    </label>
+                                    <input type="file" id="upload-input" style="display:none;" />
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="avatar-container">
+                                    <img alt="" src="https://secure.gravatar.com/avatar/cab67f2a9d6b3b3705658ac7248dfab6?s=70&amp;d=robohash&amp;r=pg" srcset="https://secure.gravatar.com/avatar/cab67f2a9d6b3b3705658ac7248dfab6?s=140&amp;d=robohash&amp;r=pg 2x" class="avatar avatar-70 photo" height="70" width="70" decoding="async">
+                                    <label for="upload-input" class="camera-icon">
+                                        <i class="fas fa-camera"></i> <!-- Font Awesome camera icon -->
+                                    </label>
+                                    <input type="file" id="upload-input" style="display:none;" />
+                                </div>  
+                            }
+                        <span class="user-name inline-block">
+                            mic7747<em class="user-id op-5">#397240</em>
+                        </span>
+                    </div>
+
+                    <nav class="woocommerce-MyAccount-navigation" aria-label="Account pages">
+                        <ul id="my-account-nav" class="account-nav nav nav-line nav-uppercase nav-vertical mt-half">
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard is-active active">
+                                <a href="#dashboard">Dashboard</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+                                <a href="#order">Orders</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+                                <a href="#addresses">Addresses</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--payment-methods">
+                                <a href="#payment-methods">Payment methods</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account">
+                                <a href="#account-details">Account details</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--my-coupons">
+                                <a href="#my-coupons">My Coupons</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--rewards-points">
+                                <a href="#rewards-points">Rewards Points</a>
+                            </li>
+                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
+                                <a href="https://www.3chi.com/my-account/customer-logout/">Logout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="large-9 col" id="dashboard">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            <p>
+                                Hello <strong>mic7747</strong> (not <strong>mic7747</strong>? <a href="https://www.3chi.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwww.3chi.com%2Fmy-account%2F&amp;_wpnonce=b9ee58c642">Log out</a>)
+                            </p>
+                            <p>
+                                From your account dashboard you can view your <a href="https://www.3chi.com/my-account/orders/">recent orders</a>, manage your <a href="https://www.3chi.com/my-account/edit-address/">shipping and billing addresses</a>, and <a href="https://www.3chi.com/my-account/edit-account/">edit your password and account details</a>.
+                            </p>
+                            <ul class="dashboard-links">
+                                <!-- Dashboard links -->
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard is-active active">
+                                    <a class="user-pro-links" href="#dashboard">Dashboard</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+                                    <a class="user-pro-links" href="#order">Orders</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+                                    <a class="user-pro-links" href="#addresses">Addresses</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--payment-methods">
+                                    <a class="user-pro-links" href="#payment-methods">Payment methods</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account">
+                                    <a class="user-pro-links" href="#account-details">Account details</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--my-coupons">
+                                    <a class="user-pro-links" href="#my-coupons">My Coupons</a>
+                                </li>
+                                <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--rewards-points">
+                                    <a class="user-pro-links" href="#rewards-points">Rewards Points</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="order">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            @Html.Partial("_OrdersPartial")
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="addresses">
+                    <div class="woocommerce">
+                        @Html.Partial("_AddressesPartial")
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="payment-methods">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            <form id="add_payment_method" method="post">
+                                <div id="payment" class="woocommerce-Payment">
+                                    <ul class="woocommerce-PaymentMethods payment_methods methods">
+                                        <li class="woocommerce-PaymentMethod woocommerce-PaymentMethod--nmi payment_method_nmi">
+                                            <input id="payment_method_nmi" type="radio" class="input-radio" name="payment_method" value="nmi" checked="checked">
+                                            <label for="payment_method_nmi">
+                                                Credit/Debit Card
+                                                <img decoding="async" style="margin-left: 0.3em" src="https://www.3chi.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg" alt="Visa" width="32">
+                                                <img decoding="async" style="margin-left: 0.3em" src="https://www.3chi.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg" alt="Mastercard" width="32">
+                                                <img decoding="async" style="margin-left: 0.3em" src="https://www.3chi.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg" alt="Amex" width="32">
+                                                <img decoding="async" style="margin-left: 0.3em" src="https://www.3chi.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg" alt="Discover" width="32">
+                                            </label>
+                                            <div class="woocommerce-PaymentBox woocommerce-PaymentBox--nmi payment_box payment_method_nmi">
+                                                <div class="nmi_new_card" id="nmi-payment-data" data-amount="0">
+                                                    <p>Charges on statement will appear as 3CHI3179362057</p>
+                                                    <fieldset id="wc-nmi-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
+                                                        <!-- Used to display form errors -->
+                                                        <div class="nmi-source-errors" role="alert"></div>
+
+                                                        <div class="form-row form-row-wide">
+                                                            <label for="nmi-card-number">Card Number <span class="required">*</span></label>
+                                                            <input type="text" id="nmi-card-number" name="nmi-card-number" placeholder="•••• •••• •••• ••••" required>
+                                                        </div>
+
+                                                        <div class="form-row-box">
+                                                            <div class="form-row form-row-first">
+                                                                <label for="nmi-card-expiry">Expiry Date <span class="required">*</span></label>
+                                                                <input type="text" id="nmi-card-expiry" name="nmi-card-expiry" placeholder="MM / YY" required>
+                                                            </div>
+
+                                                            <div class="form-row form-row-last">
+                                                                <label for="nmi-card-cvc">Card Code (CVC) <span class="required">*</span></label>
+                                                                <input type="text" id="nmi-card-cvc" name="nmi-card-cvc" placeholder="CVC" required>
+                                                            </div>
+                                                       </div>
+                                                        <div class="clear"></div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="form-row">
+                                        <input type="hidden" id="woocommerce-add-payment-method-nonce" name="woocommerce-add-payment-method-nonce" value="05fc853133">
+                                        <input type="hidden" name="_wp_http_referer" value="/my-account/add-payment-method/">
+                                        <button type="submit" class="woocommerce-Button woocommerce-Button--alt button alt" id="place_order" value="Add payment method">Add payment method</button>
+                                        <input type="hidden" name="woocommerce_add_payment_method" id="woocommerce_add_payment_method" value="1">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="account-details">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            @Html.Partial("_AccountDetailsPartial")
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="my-coupons">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            <p>coupon content goes here.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-9 col" id="rewards-points">
+                    <div class="woocommerce">
+                        <div class="woocommerce-MyAccount-content">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            <p>Rewards Points content goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // File upload (Profile Image) Section
+        var cameraIcon = document.querySelector('.camera-icon');
+        var uploadInput = document.getElementById('upload-input');
+        if (cameraIcon && uploadInput) {
+            // When the camera icon is clicked, trigger the hidden file input.
+            cameraIcon.addEventListener('click', function () {
+                uploadInput.click();
+            });
+
+            // When a file is selected, submit it via AJAX.
+            uploadInput.addEventListener('change', function (e) {
+                var file = e.target.files[0];
+                if (file) {
+                    var formData = new FormData();
+                    formData.append('file', file);
+
+                    fetch('@Url.Action("EditUserProfileImage", "Home")', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Update the avatar image if the upload was successful.
+                            var avatar = document.querySelector('.avatar');
+                            if (avatar) {
+                                avatar.src = data.newImageUrl;
+                            }
+                        } else {
+                            alert('Failed to upload image');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred while uploading the image');
+                    });
+                }
+            });
+        }
+
+        // Navigation Section (Tabs for Dashboard, Orders, etc.)
+        const navLinks = document.querySelectorAll('.woocommerce-MyAccount-navigation-link a');
+        const dashboardDiv = document.getElementById('dashboard');
+        const orderDiv = document.getElementById('order');
+        const addressesDiv = document.getElementById('addresses');
+        const paymentMethodsDiv = document.getElementById('payment-methods');
+        const accountDetailsDiv = document.getElementById('account-details');
+        const myCouponsDiv = document.getElementById('my-coupons');
+        const rewardsPointsDiv = document.getElementById('rewards-points');
+
+        // Initially hide all sections except the dashboard.
+        if (orderDiv) orderDiv.style.display = 'none';
+        if (addressesDiv) addressesDiv.style.display = 'none';
+        if (paymentMethodsDiv) paymentMethodsDiv.style.display = 'none';
+        if (accountDetailsDiv) accountDetailsDiv.style.display = 'none';
+        if (myCouponsDiv) myCouponsDiv.style.display = 'none';
+        if (rewardsPointsDiv) rewardsPointsDiv.style.display = 'none';
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Remove active classes from all nav links.
+                navLinks.forEach(navLink => {
+                    if (navLink.parentElement) {
+                        navLink.parentElement.classList.remove('is-active', 'active');
+                    }
+                });
+
+                // Add active classes to the clicked link.
+                if (link.parentElement) {
+                    link.parentElement.classList.add('is-active', 'active');
+                }
+
+                // Hide all content sections.
+                if (dashboardDiv) dashboardDiv.style.display = 'none';
+                if (orderDiv) orderDiv.style.display = 'none';
+                if (addressesDiv) addressesDiv.style.display = 'none';
+                if (paymentMethodsDiv) paymentMethodsDiv.style.display = 'none';
+                if (accountDetailsDiv) accountDetailsDiv.style.display = 'none';
+                if (myCouponsDiv) myCouponsDiv.style.display = 'none';
+                if (rewardsPointsDiv) rewardsPointsDiv.style.display = 'none';
+
+                // Show the selected section based on the link's href.
+                const target = link.getAttribute('href');
+                if (target === '#dashboard' && dashboardDiv) {
+                    dashboardDiv.style.display = 'block';
+                } else if (target === '#order' && orderDiv) {
+                    orderDiv.style.display = 'block';
+                    fetch('/Home/UserOrders')
+                        .then(response => response.text())
+                        .then(data => {
+                            orderDiv.innerHTML = data;
+                        });
+                } else if (target === '#addresses' && addressesDiv) {
+                    addressesDiv.style.display = 'block';
+                    fetch('/Home/UserAddress')
+                        .then(response => response.text())
+                        .then(data => {
+                            addressesDiv.innerHTML = data;
+                        });
+                } else if (target === '#payment-methods' && paymentMethodsDiv) {
+                    paymentMethodsDiv.style.display = 'block';
+                } else if (target === '#account-details' && accountDetailsDiv) {
+                    accountDetailsDiv.style.display = 'block';
+                    fetch('/Home/UserAccountDetails')
+                        .then(response => response.text())
+                        .then(data => {
+                            accountDetailsDiv.innerHTML = data;
+                        });
+                } else if (target === '#my-coupons' && myCouponsDiv) {
+                    myCouponsDiv.style.display = 'block';
+                    fetch('/Home/UserCoupons')
+                        .then(response => response.text())
+                        .then(data => {
+                            myCouponsDiv.innerHTML = data;
+                        });
+                } else if (target === '#rewards-points' && rewardsPointsDiv) {
+                    rewardsPointsDiv.style.display = 'block';
+                    fetch('/Home/UserRewardsPoints')
+                        .then(response => response.text())
+                        .then(data => {
+                            rewardsPointsDiv.innerHTML = data;
+                        });
+                }
+            });
+        });
+
+        // Password Visibility Toggle (Eye Icon)
+        // Uses event delegation to handle dynamically added elements.
+        document.body.addEventListener('click', function (event) {
+            if (event.target.classList.contains('pas-eye')) {
+                // Find the nearest password input within the same container.
+                let passwordInput = event.target.closest('.password-input').querySelector('input');
+                if (passwordInput) {
+                    // Toggle the input type between 'password' and 'text'.
+                    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+
+                    // Toggle the eye icon classes.
+                    event.target.classList.toggle('fa-eye');
+                    event.target.classList.toggle('fa-eye-slash');
+                }
+            }
+        });
+    });
+</script>
+@* <section class="user-profile-section">
+        <div class="container">
+            <div class="cont-head">
+                <img src="../Dashboard/SCRANTONLOGO.png" alt="" />
+                <div class="pt">
+                    <span class="tittle">My Account</span>
+                    <span class="subtittle">Dashboard</span>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="sidebar">
+                    <ul>
+                        <p class="cam"><img src="../Dashboard/camera.png" alt="" /></p>
+                        <span id="user-name">krishnaverma4203 <strong id="user-id">#213667</strong></span>
+                        <li class="dash-li" id="dash">DASHBOARD</li>
+                        <li id="orders">ORDERS</li>
+                        <li id="address">ADDRESSES</li>
+                        <li id="payment">PAYMENT METHODS</li>
+                        <li id="account">ACCOUNT DETAILS</li>
+                        <li id="coupons">MY COUPONS</li>
+                        <li id="points">REWARD POINTS</li>
+                    </ul> 
+                </div>
+                <div class="main-content">
+                    <div class="main-head">
+                        <p class="user">
+                            Hello <strong>krishnaverma4203</strong> ( not
+                            <strong>krishnaverma4203? </strong> <a href="#">Log out</a> )
+                        </p>
+                        <p class="p-text">
+                            From your account dashboard you can view your recent orders,
+                            manage your shipping and billing addresses, and edit your password
+                            and account details.
+                        </p>
+                    </div>
+                    <div class="grid">
+                        <button class="card">Dashboard</button>
+                        <button class="card">Orders</button>
+                        <button class="card">Addresses</button>
+                        <button class="card">Payment methods</button>
+                        <button class="card">Account details</button>
+                        <button class="card">Rewards Points</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Overlay -->
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Profile Picture Popup -->
+        <div id="profile-popup" class="popup">
+            <h3>Upload Profile Picture</h3>
+            <button class="close" id="close-popup">X</button>
+            <input type="file" id="file-input" accept="image/*" />
+            <button id="save-btn">Save</button>
+        </div>
+
+    </section>
+    <script>
+          const intialcontent = document.querySelector(".main-content").innerHTML;
+
+          document.getElementById("dash").addEventListener("click",function(){
+            document.querySelector(".main-content").innerHTML = intialcontent;
+          })
+
+          document.addEventListener("DOMContentLoaded", function () {
+            const cameraIcon = document.querySelector(".cam img");
+            const popup = document.getElementById("profile-popup");
+            const closePopup = document.getElementById("close-popup");
+
+            // Show popup when camera icon is clicked
+            cameraIcon.addEventListener("click", function () {
+              popup.style.display = "block";
+            });
+
+            // Hide popup when close button is clicked
+            closePopup.addEventListener("click", function () {
+              popup.style.display = "none";
+            });
+
+            // Close popup if clicked outside the popup box
+            window.addEventListener("click", function (event) {
+              if (event.target === popup) {
+                popup.style.display = "none";
+              }
+            });
+          });
+
+          document.getElementById("orders").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                 <span>No Orders has been made yet.</span>
+                 `;
+          });
+
+          document.getElementById("orders").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                 <span class="ord">No Orders has been made yet.</span>
+                 `;
+          });
+
+          document.getElementById("coupons").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                 <span class="cou">You have no Coupons.</span>
+                 `;
+          });
+
+          document.getElementById("address").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                <div class="address">
+                    <div class="b1">
+                        <p class="add-head">Billing address</p>
+                        <p class="add-text">Add Billing Address</p>
+                        <p class="add-text ab">You have not set up this type of address yet.</p>
+                    </div>
+                    <div class="b2">
+                        <p class="add-head">Shipping address</p>
+                        <p class="add-text">Add Billing Address</p>
+                        <p class="add-text ab">You have not set up this type of address yet.</p>
+                    </div>
+                </div>
+                `;
+          });
+
+          document.getElementById("payment").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                   <div class="payment">
+                    <span>No Save methods found.</span>
+                    <button>ADD PAYMENT METHOD</button>
+                </div>
+                `;
+          });
+
+          document.getElementById("account").addEventListener("click", () => {
+            const mainContent = document.querySelector(".main-content");
+            mainContent.innerHTML = `
+                 <div class="account">
+                    <form>
+                <!-- First Name and Last Name -->
+                <div class="row">
+                    <div class="column">
+                        <label for="first-name">First name *</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="column">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+
+                <!-- Display Name -->
+                <label for="display-name">Display name *</label>
+                <input type="text" id="display-name" name="display-name" value="">
+
+                <!-- Email -->
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" value="">
+
+                <!-- Password Change -->
+                <h3>Password Change</h3>
+
+                <label for="current-password">Current password (leave blank to leave unchanged)</label>
+                <input type="password" id="current-password" name="current-password">
+
+                <label for="new-password">New password (leave blank to leave unchanged)</label>
+                <input type="password" id="new-password" name="new-password">
+
+                <label for="confirm-password">Confirm new password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob" value="">
+
+
+                <!-- Buttons -->
+                <div class="account-btn">
+                    <button type="submit" class="save-btn">SAVE CHANGES</button>
+                    <button type="button" class="delete-btn">DELETE ACCOUNT</button>
+                </div>
+
+            </form>
+                </div>
+                `;
+          });
+
+          document.getElementById("points").addEventListener("click", function () {
+            const mainContent = document.querySelector(".main-content");
+
+            // Load the Rewards Points History section initially
+            mainContent.innerHTML = `
+            <div class="cards-reward">
+                <div class="re card-re1">
+                    <p class="re-title">Rewards Points</p>
+                    <p class="re-subtitle">TO REDEEM</p>
+                    <h1>200</h1>
+                    <p class="worth">worth <strong>$2.00</strong></p>
+                    <p class="total-collected">TOTAL COLLECTED: 200</p>
+                </div>
+
+                <div class="re card-re2">
+                    <p class="re-title">My rank</p>
+                    <h1># 213667</h1>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="re-tabs">
+                <span id="reward-history" class="tab active">Rewards Points history</span>
+                <span id="manage-rewards" class="tab">Manage Rewards Points</span>
+            </div>
+
+            <hr>
+
+            <!-- Reward Points Table -->
+            <div id="reward-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>REASON</th>
+                            <th>ORDER NO.</th>
+                            <th>REWARDS POINTS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January 29, 2025</td>
+                            <td>Registration</td>
+                            <td>-</td>
+                            <td class="points">+200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        `;
+
+            // Add event listeners to switch between tabs
+            setTimeout(() => {
+              document
+                .getElementById("reward-history")
+                .addEventListener("click", function () {
+                  document.getElementById("reward-content").innerHTML = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DATE</th>
+                                <th>REASON</th>
+                                <th>ORDER NO.</th>
+                                <th>REWARDS POINTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>January 29, 2025</td>
+                                <td>Registration</td>
+                                <td>-</td>
+                                <td class="points">+200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
+                  setActiveTab("reward-history");
+                });
+
+              document
+                .getElementById("manage-rewards")
+                .addEventListener("click", function () {
+                  document.getElementById("reward-content").innerHTML = `
+                    <div class="re-up">
+                        <span class="reupt">Convert Rewards into a coupon code</span>
+                        <p>Do you want to share your Rewards Points? Create a coupon code and share it so it can be used</p>
+                    </div>
+                    <div class="re-bo">
+                      <span>Convert</span>
+                      <input type="number" value="200">
+                      <span>Rewards Points for a coupon value of <strong>$2.00</strong> </span>
+                      <button>CONVERT</button>
+                    </div>
+                `;
+                  setActiveTab("manage-rewards");
+                });
+            }, 100);
+          });
+
+          // Function to set the active tab
+          function setActiveTab(tabId) {
+            document.querySelectorAll(".tab").forEach((tab) => {
+              tab.classList.remove("active");
+            });
+            document.getElementById(tabId).classList.add("active");
+          }
+
+          document
+            .getElementById("payment-methods")
+            .addEventListener("click", function () {
+              const mainContent = document.querySelector(".main-content");
+              mainContent.innerHTML = `
+                <div class="down">
+                    <span>No saved methods found.</span>
+                    <button>ADD PAYMENTS METHOD</button>
+                </div>
+                `;
+            });
+    </script> *@
+

@@ -1,0 +1,62 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+
+   
+}
+
+
+<section id="section-blog">
+    <div class="">
+        <div style=" margin:0" class="blog-row1">
+            <div class="blog-row1-tittle">
+                <h2 class="">Explore Our Blogs</h2>
+            </div>
+        </div>
+        <div class="blog-row2">
+            <div class="blog-row2-child">
+                @foreach (var blog in Model.Blogs)
+                {
+
+
+
+                    <div class=" ">
+                        <article class="  ">
+                            <div class="image-holder zoom-effect p-box">
+                                <a href="@Url.Action("BlogDetails", "Home", new { blog_id = blog.Id })" class="p-box-a">
+                                    <img src="@blog.ImagePath" alt="@blog.Title" class="p-box-a-img">
+                                </a>
+                            </div>
+                            <div class="blog-body">
+                                <div class="body-info">
+                                    <div class="info-date">
+                                        <i class="fa-regular fa-calendar"></i>@blog.PublishedDate.ToString("d MMMM yyyy")
+                                    </div>
+                                    <div class="info-data">
+                                        <i class="fa-regular fa-pen-to-square"></i> @blog.Author
+                                    </div>
+                                    <div class="inf-data">
+                                        <i class="fa-regular fa-folder"></i> @blog.Blog_Category
+                                    </div>
+                                </div>
+                                <div class="body-info2">
+                                    <h3 class="body-description">
+                                        <a href="@Url.Action("BlogDetails", "Home", new { blog_id = blog.Id })" class="">
+                                            @blog.Title
+                                        </a>
+                                    </h3>
+                                    <p class="body-content">
+                                        @blog.Content
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+
+

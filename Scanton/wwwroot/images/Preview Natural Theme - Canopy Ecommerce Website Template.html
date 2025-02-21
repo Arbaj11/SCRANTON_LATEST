@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://themes.shopify.com/themes/canopy/styles/natural/preview -->
+<html class="js supports placeholder flexbox csstransforms3d" lang="EN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://cdn.shopify.com/">  <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://cdn.shopify.com/static/fonts/ShopifySans--regular.woff2"><link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://cdn.shopify.com/static/fonts/ShopifySans--bold.woff2">  <link rel="icon" type="image/png" href="https://cdn.shopify.com/static/shopify-favicon.png">
+  <title>    Preview Natural Theme - Canopy Ecommerce Website Template
+</title>
+  <meta name="description" content="Shopify Theme Store includes over 100 free and premium professionally designed ecommerce website templates that you can use for your own online store.">
+
+    <link rel="canonical" href="https://themes.shopify.com/themes/canopy/styles/natural/preview">
+
+
+  <script type="text/javascript" async="" src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/js"></script><script type="text/javascript" async="" src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/trekkie.themestore.min.js.download"></script><script async="" src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/gtm.js.download"></script><script nonce="">document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js')</script>
+    <meta name="google-site-verification" content="w4um_4h92pEHOipmSk8JHS8bY0x1c80EtfJAPo_FuU0">
+  <meta name="google-site-verification" content="Qu2Oloy2MEBgLgnmmmCTQ-0TuRH40OIOx63D8L8MbYQ">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="7O6ooLX8I0tIKvJtFV6TARaEyg5PQ4aKeoae1mqQQptyfeA3LFFG9mTdpE6jkS1i9s_Ukvblfw3sxW0yyYYoBA">
+    <link rel="stylesheet" href="./Preview Natural Theme - Canopy Ecommerce Website Template_files/application-b31550425b69d2bc75682e1bbd2a5f297a1275a21d7d19b4cd42c378affd2576.css">
+  <link rel="stylesheet" href="./Preview Natural Theme - Canopy Ecommerce Website Template_files/tailwind-7992df8035bd43c70105f5a56a2807319c674769e7abefdf2cc9a75b054f332b.css" data-turbo-track="reload">
+<link rel="stylesheet" href="./Preview Natural Theme - Canopy Ecommerce Website Template_files/inter-font-013a82a3f24b133ada787c7ed29ae12fec6fef808a104afb5332cad9be6be848.css" data-turbo-track="reload">
+      <script type="text/javascript" id="dux-data" data-mode="production">
+  (function () {
+    function getData(key) {
+      const dux_info = document.getElementById('dux-data');
+      if (dux_info && dux_info.dataset && dux_info.dataset[key]) {
+        return dux_info.dataset[key];
+      }
+      return;
+    }
+
+    function loadScript(src) {
+      const promise = new Promise(function(resolve, reject){
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.onload = () => {
+          resolve(true);
+        };
+        script.onerror = () => {
+          reject(false);
+        };
+        document.head.appendChild(script);
+      });
+      return promise;
+    }
+    loadScript(`https://cdn.shopify.com/shopifycloud/dux/dux-3.4.1.min.js`).then(() => {
+      Dux.init({
+        service: "themestore",
+        mode: getData('mode') || 'development',
+        eventHandlerEndpoint: "https://themes.shopify.com/.well-known/dux",
+        emitTrekkiePageViewEvent: true,
+        enableGtm: true,
+        enableGtmLoader: false,
+        enableActiveConsent: false,
+        shopId: getData('shop_id'),
+        identityUuid: getData('identity_uuid'),
+      });
+    });
+  })();
+</script><script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/dux-3.4.1.min.js.download" async=""></script>
+
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',"GTM-TMHDF2L");</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript">
+  (function(){
+    function trekkieLoadOnError() {
+      var Monorail = {
+        produce: function produce(monorailDomain, schemaId, payload) {
+          var currentMs = new Date().getTime();
+          var event = {
+            schema_id: schemaId,
+            payload: payload,
+            metadata: {
+              event_created_at_ms: currentMs,
+              event_sent_at_ms: currentMs
+            }
+          };
+          return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+        },
+        sendRequest: function sendRequest(endpointUrl, payload) {
+          // Try the sendBeacon API
+          if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+            var blobData = new window.Blob([payload], {
+              type: 'text/plain'
+            });
+
+            if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+              return true;
+            } // sendBeacon was not successful
+
+          } // XHR beacon
+
+          var xhr = new XMLHttpRequest();
+
+          try {
+            xhr.open('POST', endpointUrl);
+            xhr.setRequestHeader('Content-Type', 'text/plain');
+            xhr.send(payload);
+          } catch (e) {
+            console.log(e);
+          }
+
+          return false;
+        },
+        isIos12: function isIos12() {
+          return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+        }
+      };
+      Monorail.produce('monorail-edge.shopifysvc.com',
+        'theme_store_trekkie_load_error/1.0',
+        {
+          url: window.location.href,
+          
+            'locale': 'en',
+          
+      });
+    }
+    var config = {
+      'Trekkie': {
+        'appName': 'themestore',
+        'defaultAttributes': {
+          
+        },
+        'navigationTimingApiMeasurementsEnabled': true,
+        'navigationTimingApiMeasurementsSampleRate': 0.01,
+        'isServerSideCookieWritingEnabled': true
+      },
+      'Clickstream': {
+        'appName': 'themestore'
+      },
+      'Optimizely': {}
+    };
+    var trekkie_version = '2020.07.23.1';
+    var analytics = window.analytics = window.analytics || [];
+    if (analytics.integrations) {
+      return;
+    }
+    analytics.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+    ];
+    analytics.factory = function(method){
+      return function(){
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+    analytics.load = function(config){
+      analytics.config = config;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = trekkieLoadOnError
+      script.async = true;
+      script.src = '//cdn.shopify.com/s/trekkie.' + config.Trekkie.appName + '.min.js?v=' + trekkie_version;
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+    };
+    analytics.load(config);
+    analytics.page();
+  })();
+</script>
+
+</head>
+
+<body class="page--styles-preview shopify-sans-supported-lang segment-online" data-dux-initialized="1">
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMHDF2L"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="root_login_modal" data-enabled="true"></div>
+
+  <div id="GlobalIconSymbols"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icons-polaris-mobile-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14 20c-.275 0-.55-.112-.747-.335l-8-9c-.337-.38-.337-.95 0-1.328l8-9c.366-.414.998-.452 1.41-.083.414.366.45 1 .084 1.41l-7.41 8.337 7.41 8.337c.367.412.33 1.045-.083 1.41-.19.17-.428.254-.664.254z"></path></svg>
+</symbol><symbol id="modules-caret-down"><svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" viewBox="0 0 10.289 6.563"><path d="M5.212 6.563L0 1.423 1.404 0l3.788 3.735L8.865.01l1.424 1.404"></path></svg></symbol><symbol id="icons-polaris-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M1 1h18v10H1V1z"></path><path d="M13 14H2v-2h16v2h-5zm-.606 4H7.606c.16-.522.295-1.182.357-2h4.074c.062.818.196 1.478.357 2zM2 10V2h16v8H2zM19 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h4.95c-.156 1.657-.66 2.293-.658 2.293A.999.999 0 1 0 6 20h8c.39 0 .734-.242.897-.598s.09-.788-.166-1.084c-.005-.007-.522-.64-.68-2.318H19a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+</symbol><symbol id="icons-polaris-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M3 1h14v18H3V1z"></path><path d="M17 0a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h14zM4 18h12V2H4v16zM9 6h2a1 1 0 1 0 0-2H9a1 1 0 1 0 0 2zm1 8a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+</symbol></svg></div>    
+<div class="signup-form-wrapper signup--hidden " data-define="{form_0: new SignupForm(this)}">
+  <form class="marketing-form signup-form stateful-form" novalidate="novalidate" autocomplete="off" data-namespace="form_0" data-hidden-fields-namespace="hiddenFields_0" data-bind-event-submit="form_0.handleSubmit(this, event)" action="https://accounts.shopify.com/store-create" accept-charset="UTF-8" method="post">
+
+
+  <div data-define="{ email0:
+  new StatefulField(
+    &#39;email&#39;,
+    form_0,
+    this,
+    {
+      required: true,
+      validate: true,
+      live: false,
+      showHint: true,
+      showError: true
+    },
+    {},
+    &#39;form_0&#39;
+  )}
+" class="stateful-field email "><div data-context="email0"><label data-bind-class="{&#39;js-has-error&#39;: state.error,&#39;js-is-filled&#39;: state.filled || state.value.length &gt; 0,&#39;js-has-hint&#39;: !state.error &amp;&amp; state.hint}" class="marketing-input-wrapper"><span class="marketing-label marketing-label--in-field marketing-label--floating">Email address</span><input placeholder="Email address" aria-describedby="MessageId_55ca" name="signup[email]" type="email" autocomplete="email" data-bind="state.value" data-bind-event-blur="ShopifyMarketing.context.form_0.handleFieldBlur(ShopifyMarketing.context.email0)" data-bind-event-keyup="ShopifyMarketing.context.form_0.handleFieldKeyup(event, ShopifyMarketing.context.email0)" class="marketing-input marketing-input--floating" id="0_signup_email"></label><span class="marketing-form__messages" id="MessageId_55ca"><span class="suggest hide" data-bind-unsafe-html="displayHint()" data-bind-show="!state.error &amp;&amp; state.hint"></span><span class="error hide" data-bind="displayError()" data-bind-show="state.error == true"></span></span></div></div>
+
+  <div data-define="{hiddenFields_0: new HiddenFields({
+      source: &quot;&quot;,
+      source_url: &quot;&quot;,
+      source_url_referer: &quot;&quot;,
+      signup_code: &quot;&quot;,
+      signup_page: &quot;&quot;,
+      signup_page_referer: &quot;&quot;,
+      signup_types: [&quot;online_store&quot;],
+      theme: &quot;&quot;,
+      selected_app: &quot;&quot;,
+      selected_plan: &quot;&quot;,
+      domain_to_connect: &quot;&quot;,
+    }, this)}">
+    <div data-context="hiddenFields_0">
+      <input type="hidden" name="ref" value="">
+      <input type="hidden" name="language" value="en">
+      <input type="hidden" name="locale" value="en">
+      <input type="hidden" name="_y" data-bind="fields.y" value="81fe8b12-ab68-4065-b342-d71687315c81">
+      <input type="hidden" name="ssid" data-bind="fields.ssid">
+      <input type="hidden" name="source" data-bind="fields.source">
+      <input type="hidden" name="source_url" data-bind="fields.source_url">
+      <input type="hidden" name="source_url_referer" data-bind="fields.source_url_referer">
+      <input type="hidden" name="signup_code" data-bind="fields.signup_code">
+      <input type="hidden" name="signup_page" data-bind="fields.signup_page" value="https://themes.shopify.com/themes/canopy/styles/natural/preview">
+      <input type="hidden" name="signup_page_referer" data-bind="fields.signup_page_referer">
+      <input type="hidden" name="promotional_program_code" value="">
+      <input type="hidden" name="domain_to_connect" data-bind="fields.domain_to_connect">
+
+        <input type="hidden" name="signup_types[]" value="online_store">
+
+      <input type="hidden" name="signup_types[]" data-bind-disabled="fields.signup_types" data-bind="fields.signup_type" disabled="">
+      <input type="hidden" name="extra[selected_theme]" data-bind="fields.theme">
+      <input type="hidden" name="extra[selected_app]" data-bind="fields.selected_app">
+      <input type="hidden" name="extra[selected_plan]" data-bind="fields.selected_plan">
+    </div>
+  </div>
+
+  <div class=" cta_wrapper">
+    <button class="marketing-button marketing-form__button " name="button" data-bind-disabled="form_0.pending == true" type="submit">Create your store</button>
+  </div>
+</form>
+
+
+</div>
+    <div id="Announcements"></div>  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script id="GoogleAnalyticsScript" async="" src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/js(1)"></script>
+  <script>
+    window.partnersDataLayer = window.partnersDataLayer || [];
+    function gtag(){partnersDataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KT16Q3HH32');
+  </script>
+
+
+
+
+<div id="SiteContainer">
+  <div id="SiteNavContainer" role="banner">
+  <div class="marketing-nav-wrapper headroom headroom--verytop headroom--top marketing-nav-pinned" role="navigation" aria-label="Main Navigation">
+    <a class="in-page-link skip-to-main visuallyhidden focusable" data-ga-event="Main Nav" data-ga-action="Skip to content" href="https://themes.shopify.com/themes/canopy/styles/natural/preview#Main">
+      Skip to Content
+    </a>
+    <nav class="marketing-nav marketing-nav__primary marketing-nav--skin-light" id="ThemePreviewNav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="marketing-nav__items marketing-nav__items__wrapper">
+        
+  <li>
+    
+<a class="marketing-nav__item marketing-nav__item--primary device-preview__back-button" itemprop="name" href="https://themes.shopify.com/themes/canopy/styles/natural">
+  <svg class="icon device-preview__back-button-icon" aria-hidden="true" focusable="false"> <use xlink:href="#icons-polaris-mobile-chevron"></use> </svg>
+  <span>
+    Back
+  </span>
+</a>
+  </li>
+  <li class="device-preview-controls__wrapper hide--mobile">
+    
+  <ul class="marketing-nav__items">
+    <li>
+      <span class="example-presets-selector__label">
+        Theme styles
+      </span>
+      <div class="popover-wrapper js-popover example-presets-selector" data-position="bottom" data-align="left">
+        <button type="button" class="popover__trigger example-presets-selector__button popover-trigger" aria-haspopup="listbox" style="--palette-hex-code: #AAE13E;" selector="true" aria-expanded="false" aria-controls="Popover2" aria-current="location">
+          <span class="listbox__selected-option-label">Natural</span>
+          <svg class="icon marketing-nav__arrow" aria-hidden="true" focusable="false"> <use xlink:href="#modules-caret-down"></use> </svg>
+</button>        <div class="popover popover--position-bottom popover--align-left" id="Popover2"><div class="popover__content">
+          <div id="DevicePreviewOptions" class="example-presets-selector__options carousel-nav mobile-carousel-nav" role="listbox" aria-activedescendant="DevicePreviewOptions-natural">
+              <a style="--palette-hex-code: #AAE13E" class="example-presets-selector__option" role="option" aria-selected="true" data-option="natural" data-option-label="Natural" data-example-presets-hex-code="#AAE13E" data-id="1341" data-ga-event="Main Nav" data-ga-action="Clicked" data-ga-label="preview-natural-demo" href="https://themes.shopify.com/themes/canopy/styles/natural/preview">
+                <span class="example-presets-selector__option-label">
+                  Natural
+                </span>
+</a>              <a style="--palette-hex-code: #f44669" class="example-presets-selector__option" role="option" data-option="craft" data-option-label="Craft" data-example-presets-hex-code="#f44669" data-id="2549" data-ga-event="Main Nav" data-ga-action="Clicked" data-ga-label="preview-craft-demo" href="https://themes.shopify.com/themes/canopy/styles/craft/preview">
+                <span class="example-presets-selector__option-label">
+                  Craft
+                </span>
+</a>              <a style="--palette-hex-code: #222d9f" class="example-presets-selector__option" role="option" data-option="light" data-option-label="Light" data-example-presets-hex-code="#222d9f" data-id="1342" data-ga-event="Main Nav" data-ga-action="Clicked" data-ga-label="preview-light-demo" href="https://themes.shopify.com/themes/canopy/styles/light/preview">
+                <span class="example-presets-selector__option-label">
+                  Light
+                </span>
+</a>          </div>
+</div></div></div>    </li>
+  </ul>
+
+    <ul class="marketing-nav__items">
+  <li>
+    <button name="button" type="submit" class="marketing-nav__item marketing-nav__item--primary device-preview-controls__toggle device-preview-controls__toggle--push-right active" itemprop="preview" id="DesktopPreview" data-ga-event="theme-demo-page" data-ga-action="clicked" data-ga-label="desktop screen size">
+      <svg class="icon wrapper device-preview-controls__icon device-preview-controls__icon--desktop" aria-hidden="true" focusable="false"> <use xlink:href="#icons-polaris-desktop"></use> </svg>
+      <span class="visuallyhidden">Switch to desktop preview</span>
+</button>  </li>
+  <li>
+    <button name="button" type="submit" class="marketing-nav__item marketing-nav__item--primary device-preview-controls__toggle" itemprop="preview" id="MobilePreview" data-ga-event="theme-demo-page" data-ga-action="clicked" data-ga-label="mobile screen size">
+      <svg class="icon wrapper device-preview-controls__icon device-preview-controls__icon--desktop" aria-hidden="true" focusable="false"> <use xlink:href="#icons-polaris-mobile"></use> </svg>
+      <span class="visuallyhidden">Switch to mobile preview</span>
+</button>  </li>
+</ul>
+
+  </li>
+  <li class="device-preview-controls__wrapper hide--tablet hide--desktop">
+    
+  <span class="color-style-selector-wrapper">
+      
+<a id="ExamplePresetsOption-" class="style-selector__option " style="--palette-hex-code: #AAE13E" role="option" aria-label="Preset Natural" aria-selected="true" data-ga-action="Select preset Natural" data-ga-category="Preset selector" data-ga-label="Preset Natural" href="https://themes.shopify.com/themes/canopy/styles/natural/preview"></a>
+
+      
+<a id="ExamplePresetsOption-" class="style-selector__option " style="--palette-hex-code: #222d9f" role="option" aria-label="Preset Light" aria-selected="false" data-ga-action="Select preset Light" data-ga-category="Preset selector" data-ga-label="Preset Light" href="https://themes.shopify.com/themes/canopy/styles/light/preview"></a>
+
+      
+<a id="ExamplePresetsOption-" class="style-selector__option " style="--palette-hex-code: #f44669" role="option" aria-label="Preset Craft" aria-selected="false" data-ga-action="Select preset Craft" data-ga-category="Preset selector" data-ga-label="Preset Craft" href="https://themes.shopify.com/themes/canopy/styles/craft/preview"></a>
+
+  </span>
+
+  </li>
+  <li class="hide--mobile marketing-nav__items--install-theme">
+    <a class="marketing-button marketing-button--small theme-primary-cta" data-ga-action="Install theme from demo page" data-ga-label="Canopy - Natural" data-trekkie-style-id="1341" data-trekkie-style-handle="natural" data-trekkie-theme-handle="canopy" data-trekkie-theme-id="732" data-ga-event="Preview theme" data-js-theme-action="login" data-partner-tracking-enabled="false" data-partner-tracking-action="add_to_cart" data-partner-tracking-value="390.00" data-partner-tracking-name="Canopy" data-partner-tracking-id="732" data-partner-tracking-currency="USD" href="https://themes.shopify.com/login?ux=signup">
+  Sign up to try
+</a>
+  </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+  <div id="PageContainer">
+    <main role="main" id="Main">
+      <div class="device-preview">
+        <div class="device-preview__container" id="PreviewFrameContainer">
+          <iframe id="PreviewFrame" class="device-preview__iframe" src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/saved_resource.html"></iframe>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+    <script>
+//<![CDATA[
+window.I18n = window.I18n || {}; window.I18n.data = {"modal":{"home":"Home","close":"Close"},"signup":{"header":"Start your free %{trial_length}-day trial of Shopify","custom_header":"%{custom_signup_header}","create_now":"Create your store","labels":{"email":"Email address","password":"Password","storename":"Store name","shop_name":"Your store name","promotional_program_promo_code":"Discount code","subdomain":"Store URL"},"subtitles":{"shop_name":"This can be changed later.","promotional_program_promo_code":"Enter the promo code that was provided to you.","subdomain":"This will be the default domain for your store, but you can add different domains later. You'll also use your Store URL to log in."},"placeholders":{"password":"Password","email":"Email address","shop_name":"Your store name","subdomain":"Store URL","autogenerated_subdomain":"Store address"},"success_messages":{"email":"Got it","password":"Looks great","shop_name":"That name is available!","subdomain":"You‘ll use this to log in to your store"},"store_address_suffix":".myshopify.com","hint_messages":{"email_typo_html":"Did you mean <button type=\"button\" data-bind-event-click=\"%{on_click}\">%{suggestion}</button>?"},"tooltip":"Start your free %{trial_length}-day trial today!","checking":"Checking...","details":{"shop_name":"If you are the owner you can <a href=\"https://%{admin}/admin\">log in here</a>"}},"forms":{"errors":{"throttled":"Too many requests from this IP, try again later.","global":{"invalid":"Please enter a valid email address","required":"This field is required.","generic":"Sorry, something went wrong. Please try again later.","throttled":"Too many requests from this IP, try again later."},"shop_name":{"empty":"Please enter a store name","minlength":"Your store name must be at least 4 characters","maxlength":"Your store name can’t be longer than 60 characters","existingAdmin":"A store with that name already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","message":"%{err}","matchesPassword":"Your store name can’t be the same as your password","disallowed":"Your store name can’t contain the word <strong>%{err}</strong>. Try another."},"email":{"empty":"Please enter an email address","invalid":"Please enter a valid email address","member_exists":"You are already subscribed to this list","generic":"Sorry, something went wrong. Please try again later."},"password":{"empty":"Please enter a password","minlength":"Password must be at least 5 characters","spaces":"Password cannot start or end with a space"},"subdomain":{"empty":"Please enter a subdomain","minlength":"Your subdomain must be at least 4 characters","multiple":"Multiple subdomains are associated with this email","suggest":"Did you mean %{err}?","invalid":"Please enter a valid subdomain","existingAdmin":"A store with that subdomain already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","disallowed":"Your subdomain can’t contain the word <strong>%{err}</strong>. Try another.","message":"%{err}"},"promotional_program_promo_code":{"message":"%{err}"},"autogenerated_subdomain":{"existingAdmin":"A store with that subdomain already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","empty":"Please enter a subdomain","invalid":"Please enter a valid subdomain, only alpha-numeric characters are allowed."}}},"theme_store_frontend":{"show_button_text":"See update details","hide_button_text":"Show less","unexpected_login_error":"Unexpected error","theme_search":{"number_of_results":{"one":"%{count} result for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search.","other":"%{count} results for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search."}},"styles_carousel":{"title":"%{themeName} Theme - %{styleName}  - Ecommerce Website Template"},"theme_filters":{"heading":"Search filters","no_results_now":"Could not get results right now","try_again_or_home_page_html":"Try again later, or %{visit_home_page}","visit_home_page":"visit the home page","pagination":"%{first_item_index} - %{last_item_index} of %{themes_count}","filter_subheadings":{"price":"Filter by price","catalog-size":"Filter by catalog size","industry":"Filter by industry","layout":"Filter by layout","design":"Filter by design","features":"Filter by feature"},"expand_filters_label":{"price":"Expand price filters","catalog-size":"Expand filters for catalog size","industry":"Expand industry filters","layout":"Expand layout filters","design":"Expand design filters","features":"Expand feature filters"},"collapse_filters_label":{"price":"Collapse price filters","catalog-size":"Collapse filters for catalog size","industry":"Collapse industry filters","layout":"Collapse layout filters","design":"Collapse design filters","features":"Collapse feature filters"},"filter_results_count":{"one":"%{filter_label} (%{count} matching theme)","other":"%{filter_label} (%{count} matching themes)"},"themes_count":{"one":"%{count} theme","other":"%{count} themes"},"other_industry_search":{"label":"Other","placeholder":"Enter industry","button_label":"OK"}},"local_currency":{"estimated_price":"Estimated %{calculated_price}*","local_currency_exchange":"* Estimated Exchange Rate: 1 USD = %{currency_rate}.","local_currency_charges_notice":"Actual price may vary. Prices displayed are estimates based on current exchange rates. Exact amount charged will vary and depends on the exchange rate at the time of payment processing. Prices displayed exclude any applicable taxes and fees, which will be added to the cost of all services purchased.","local_currency_learn_more_link_html":"<a href=\"%{url}\" class=\"body-link\">Learn more</a>"}}}; window.I18n.globals = {"total_blog_subscribers":"446,005","trial_length":3,"custom_signup_header":""};
+//]]>
+</script>
+  <script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/rails-f96da86d32b453b6828fe1dfc1ff0644a9adef722172398dc0433fbb81630651.js.download" crossorigin="anonymous" integrity="sha256-+W2obTK0U7aCj+Hfwf8GRKmt73IhcjmNwEM/u4FjBlE="></script>
+  <script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/runtime-40cf53ff75e6ed0b0e18442adf372b4ed2da02ffc8fe21985c6844f7fe7427f1.js.download"></script>
+<script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/vendors-caches_app_node_modules_shopify_polyfills_base_esnext-15a7de9bbd9ec158716586d662b7c9b912bb5b2615a0953adf03be7cf2ff576a.js.download"></script>
+<script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/vendors-caches_app_node_modules_shopify_marketing-assets_dist_javascripts_index_js-caches_app-5f2387-f1cf5f8fd2e09dcb623b0f7fb824174d3edd8250312.download"></script>
+<script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/vendors-caches_app_node_modules_bugsnag_js_browser_notifier_js-caches_app_node_modules_shopif-cb8390-17f11219b3e4c39656e2a0a6e84f7f670a4dbd8f3ed.download"></script>
+<script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/vendors-caches_app_node_modules_lodash_lodash_js-caches_app_node_modules_script-loader_addScript_js-1cffee63d7f7f367f54e3cde705e6d212c062843af69.download"></script>
+<script src="./Preview Natural Theme - Canopy Ecommerce Website Template_files/application-4187d3ef4830e9a1d9f68614021e01342ce50f347c0b40e31a5ecf136c71553c.js.download"></script>
+      <script type="text/javascript">
+  //<![CDATA[
+   var pageTrackerReadyInterval = setInterval(function(){
+     if (window._gat) { clearInterval(pageTrackerReadyInterval) } else { return; }
+     var pageTracker = _gat._getTracker("UA-82702-3");
+     pageTracker._setDomainName("themes.shopify.com");
+     pageTracker._initData();
+     try {
+       var results = new RegExp("[\\?&](source|r|ref)=([^&#]*)", "gi").exec(window.location.href);
+       if(results != null) {
+         var date = new Date();
+         var days = results[2] == 'cj' ? 45 : 7;
+         date.setTime(date.getTime()+days*86400000);
+         document.cookie = "source=" + results[2] + "; expires=" + date.toGMTString() + "; path=/; domain=.shopify.com";
+         pageTracker._setVar("ref: " + results[2]);
+       }
+     }
+     catch(e) {}
+     pageTracker._trackPageview();
+   }, 120);
+  //]]>
+</script>
+
+  
+
+
+</body></html>

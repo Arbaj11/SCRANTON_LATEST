@@ -1,0 +1,146 @@
+﻿@model Scanton.Models.IndexViewModel
+
+    <div class="custom-modal-body">
+        <div class="custom-store-list-modal">
+            <div class="custom-header-container">
+
+
+                @if (Model.StoreProfiles != null && Model.StoreProfiles.Count > 0)
+                {
+                    <h2>Select Storeeeeeeeeeeeee</h2>
+                }
+                else
+                {
+                    <h2>Select Store</h2>
+                }
+
+                <!-- Updated Search Component -->
+                <div class="pip-search pip-store-list-modal__search-store">
+                    <!-- Search Icon on the Left -->
+                    <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-search__icon pip-search__left-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9804 15.3946c-1.0361.7502-2.3099 1.1925-3.6869 1.1925C6.8177 16.5871 4 13.7694 4 10.2935 4 6.8177 6.8177 4 10.2935 4c3.4759 0 6.2936 2.8177 6.2936 6.2935 0 1.377-.4423 2.6508-1.1925 3.6869l4.6016 4.6016-1.4142 1.4142-4.6016-4.6016zm.6067-5.1011c0 2.3713-1.9223 4.2936-4.2936 4.2936C7.9223 14.5871 6 12.6648 6 10.2935 6 7.9223 7.9223 6 10.2935 6c2.3713 0 4.2936 1.9223 4.2936 4.2935z"></path>
+                    </svg>
+
+                    <!-- Search Input -->
+                    <input id="store-list-modal-search" type="search" placeholder="Search by location" aria-disabled="false" class="pip-search__input">
+
+                    <!-- Current Location Icon on the Right -->
+                    <button type="button" aria-hidden="false" class="pip-btn pip-btn--xsmall pip-btn--icon-tertiary pip-search__action pip-search__current-location">
+                        <span class="pip-btn__inner">
+                            <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="pip-svg-icon pip-btn__icon">
+                                <path d="M12 15c1.6569 0 3-1.3431 3-3s-1.3431-3-3-3-3 1.3431-3 3 1.3431 3 3 3z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9205 13H21v-2h-2.0795A6.9929 6.9929 0 0 0 13 5.08V3h-2v2.08A6.9928 6.9928 0 0 0 5.08 11H3v2h2.08A6.9924 6.9924 0 0 0 11 18.9205V21h2v-2.0795A6.9927 6.9927 0 0 0 18.9205 13zm-2.7632-3.7779A4.9993 4.9993 0 0 1 17 12a5.006 5.006 0 0 1-1.4661 3.5339A5.006 5.006 0 0 1 12 17a5 5 0 1 1 4.1573-7.7779z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Stock Filter -->
+                <div class="custom-stock-filter">
+                    <span class="pip-switch--subtle pip-switch pip-store-list-modal__available-filter">
+                        <span class="pip-switch__toggle">
+                            <span class="pip-switch__button">
+                                <span class="pip-switch__symbol">
+                                    <!-- Add your icon here, this time styled with proper size and alignment -->
+                                    <svg viewBox="0 0 24 24" focusable="false" width="16" height="16" aria-hidden="true" class="pip-svg-icon pip-switch__icon">
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <label for="stock_available_switch" class="pip-switch__label">Only stores with available stock</label>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Store List -->
+            <div class="custom-store-list">
+                <ul>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Hyderabad</span>
+                                <span>
+                                    Raidurg, Serilingampally, Mandal, Survey no. 83/1,
+                                    Plot No.25, 26, Part 29 Panmaqtha, Rangareddy,
+                                    Hyderabad, Hyderabad
+                                </span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Navi Mumbai</span>
+                                <span>Turbhe MIDC, Turbhe Navi Mumbai Maharashtra...</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Hyderabad</span>
+                                <span>Raidurg, Serilingampally, Mandal, Survey no. 83/1...</span>
+                                <span class="custom-status"><i class="fa-solid fa-ban"></i></i>Click & Collect - Available</span>
+                                <span class="custom-status-emt"><img class="out-of-stock-icon" src="~/images/out-of-stock-1.png" />Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Navi Mumbai</span>
+                                <span>Turbhe MIDC, Turbhe Navi Mumbai Maharashtra...</span>
+                                <span class="custom-status"><i class="fa-solid fa-ban"></i></i>Click & Collect - Available</span>
+                                <span class="custom-status-emt"><img class="out-of-stock-icon" src="~/images/out-of-stock-1.png" />Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Hyderabad</span>
+                                <span>Raidurg, Serilingampally, Mandal, Survey no. 83/1...</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status-emt"><img class="out-of-stock-icon" src="~/images/out-of-stock-1.png" />Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Navi Mumbai</span>
+                                <span>Turbhe MIDC, Turbhe Navi Mumbai Maharashtra...</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Hyderabad</span>
+                                <span>Raidurg, Serilingampally, Mandal, Survey no. 83/1...</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                    <li class="custom-store-item">
+                        <button type="button">
+                            <span class="custom-store-info">
+                                <span class="custom-store-name">Navi Mumbai</span>
+                                <span>Turbhe MIDC, Turbhe Navi Mumbai Maharashtra...</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Click & Collect - Available</span>
+                                <span class="custom-status"><i class="fa-solid fa-circle-dot"></i>Store - In stock</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>

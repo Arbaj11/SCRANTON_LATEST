@@ -1,0 +1,188 @@
+﻿#footer-bottom-bar {
+    background: black;
+    color: white;
+    padding: 3rem 2rem;
+    width: 100%;
+    height: fit-content;
+}
+
+    #footer-bottom-bar p {
+        text-align: center;
+    }
+
+    #footer-bottom-bar ul li {
+        list-style: none;
+        display: flex;
+    }
+
+    /* Footer Content Layout */
+    #footer-bottom-bar .pb-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
+
+    /* Logo Section */
+    #footer-bottom-bar .cb-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #footer-bottom-bar .cb-1 img {
+            width: 12rem;
+            margin-bottom: 1rem;
+        }
+
+    /* Social Icons */
+    #footer-bottom-bar .foot1-ul {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        #footer-bottom-bar .foot1-ul a {
+            text-decoration: none;
+        }
+
+            #footer-bottom-bar .foot1-ul a i {
+                color: white;
+                border: 1px solid white;
+                padding: 0.7rem;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                transition: 0.3s;
+            }
+
+                #footer-bottom-bar .foot1-ul a i:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+    /* Quick Links & Customer Service */
+    #footer-bottom-bar .cb-2,
+    #footer-bottom-bar .cb-3 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-bottom-bar .h5 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #footer-bottom-bar .foot2-ul,
+    #footer-bottom-bar .foot3-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+
+    /* Subscription Form */
+    #footer-bottom-bar .cb-4 {
+        text-align: center;
+    }
+
+        #footer-bottom-bar .cb-4 p {
+            color: gray;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    #footer-bottom-bar .cb4-d {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    #footer-bottom-bar .cb-4 input {
+        padding: 0.7rem;
+        font-size: 1rem;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #footer-bottom-bar .cb-4 button {
+        width: fit-content;
+        margin: auto;
+        padding: 0.8rem;
+        font-size: 1rem;
+        background: #D40E54;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #footer-bottom-bar .cb-4 button:hover {
+            background: #a50c42;
+        }
+
+    /* Footer Description */
+    #footer-bottom-bar .foot-h5 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #footer-bottom-bar .foot-p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 1.5rem;
+    }
+
+    /* Copyright Section */
+    #footer-bottom-bar + .copy {
+        background-color: #F8F9FA;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: black;
+    }
+
+/* === RESPONSIVE STYLES === */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    #footer-bottom-bar .pb-1 {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    #footer-bottom-bar .foot1-ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #footer-bottom-bar .cb4-d {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #footer-bottom-bar .cb-4 input,
+    #footer-bottom-bar .cb-4 button {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Footer Links */
+#footer-bottom-bar a {
+    text-align:left;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,54 @@
+﻿@model Scanton.Models.Banner
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add New Banner";
+}
+
+<h2 class="text-center my-4">Add New Banner</h2>
+
+<div class="container">
+    <form asp-action="Create" enctype="multipart/form-data" method="post">
+        <div class="mb-3">
+            <label for="Title" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="BannerUrl" class="form-label">BannerUrl</label>
+            <input asp-for="BannerUrl" class="form-control" />
+            <span asp-validation-for="BannerUrl" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="TittleParagraph1" class="form-label">Title Paragraph </label>
+            <input asp-for="TittleParagraph1" class="form-control" />
+            <span asp-validation-for="TittleParagraph1" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="TittleParagraph2" class="form-label">Title Paragraph 2</label>
+            <input asp-for="TittleParagraph2" class="form-control" />
+            <span asp-validation-for="TittleParagraph2" class="text-danger"></span>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="Description" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="ImageFile" class="form-label">Upload Image</label>
+            <input type="file" class="form-control" name="imageFile" />
+        </div>
+
+        <div class="mb-3 form-check">
+            <input asp-for="IsActive" class="form-check-input" type="checkbox" />
+            <label for="IsActive" class="form-check-label">Active</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

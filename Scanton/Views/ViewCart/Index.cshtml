@@ -1,0 +1,411 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Scanton.styles.css" asp-append-version="true" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+<section class="shoping-logo">
+    <div>
+        <h1 style="color:#0b4b30;"> <i class="fa fa-shopping-cart cart-icon-view"></i>Shopping Cart</h1>
+    </div>
+</section>
+
+
+
+
+<section class="shopping-cart-section">
+    <div class="cart-container">
+        <div class="cart-grid">
+            <div class="cart-content">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="product" itemscope itemtype="http://schema.org/Product">
+                        <div class="product-card" style="padding-bottom: 5%;">
+                            <div class="product-inner">
+                                <div class="product-image">
+                                    <img src="@product.ImagePath" alt="@product.Name" itemprop="image" loading="eager">
+                                    <span class="product-id">@product.Id</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="price-module">
+                                        <div class="price-info">
+                                            <a href="#" class="product-name">@product.Name</a>
+                                            <div class="product-description">@product.Flavor</div>
+                                        </div>
+                                        <div class="product-price">
+                                            <span class="current-price">
+                                                $<span id="price-value" data-base-price="@product.PriceWithDiscount">@product.PriceWithDiscount</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="availability">
+                                        <span class="status"><i class="fa-solid fa-circle"></i>Available for delivery</span>
+                                        <span class="status"><i class="fa-solid fa-circle"></i>Available for Click & Collect</span>
+                                    </div>
+                                    <div class="product-controls">
+                                        <div class="quantity-stepper">
+                                            <i class="fa-solid fa-minus stepper-minus"></i>
+                                            <input type="text" value="1" class="quantity-input" min="1" max="999">
+                                            <i class="fa-solid fa-plus stepper-plus"></i>
+                                        </div>
+                                        <div class="trash-icon-container">
+                                            <svg class="trash-icon" data-product-id="@product.Id" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                                <path d="M13 9h2v8h-2V9zm-2 0H9v8h2V9z"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4892 5c-.0258-.577-.1265-1.2552-.5198-1.819C14.3653 2.315 13.3219 2 11.9981 2c-1.3531 0-2.4193.3063-3.0168 1.1953-.2761.4109-.3861.8584-.4359 1.2488-.0234.1833-.0352.3719-.0412.5559H3v2h2v14h14V7h2V5h-5.5108zm-4.9598-.303a3.551 3.551 0 0 0-.0239.303h2.9782c-.0229-.371-.0736-.5586-.1546-.6747C13.284 4.2607 13.0774 4 11.9981 4c-1.1451 0-1.3289.2693-1.3568.311-.0367.0545-.0833.161-.1119.386zM17 7H7v12h10V7z"></path>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>Products</span>
+                <span class="total-price">$ @ViewBag.TotalDiscount</span>
+            </div>
+            <hr>
+            <div class="summary-row">
+                <h4 class="total-gst">Total</h4>
+                <span class="total-gst-price">$ @ViewBag.TotalDiscount</span>
+            </div>
+
+            <div class="apply-coupon">
+                <ul class="accordion">
+                    <li class="accordion-item" id="cart-coupon">
+                        <div role="heading" aria-level="2">
+                            <button type="button" class="accordion-header" aria-controls="SEC_cart-coupon" aria-expanded="false">
+                                <span class="accordion-title">
+                                    <span class="accordion-title-text">
+                                        <span class="icon-container">
+                                            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="icon">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.998 13v4h2v-4h4v-2h-4V7h-2v4h-4v2h4z"></path>
+                                            </svg>
+                                            Apply discount code
+                                        </span>
+                                    </span>
+                                </span>
+                                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="icon-dropdown">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="m12.0003 15.5996-5.7857-5.785 1.414-1.4143 4.3717 4.3711 4.3717-4.3711 1.4141 1.4143-5.7858 5.785z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="SEC_cart-coupon" class="accordion-content" aria-hidden="true">
+                            <div class="accordion-content-inner">
+                                <form id="couponForm">
+                                    <div class="form-wrapper">
+                                        <div class="input-group">
+                                            <input type="text" id="discountCode" placeholder="Enter discount code">
+                                        </div>
+                                        <button type="submit" class="apply-btn">Apply</button>
+                                    </div>
+                                </form>
+                                <p class="info-text">Enter the code without any space between letters. Gift cards can be exchanged later in the process.</p>
+                            </div>
+                            <div id="couponModal" class="coupon-popup-overlay">
+                                <div class="popup-toast">
+                                    <div class="popup-toast-content">
+                                        <i class="fa-solid fa-check popup-toast-check"></i>
+                                        <div class="message">
+                                            <span class="message-text text-1" id="couponPopupMessage"></span>
+                                            <span class="message-text text-2" id="couponPopupSubMessage"></span>
+                                        </div>
+                                    </div>
+                                    <i class="uil uil-multiply popup-toast-close close-btn"></i>
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="check-out-products" href="@Url.Action("CheckOutProducts", "ViewCart", new { totalPrice = "__totalPrice__", totalGstPrice = "__totalGstPrice__" })">
+                <button type="button" aria-disabled="false" class="cart-ingka-jumbo-btn cart-ingka-jumbo-btn--emphasised"
+                        data-cart-cta="true" id="btnCheckout">
+                    <span class="cart-ingka-jumbo-btn__inner">
+                        <span class="cart-ingka-jumbo-btn__label">Continue to checkout</span>
+                        <span class="cart-ingka-jumbo-btn__icon">
+                            <svg viewBox="0 0 24 24" focusable="false" width="24" height="24" aria-hidden="true" class="cart-ingka-svg-icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="m20.0008 12.0001-8-8.001-1.4143 1.414L16.1727 11H4v2h12.1723l-5.5868 5.5866 1.4141 1.4142 8.0012-8.0007z"></path>
+                            </svg>
+                        </span>
+                    </span> 
+                </button>
+            </a>
+
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+<div class="shippingContainer">
+    <div>
+        <img src="https://www.svgrepo.com/show/60587/fast-delivery.svg" height="30" width="30" alt="delivery">
+        <p>Free <br>U.S. Shipping</p>
+    </div>
+    <div>
+        <img src="https://www.svgrepo.com/show/158198/return.svg" height="30" width="30" alt="return">
+        <p>30 DAY <br> FREE RETURN</p>
+    </div>
+    <div>
+        <img src="https://static.thenounproject.com/png/1063365-200.png" height="30" width="30" alt="FINANCING">
+        <p>FINANCING <br>AVAILABLE</p>
+    </div>
+    <div>
+        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_397927.svg" height="30" width="30" alt="delivery">
+        <p>Authenticity<br>Guaranteed</p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+    document.querySelectorAll(".stepper-plus").forEach(button => {
+        button.addEventListener("click", function() {
+            let quantityInput = this.closest(".quantity-stepper").querySelector(".quantity-input");
+            let priceElement = this.closest(".product-info").querySelector("#price-value");
+            let basePrice = parseFloat(priceElement.getAttribute("data-base-price"));
+            let productId = this.closest(".product-card").querySelector(".product-id").textContent.trim();
+
+            let currentQuantity = parseInt(quantityInput.value);
+            currentQuantity += 1;
+            quantityInput.value = currentQuantity;
+
+            priceElement.textContent = (basePrice * currentQuantity).toFixed(2);
+            updateTotal();
+
+            // Send AJAX request to update the session
+            fetch('/ViewCart/UpdateQuantity', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: JSON.stringify({ productId: productId, quantity: currentQuantity })
+            }).then(response => response.json())
+              .then(data => console.log("Updated successfully:", data))
+              .catch(error => console.error("Error updating quantity:", error));
+        });
+    });
+
+
+
+    function showCouponPopup(message, type, subMessage = "") {
+        var modal = $("#couponModal");
+        var messageBox = $("#couponPopupMessage");
+        var subMessageBox = $("#couponPopupSubMessage");
+        var icon = $(".popup-toast-check"); // The icon element
+        var toast = $(".popup-toast"); // The toast container
+        var progressBar = $(".progress"); // Correctly select the progress bar element
+
+        messageBox.text(message);
+        subMessageBox.text(subMessage);
+
+        // Apply class based on success/error
+        messageBox.removeClass("success error").addClass(type);
+        subMessageBox.removeClass("success error").addClass(type);
+
+        // Change the icon and progress bar color based on the type
+        if (type === "error") {
+            icon.removeClass("fa-check").addClass("fa-xmark popup-toast-x-mark");
+            progressBar.css("background-color", "red"); // Change progress bar color to red
+            toast.css("border", "2px solid red"); // Add red border to the toast
+        } else {
+            icon.removeClass("fa-xmark popup-toast-x-mark").addClass("fa-check popup-toast-check");
+            progressBar.css("background-color", "#ddd"); // Set the progress bar to default color (grey)
+            toast.css("border", "none"); // Remove the border for success
+        }
+
+        modal.fadeIn(); // Show modal
+
+        $(".popup-toast-close").click(function () {
+            modal.fadeOut();
+        });
+
+        $(window).click(function (event) {
+            if ($(event.target).is(modal)) {
+                modal.fadeOut();
+            }
+        });
+
+        setTimeout(function () {
+            modal.fadeOut();
+        }, 3000);
+    }
+
+
+
+
+    document.querySelectorAll(".stepper-minus").forEach(button => {
+        button.addEventListener("click", function() {
+            let quantityInput = this.closest(".quantity-stepper").querySelector(".quantity-input");
+            let priceElement = this.closest(".product-info").querySelector("#price-value");
+            let basePrice = parseFloat(priceElement.getAttribute("data-base-price"));
+            let productId = this.closest(".product-card").querySelector(".product-id").textContent.trim();
+
+            let currentQuantity = parseInt(quantityInput.value);
+            if (currentQuantity > 1) {
+                currentQuantity -= 1;  // Decrease quantity
+                quantityInput.value = currentQuantity;
+                priceElement.textContent = (basePrice * currentQuantity).toFixed(2);
+                updateTotal();
+
+                // Send AJAX request to update the session
+                fetch('/ViewCart/UpdateQuantity', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: JSON.stringify({ productId: productId, quantity: currentQuantity })
+                }).then(response => response.json())
+                  .then(data => console.log("Updated successfully:", data))
+                  .catch(error => console.error("Error updating quantity:", error));
+            }
+        });
+    });
+
+
+    function updateTotal() {
+        debugger
+        let total = 0;
+        document.querySelectorAll("#price-value").forEach(priceElement => {
+            total += parseFloat(priceElement.textContent);
+        });
+
+        // Update both total price elements
+        document.querySelector(".total-price").textContent = "$ " + total.toFixed(2);
+        document.querySelector(".total-gst-price").textContent = "$ " + total.toFixed(2);
+    }
+
+    $(document).ready(function() {
+        $('#cart-coupon .accordion-header').on('click', function() {
+            var content = $('#SEC_cart-coupon');
+            var icon = $(this).find('.icon-dropdown');
+            content.toggleClass('open');
+            icon.css('transform', content.hasClass('open') ? 'rotate(180deg)' : 'rotate(0deg)');
+            var isExpanded = content.hasClass('open');
+            $(this).attr('aria-expanded', isExpanded);
+            content.attr('aria-hidden', !isExpanded);
+        });
+
+        $("#btnCheckout").click(function () {
+        var totalPrice = $(".total-price").text().replace("$", "").trim();
+        var totalGstPrice = $(".total-gst-price").text().replace("$", "").trim();
+
+        // Update the href of the link with the dynamic values
+        $(".check-out-products").attr("href", function (index, currentHref) {
+            return currentHref.replace("__totalPrice__", totalPrice).replace("__totalGstPrice__", totalGstPrice);
+        });
+    });
+
+        $('.trash-icon').click(function() {
+            var productId = $(this).data('product-id');
+
+            $.ajax({
+                url: '/ViewCart/RemoveFromCart',
+                type: 'POST',
+                data: { product_id: productId },
+                success: function(response) {
+                    if (response.success) {
+                        Swal.fire({
+                            title: 'Item Successfully Removed!',
+                            text: 'Your cart has been updated.',
+                            icon: 'success',
+                            confirmButtonText: 'Continue Shopping',
+                            background: '#f8f9fa',
+                            customClass: {
+                                title: 'success-title',
+                                confirmButton: 'success-button',
+                                popup: 'success-popup',
+                                icon: 'success-icon'
+                            }
+                        }).then(() => {
+                            location.reload();
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Oops, Something Went Wrong!',
+                            text: 'We couldn\'t remove the item. Please try again.',
+                            icon: 'error',
+                            confirmButtonText: 'Retry',
+                            background: '#f8d7da',
+                            customClass: {
+                                title: 'error-title',
+                                confirmButton: 'error-button',
+                                popup: 'error-popup',
+                                icon: 'error-icon'
+                            }
+                        });
+                    }
+                },
+                error: function() {
+                    Swal.fire({
+                        title: 'Uh-oh!',
+                        text: 'An unexpected error occurred. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Close',
+                        background: '#f8d7da',
+                        customClass: {
+                            title: 'error-title',
+                            confirmButton: 'error-button',
+                            popup: 'error-popup',
+                            icon: 'error-icon'
+                        }
+                    });
+                }
+            });
+        });
+
+
+     $("#couponForm").submit(function (e) {
+        e.preventDefault();
+
+        var couponName = $("#discountCode").val().trim();
+        var totalPriceText = $(".total-price").text().replace("$", "").trim();
+             var totalGstPriceText = $(".total-gst-price").text().replace("$", "").trim();
+        var totalPrice = parseFloat(totalPriceText) || 0;
+                var totalGSTPrice = parseFloat(totalGstPriceText) || 0;
+
+        if (couponName === "") {
+            showCouponPopup("Please enter a discount code.", "error");
+            return;
+        }
+
+        $.ajax({
+            url: "/ViewCart/ApplyCoupon",
+            type: "POST",
+            data: { couponName: couponName, totalPrice: totalPrice },
+            success: function (response) {
+                if (response.success) {
+                    showCouponPopup("Coupon applied successfully!", "success", "Discount: $" + response.discountAmount.toFixed(2));
+                    $(".total-price").text("$" + response.newTotal.toFixed(2)); // Update total price on UI
+                    $(".total-gst-price").text("$" + response.newTotal.toFixed(2)); // Update total price on UI
+                } else {
+                    showCouponPopup(response.message, "error");
+                }
+            },
+            error: function () {
+                showCouponPopup("Failed to apply coupon. Please try again.", "error");
+            }
+        });
+    });
+
+    
+});
+</script>
+

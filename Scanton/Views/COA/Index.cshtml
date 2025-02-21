@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Scanton.Models.COA>
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Manage Banners";
+}
+
+<h2 class="text-center my-4">Manage C.O.A</h2>
+
+<div class="text-end mb-4">
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Add New C.O.A
+    </a>
+</div>
+
+<table class="table table-bordered table-hover text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>PDF</th>
+            <th>View PDF</th>
+            <th>Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var coa in Model)
+            {
+                <tr>
+                    <!-- Product Name -->
+                    <td>@coa.Product_name</td>
+
+                    <!-- Product Image -->
+                    <td>
+                        @if (!string.IsNullOrEmpty(coa.Product_image))
+                        {
+                            <img src="@Url.Content(coa.Product_image)" alt="Product Image" style="width: 100px; height: auto;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">No Image</span>
+                        }
+                    </td>
+
+                    <!-- PDF -->
+                    <td class="pdf-table-data">
+                        @if (!string.IsNullOrEmpty(coa.Pdf_Path))
+                        {
+                            <div class="embed-responsive embed-responsive-16by9" style="width: 167px; height: 114px;">
+                                <iframe class="pdf-frame" src="@Url.Content(coa.Pdf_Path)" frameborder="0" style="width: 156px; height: 108px;"></iframe>
+                            </div>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No PDF</span>
+                        }
+                    </td>
+
+                    <td>
+                        @if (!string.IsNullOrEmpty(coa.Pdf_Path))
+                        {
+                            <a href="@Url.Content(coa.Pdf_Path)" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-file-earmark-pdf"></i> View PDF
+                            </a>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No PDF</span>
+                        }
+                    </td>
+
+
+                    <!-- Active Status -->
+                    <td>
+                        <a asp-action="Activate"
+                           asp-route-id="@coa.Id"
+                           asp-route-isActive="@(coa.Is_Active ? "false" : "true")"
+                           class="me-2 btn-lg">
+                            @if (coa.Is_Active)
+                            {
+                                <i class="fa-solid fa-toggle-on" style="color:green"></i>
+                            }
+                            else
+                            {
+                                <i class="fa-solid fa-toggle-off" style="color:red"></i>
+                            }
+                        </a>
+                    </td>
+
+                    <!-- Actions -->
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@coa.Id" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this item?');">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No C.O.A entries available.</td>
+            </tr>
+        }
+    </tbody>
+</table>

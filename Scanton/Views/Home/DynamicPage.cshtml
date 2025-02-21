@@ -1,0 +1,56 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+
+}
+<section class="dynamic-page-breadcrumb-section pt-0">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12 dynamic-col">
+                <div class="dynamic-page-breadcrumb-container">
+                    <nav>
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="@Url.Action("Index","Home")">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">@ViewBag.DynamicPages.CustomePageTittle</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dynamic-page-header-section pt-0">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-6">
+                <div class="dynamic-page-header-container">
+                    <h1 class="dynamic-page-header-title">@ViewBag.DynamicPages.CustomePageTittle</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dynamic-page-policy-section section-lg-space">
+    <div class="container-fluid-lg">
+        <div class="row gx-xl-5 gy-xl-0 g-3 ratio_148_1">
+            <div class="col-xl-10 col-12">
+                <div class="dynamic-page-policy-content p-center-left">
+                    <div>
+                        <div class="dynamic-page-policy-body">
+                            <h2 class="text-center">@ViewBag.DynamicPages.CustomePageTittle</h2> <!-- Centered Heading -->
+                            <div class="content-body">
+                                @Html.Raw(ViewBag.DynamicPages.CustomePageData) <!-- Raw HTML Content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

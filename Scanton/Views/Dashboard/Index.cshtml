@@ -1,0 +1,127 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container-fluid py-4" style="background-color: #f8f9fc;">
+    <!-- Dashboard Header -->
+    <div class="row mb-5">
+        <div class="col text-center">
+            <h1 class="fw-bold display-4" style="color: #343a40;">Admin Dashboard</h1>
+            <p class="text-muted">Monitor your platform performance and stay updated.</p>
+        </div>
+    </div>
+
+    <!-- Statistic Cards -->
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow h-100" style="background: linear-gradient(135deg, #4CAF50, #8BC34A); color: white;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3" style="font-size: 3rem;">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h6 class="text-uppercase">Total Users</h6>
+                    <h3 class="fw-bold">@ViewBag.TotalUsers</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow h-100" style="background: linear-gradient(135deg, #FF5722, #FF7043); color: white;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3" style="font-size: 3rem;">
+                        <i class="bi bi-cart-fill"></i>
+                    </div>
+                    <h6 class="text-uppercase">Orders</h6>
+                    <h3 class="fw-bold">@ViewBag.TotalOrders</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow h-100" style="background: linear-gradient(135deg, #00BCD4, #03A9F4); color: white;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3" style="font-size: 3rem;">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h6 class="text-uppercase">Revenue ($)</h6>
+                    <h3 class="fw-bold">$@ViewBag.TotalRevenue</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow h-100" style="background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3" style="font-size: 3rem;">
+                        <i class="bi bi-truck-flatbed"></i>
+                    </div>
+                    <h6 class="text-uppercase">Pending Shipments</h6>
+                    <h3 class="fw-bold">@ViewBag.PendingShipments</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Orders -->
+    <div class="card border-0 shadow-sm mt-5">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Recent Orders</h5>
+            <a href="@Url.Action("Index", "Orders")" class="btn btn-light btn-sm">View All</a>
+        </div>
+        <div class="card-body p-4">
+            <table class="table table-striped table-hover align-middle">
+                <thead style="background-color: #f4f7fc;">
+                    <tr>
+                        <th>#</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Amount ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>2024-12-01</td>
+                        <td><span class="badge bg-success">Completed</span></td>
+                        <td>$250.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>2024-12-05</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                        <td>$80.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Taylor</td>
+                        <td>2024-12-06</td>
+                        <td><span class="badge bg-danger">Canceled</span></td>
+                        <td>$0.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- User Activity -->
+    <div class="card border-0 shadow-sm mt-4">
+        <div class="card-header bg-success text-white">
+            <h5>User Activity</h5>
+        </div>
+        <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary"><i class="bi bi-person-circle"></i> John Doe logged in</span>
+                <span class="text-muted small">1 hour ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary"><i class="bi bi-cart-plus"></i> Jane placed an order</span>
+                <span class="text-muted small">2 hours ago</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary"><i class="bi bi-pencil"></i> Emma added a review</span>
+                <span class="text-muted small">3 days ago</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,293 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = null;
+
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Scanton.styles.css" asp-append-version="true" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+<section class="breadscrumb-section pt-0" id="partner-section">
+    <div class="container-fluid-lg" id="partner-container">
+        <div class="row" id="partner-row">
+            <div class="col-12" id="partner-col">
+                <div class="breadscrumb-contain" id="partner-contain">
+                    <h2 id="partner-title">PARTNER WITH US TODAY!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="service-section" id="service-section">
+    <div class="row g-3" id="service-row">
+        <div class="col-12" id="service-col">
+            <div class="service-contain" id="service-contain">
+                <div class="service-box" id="service-box-1">
+                    <div class="service-image" id="service-image-1">
+                        <img src="~/images/Box.jpg" class="blur-up lazyloaded" alt="Delivery Box" id="delivery-box-img">
+                    </div>
+                    <h3 class="service-title" id="service-title-1">Delivery Box</h3>
+                </div>
+
+                <div class="service-box" id="service-box-2">
+                    <div class="service-image" id="service-image-2">
+                        <img src="~/images/Support.jpg" class="blur-up lazyloaded" alt="Customer Care" id="customer-care-img">
+                    </div>
+                    <h3 class="service-title" id="service-title-2">Customer Care</h3>
+                </div>
+
+                <div class="service-box" id="service-box-3">
+                    <div class="service-image" id="service-image-3">
+                        <img src="~/images/fast.jpg" class="blur-up lazyloaded" alt="Truck" id="truck-img">
+                    </div>
+                    <h3 class="service-title" id="service-title-3">Fast Delivery</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="auth-forms">
+    <!-- Success Modal -->
+    <div id="successModal" class="pop-up-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            @if (TempData["ErrorMessage"] != null && TempData["ErrorMessage"].ToString() == "This email is already registered. Please log in.")
+            {
+                <div class="coress-check">
+                    <img  class="cross-image"  src="~/images/Wrong png 01.png" alt="Error icon" />
+                </div>
+                <p>@TempData["ErrorMessage"]</p>
+            }
+            else
+            {
+                <div class="verified-check">
+                    <video autoplay loop muted class="verify-check">
+                        <source src="~/images/Comp 1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>@TempData["SuccessMessage"]</p>
+            }
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="auth-signup">
+            <h2 class="form-title">Create Account</h2>
+            
+            <div class="form-container sign-up-container">
+                <form asp-action="SignUpUser" enctype="multipart/form-data" method="post">
+                    @Html.AntiForgeryToken()
+                    <h1 class="form-heading">Create Account</h1>
+                    <span>or use your email for registration</span>
+
+                    <!-- Step 1: Original input fields -->
+                    <div class="step1">
+                        <input type="text" class="form-input" placeholder="Name" name="Name" />
+                        <input type="email" class="form-input" placeholder="Email" name="Email"/>
+                        <input type="password"
+                               class="form-input"
+                               id="passwordInput"
+                               placeholder="Password" name="Password" />
+                        <span id="togglePassword"
+                              class="toggle-password-icon"
+                              style="cursor: pointer; margin-left: -30px;">
+                            👁️
+                        </span>
+                    </div>
+
+                    <!-- Additional fields--1 -->
+                    <div class="additional-fields">
+                        <input type="text" class="form-input" placeholder="Phone Number" name="PhoneNumber" />
+                        <input type="text" class="form-input" placeholder="City" name="City"/>
+                        <input type="text" class="form-input" placeholder="State" name="State" />
+                        <input type="text" class="form-input" placeholder="Zip Code" name="ZipCode"/>
+                    </div>
+
+                    <!-- Additional fields--2 -->
+                    <div class="additional-fields">
+                        <input type="text" class="form-input" placeholder="Company" name="Company" />
+                        <textarea class="form-input" placeholder="Address" name="Address"></textarea>
+                        <input type="text" class="form-input" placeholder="Resellers Licence" name="ResellersLicense" />
+                    </div>
+
+                    <!-- Additional fields--3 -->
+                    <div class="additional-fields">
+                        <div class="signup-drop">
+                            <label for="distributorType">Are you a wholesale distributor or retailer?</label>
+                            <select class="form-input" id="distributorType" name="DistributorType">
+                                <option value="">Select an option</option>
+                                <option value="wholesale">Wholesale Distributor</option>
+                                <option value="retail">Retailer</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-input" placeholder="Note"  name="Note"/>
+                        <input type="file" class="form-input" placeholder="Attachment" name="imageFile" />
+                    </div>
+
+                    <!-- "Back" button and "Sign Up" button -->
+                    <div class="sign-up-buttons">
+                        
+                        <button class="form-button sign-up-btn" id="signUpBtn">Sign Up</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- Sign In section -->
+        <div class="auth-signin">
+            <h2 class="form-title">Sign In</h2>
+            <div class="form-container sign-in-container" id="sign-in-contain">
+                <form asp-action="Login" enctype="multipart/form-data" method="post">
+                    <h1 class="form-heading">Sign in</h1>
+                    <img class="sign-up-login-images" src="~/images/SCRANTONLOGO.svg" />
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" class="form-input" placeholder="Email" name="Email"  required/>
+                    <input type="password" class="form-input" placeholder="Password" name="Password" required />
+                    <a href="#">Forgot your password?</a>
+                    <button class="form-button sign-in-btn">Sign In</button>
+                </form> 
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="overlay-heading">Welcome Back!</h1>
+                        <img class="sign-up-images" src="~/images/SCRANTON WHITE LOGO.png"/>
+                        <p>To keep connected with us, please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="overlay-heading">Hello, Friend!</h1>
+                        <img class="sign-up-images" src="~/images/SCRANTON WHITE LOGO.png" />
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="lab-result-start-content" id="PARTNER-content">
+    <div class="lab-content">
+        <div class="lab-tittle">
+            <h1>PARTNER WITH US TODAY!</h1>
+        </div>
+        <div class="lav-content">
+            <p>
+                We're not here to sell you. We're here to make your life a breeze! We want to learn the ins and outs of your business—what makes it tick and what drives it forward. By applying your principles with what we've learned working alongside countless other retailers, we'll bring value as a partner while increasing revenue for your business.
+            </p>
+            <p>
+                Every partnership we make, we're in it for the long haul. We've been cultivating and participating in the cannabis space for over 15 years. With a vast repertoire of industry knowledge, we spend rigorous amounts of time and resources on research and development. As a result, each product we provide to our consumers is reliable, clean, and so potent your customers will be running back for more.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+    document.getElementById("togglePassword").addEventListener("click", function () {
+        const passwordInput = document.getElementById("passwordInput");
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+
+        // Optionally toggle the icon for visual feedback
+        this.textContent = type === "password" ? "👁️" : "🙈";
+    });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        var successMessage = "@TempData["SuccessMessage"]";
+        var errorMessage = "@TempData["ErrorMessage"]";
+
+        var modal = document.getElementById("successModal");
+        var closeModal = document.getElementById("closeModal");
+
+        // If there's a success message, show the success modal
+        if (successMessage) {
+            modal.style.display = "block";
+            document.querySelector("#successModal p").textContent = successMessage;
+        }
+
+        // If there's an error message, show the error modal
+        if (errorMessage) {
+            modal.style.display = "block";
+            document.querySelector("#successModal p").textContent = errorMessage;
+        }
+
+        // Close the modal when clicking the close button
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // Close the modal when clicking outside of it
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+
+    function showSuccessModal(message) {
+        document.querySelector("#successModal p").textContent = message;
+        document.getElementById("successModal").style.display = "block";
+    }
+
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const signUpBtn = document.getElementById('signUpBtn');
+    //     const backBtn = document.getElementById('backBtn');
+    //     const step1 = document.querySelector('.step1');
+    //     const additionalFields = document.querySelectorAll('.additional-fields');
+
+    //     let currentStep = 0;
+
+    //     signUpBtn.addEventListener('click', function(e) {
+    //         e.preventDefault();
+
+    //         if (currentStep < additionalFields.length) {
+    //             additionalFields.forEach((field) => field.classList.add('hidden'));
+    //             step1.classList.add('hidden');
+    //             additionalFields[currentStep].classList.remove('hidden');
+    //             currentStep++;
+    //             backBtn.classList.remove('hidden');
+    //         }
+    //     });
+
+    //     backBtn.addEventListener('click', function() {
+    //         additionalFields.forEach((field) => field.classList.add('hidden'));
+    //         step1.classList.remove('hidden');
+    //         backBtn.classList.add('hidden');
+    //         currentStep = 0;
+    //     });
+    // });
+
+
+
+
+</script>

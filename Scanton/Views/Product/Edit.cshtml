@@ -1,0 +1,234 @@
+﻿@model Scanton.Models.Product
+@{
+    Layout = "_AdminLayout";
+    ViewBag.Title = "Add Product";
+}
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data" class="row gx-5 gy-4">
+    <div class="col-lg-8">
+        <!-- Product Details Card -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Product Details</h5>
+            </div>
+            <div class="card-body">
+                <!-- Product Name -->
+                <div class="mb-4">
+                    <label asp-for="Name" class="form-label fw-semibold text-dark">Product Name</label>
+                    <input asp-for="Name" class="form-control rounded-pill border-primary" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label text-dark fw-semibold">Product Description</label>
+                    <div id="quill-editor" style="min-height: 200px;" class="form-control"></div>
+                    <input type="hidden" id="Content" name="Description" value="@Model.Description" />  <!-- Hidden input for form submission -->
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ShortDescription" class="form-label text-dark fw-semibold">Short Description</label>
+                    <div id="short-description-editor" style="min-height: 200px; border: 1px solid #ced4da; border-radius: 4px; padding: 10px;" contenteditable="true"></div>
+                    <input type="hidden" id="ShortDescription" name="ShortDescription" value="@Model.ShortDescription" />
+                    <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                </div>
+
+                <!-- Price, MSP, and Weight -->
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="Price" class="form-label fw-semibold text-dark">Price</label>
+                        <input asp-for="Price" class="form-control border-primary rounded-pill" type="number" step="0.01" />
+                        <span asp-validation-for="Price" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="MSP" class="form-label fw-semibold text-dark">MSP</label>
+                        <input asp-for="MSP" class="form-control border-primary rounded-pill" type="number" step="0.01" />
+                        <span asp-validation-for="MSP" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="Weight" class="form-label fw-semibold text-dark">Weight</label>
+                        <input asp-for="Weight" class="form-control border-primary rounded-pill" type="number" step="0.01" />
+                        <span asp-validation-for="Weight" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <!-- Pack Size and Price Per Pcs -->
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="TittleBadge" class="form-label fw-semibold text-dark">Badge Title</label>
+                        <input asp-for="TittleBadge" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="TittleBadge" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="PackSize" class="form-label fw-semibold text-dark">Pack Size</label>
+                        <input asp-for="PackSize" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="PackSize" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="PricePerPcs" class="form-label fw-semibold text-dark">Price Per Pcs</label>
+                        <input asp-for="PricePerPcs" class="form-control border-primary rounded-pill" type="number" step="0.01" />
+                        <span asp-validation-for="PricePerPcs" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="Stain" class="form-label fw-semibold text-dark">Stain</label>
+                        <input asp-for="Stain" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="Stain" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <label asp-for="FeaturedProducts" class="form-label fw-semibold text-dark">Featured Products</label>
+                        <input asp-for="FeaturedProducts" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="FeaturedProducts" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="Flavor" class="form-label fw-semibold text-dark">Flavor</label>
+                        <input asp-for="Flavor" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="Flavor" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <label asp-for="JustArrivedProducts" class="form-label fw-semibold text-dark">Just Arrived Products</label>
+                        <input asp-for="JustArrivedProducts" class="form-control border-primary rounded-pill" />
+                        <span asp-validation-for="JustArrivedProducts" class="text-danger small"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Image -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <label for="imageFile" class="form-label fw-semibold text-dark">Product Image</label>
+                <input type="file" class="form-control border-primary rounded" id="imageFile" name="imageFile" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+        <!-- Master Categories -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Master Categories</h5>
+            </div>
+            <div class="card-body">
+                <!-- Parent Category Dropdown -->
+                <div class="mb-4">
+                    <label for="ParentCategoryId">Parent Category</label>
+                    <select asp-for="ParentCategoryId" class="form-control border-primary rounded-pill" asp-items="ViewBag.ParentCategories">
+                        <option value="">Select Parent Category</option>
+                    </select>
+                    <span asp-validation-for="ParentCategoryId" class="text-danger small"></span>
+                </div>
+
+                <!-- Category Dropdown -->
+                <div class="mb-4">
+                    <label for="CategoryId" class="form-label fw-semibold text-dark">Category</label>
+                    <select asp-for="CategoryId" class="form-control border-primary rounded-pill" asp-items="ViewBag.Categories">
+                        <option value="">Select Category</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                </div>
+
+                <!-- Store Profile Dropdown -->
+                <div class="mb-4">
+                    <label for="StoreProfileId">Store Profile</label>
+                    <select asp-for="StoreProfileId" class="form-control border-primary rounded-pill" asp-items="ViewBag.StoreProfiles">
+                        <option value="">Select Store Profile</option>
+                    </select>
+                    <span asp-validation-for="StoreProfileId" class="text-danger small"></span>
+                </div>
+
+                <!-- Store Zip Code Dropdown -->
+                <div class="mb-4">
+                    <label for="StoreProfileId">Store Profile Zip </label>
+                    <select asp-for="StoreProfileId" class="form-control border-primary rounded-pill" asp-items="ViewBag.StoreProfiles">
+                        <option value="">Select Store Profile</option>
+                    </select>
+                    <span asp-validation-for="StoreProfileId" class="text-danger small"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub Images Section -->
+        <div class="card-body">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <label for="imageFile1" class="form-label fw-semibold text-dark">Sub Image 1</label>
+                    <input type="file" class="form-control border-primary rounded" id="imageFile1" name="imageFile" />
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <label for="imageFile2" class="form-label fw-semibold text-dark">Sub Image 2</label>
+                    <input type="file" class="form-control border-primary rounded" id="imageFile2" name="imageFile" />
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <label for="imageFile3" class="form-label fw-semibold text-dark">Sub Image 3</label>
+                    <input type="file" class="form-control border-primary rounded" id="imageFile3" name="imageFile" />
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <label for="imageFile4" class="form-label fw-semibold text-dark">Sub Image 4</label>
+                    <input type="file" class="form-control border-primary rounded" id="imageFile4" name="imageFile" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill shadow">Edit Product</button>
+    </div>
+</form>
+
+
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize Quill Editor
+        const quill = new Quill('#quill-editor', {
+            theme: 'snow',
+            placeholder: 'Write the blog content here...',
+            modules: {
+                toolbar: [
+                    ['bold', 'italic', 'underline'],
+                    [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                    ['link', 'image'],
+                    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                    [{ 'color': [] }, { 'background': [] }],
+                    [{ 'font': [] }],
+                    [{ 'align': [] }]
+                ]
+            }
+        });
+
+        // Synchronize Quill content with hidden textarea
+        const contentField = document.getElementById('Content');
+        quill.on('text-change', function () {
+            contentField.value = quill.root.innerHTML;
+        });
+
+        // Initialize Quill with existing content (Edit mode)
+        const initialContent = contentField.value;
+        if (initialContent) {
+            quill.root.innerHTML = initialContent;
+        }
+    });
+
+
+    var quill = new Quill('#short-description-editor', {
+        theme: 'snow'
+    });
+
+
+    var hiddenInput = document.getElementById('ShortDescription');
+    quill.on('text-change', function() {
+        hiddenInput.value = quill.root.innerHTML; // Save the content to the hidden input
+    });
+
+
+    var initialContent = "@Model.ShortDescription";
+    quill.root.innerHTML = initialContent;
+</script>

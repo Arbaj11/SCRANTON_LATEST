@@ -1,0 +1,49 @@
+﻿@model Scanton.Models.COA
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add New C.O.A ";
+}
+
+<h2 class="text-center my-4">Add New C.O.A</h2>
+
+<div class="container">
+    <form asp-action="Create" enctype="multipart/form-data" method="post">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-cloud-upload-fill me-2"></i> Upload About Us Details</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    
+
+                    <!-- Product Name -->
+                    <div class="mb-3">
+                        <label for="Product_name" class="form-label">Product Name</label>
+                        <input asp-for="Product_name" class="form-control" required />
+                        <span asp-validation-for="Product_name" class="text-danger"></span>
+                    </div>
+
+                    <!-- Product Image -->
+                    <div class="mb-3">
+                        <label for="Product_image" class="form-label">Product Image</label>
+                        <input type="file" class="form-control" id="Product_image" name="Product_image" required />
+                        <span asp-validation-for="Product_image" class="text-danger"></span>
+                    </div>
+
+                    <!-- PDF Upload -->
+                    <div class="mb-3">
+                        <label for="Pdf_Path" class="form-label">Upload PDF</label>
+                        <input type="file" class="form-control" id="Pdf_Path" name="Pdf_Path" accept="application/pdf" required />
+                        <span asp-validation-for="Pdf_Path" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-save-fill me-2"></i> Save
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,346 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+    var store = ViewBag.StoreProfile as IndexViewModel.StoreProfile;
+
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Scanton.styles.css" asp-append-version="true" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+<section class="store-banner-section" style="background-image: url('@Url.Content(store.ImagePath)');">
+    <div class="store-banner-wrapper">
+        <div class="store-banner-content">
+           @*  <a href="store-details.html" class="store-banner-btn">Shop Now</a> *@
+        </div>
+    </div>
+</section>
+
+@* <div class="more-shops">
+    <a href="#" class="more-shops-button">
+        <img src="~/images/More.png" class="more-img" />More Shops
+    </a>
+</div> *@
+
+<!-- Store Information Section -->
+
+@* <section class="store-info-section">
+    <div class="container">
+        <div class="store-details">
+            <div class="store-name-info">
+                <h2 class="store-name">@store?.StoreName</h2>
+            </div>
+
+            <div class="store-address">
+                <!-- First Row: Address -->
+                <div class="store-address-row-1">
+                    <div class="store-address-item">
+                        <p>
+                            <strong class="store-addres-info">
+                                <i class="fa-solid fa-location-dot location-dots"></i> Address:
+                            </strong>
+                            @store?.Address
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store-info">
+                <!-- Separate Div for City, State & Zip Code in a Single Row -->
+                <div class="store-address-row-2">
+                    <div class="store-address-inline">
+                        <div class="store-list-item">
+                            <p>
+                                <img class="state" src="~/images/city.png" />
+                                <strong class="store-addres-info">City:</strong> @store?.City
+                            </p>
+                        </div>
+
+                        <div class="store-list-item">
+                            <img class="state" src="~/images/output-onlinepngtools.png" />
+                            <p>
+                                <strong class="store-addres-info">State:</strong> @store?.State
+                            </p>
+                        </div>
+
+                        <div class="store-list-item">
+                            <img class="state" src="~/images/zip-code.png" />
+                            <p>
+                                <strong class="store-addres-info">Zip Code:</strong> @store?.ZipCode
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-row">
+                    <div class="contact-details-inline">
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <img class="contacts-img" src="~/images/gmail.png" />
+                            <p>
+                                <strong class="contact-label">Email:</strong>
+                                <a href="mailto:@store?.Email" class="contact-link">@store?.Email</a>
+                            </p>
+                        </div>
+
+                        <!-- Contact Number -->
+                        <div class="contact-item">
+                            <img class="contacts-img" src="~/images/callus.png" />
+                            <p>
+                                <strong class="contact-label">Contact:</strong>
+                                <a href="tel:@store?.ContactNumber" class="contact-link">@store?.ContactNumber</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-shops">
+                <a href="#" class="more-shops-button">
+                    <img src="~/images/More.png" class="more-img" />More Shops
+                </a>
+            </div>
+
+            <!-- Description Section -->
+            <div class="store-description">
+                <div class="descrition-head">
+                    <img class="description-img" src="~/images/descriton.png" />
+                    <h3 class="description-title">Descirption</h3>
+                </div>
+                <p class="description-text">@store?.Description</p>
+            </div>
+        </div>
+    </div>
+</section> *@
+
+
+<section class="py-5 overflow-hidden">
+        <!-- Parent container for collapsibles -->
+        <div id="productSections">
+            <!-- Product Grid for All Products -->
+            <div class="collapse show" id="allProducts" data-bs-parent="#productSections">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3 store-products">
+                    <!-- All Products Content -->
+                    @if (Model?.Products != null && Model.Products.Any())
+                    {
+                        foreach (var product in Model.Products)
+                        {
+                            <div class="col">
+                                <div class="product-item">
+                                    @if (product.BadgeIsActive == true)
+                                    {
+                                    <figure>
+                                        <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                            @if (!string.IsNullOrEmpty(product.TittleBadge) && product.TittleBadge == "Sold Out")
+                                            {
+                                                <span class="offer-badge">@product.TittleBadge</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="offer-badge-green">@product.TittleBadge %</span>
+                                            }
+                                            <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                            @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                            {
+                                                <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-store-image">
+                                            }
+                                        </a>
+                                    </figure>
+                                    }
+                                    else
+                                    {
+                                        <figure>
+                                        <a href="@Url.Action("ProductDetails", "SingleProduct", new { product_id = product.Id })" title="@product.Name">
+                                            <img src="@product.ImagePath" alt="img-not-found" class="tab-image main-image">
+                                            @if (!string.IsNullOrEmpty(product.SubImage_1))
+                                            {
+                                                <img src="@product.SubImage_1" alt="Hover image not available" class="tab-image hover-store-image">
+                                            }
+                                        </a>
+                                    </figure>
+                                    }
+
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-bold">@product.Name</h3>
+                                        <h2 class="fs-6 fw-normal">@product.Flavor</h2>
+                                        <div>
+                                            <span class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </span>
+                                            <span>(222)</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            @if (product.Price > 0)
+                                            {
+                                                <del class="orignal-price">$@product.Price</del>
+                                            }
+                                            <span class="text-dark fw-semibold custom-bold">$@product.PriceWithDiscount</span>
+                                            <span class="badge border rounded-0 fw-normal px-1 fs-7 lh-1 custom-badge">10% OFF</span>
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2 justify-content-start">
+                                                <div class="col-6 d-flex justify-content-between align-items-center">
+                                                    <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <!-- Pagination -->
+                <div class="page-specific-pagination">
+                    <div class="pagination-store">
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <a href="@Url.Action("Index", new { product_id = Model.Products.FirstOrDefault()?.Id, pageNumber = i })"
+                               class="pagination-link @(i == ViewBag.CurrentPage ? "active" : "")">
+                                @i
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <section class="store-info-section">
+        <div class="container">
+
+                <!-- Description Section -->
+                <div class="store-description">
+                    <div class="descrition-head">
+                        <img class="description-img" src="~/images/descriton.png" />
+                        <h3 class="description-title">Descirption</h3>
+                    </div>
+                    <p class="description-text">@store?.Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+<script>
+  $(document).ready(function() {
+     $('figure a').on('mouseenter', function() {
+         $(this).find('.main-image').css('opacity', '0');
+           $(this).find('.hover-store-image').css('opacity', '1');
+     }).on('mouseleave', function() {
+         $(this).find('.main-image').css('opacity', '1');
+           $(this).find('.hover-store-image').css('opacity', '0');
+     });
+   });
+</script>
+
+
+
+@* <section class="store-info-section">
+    <div class="container">
+        <div class="store-details">
+            <div class="store-name-info">
+                <h2 class="store-name">Secret Bacon Roll</h2>
+            </div>
+
+            <div class="store-address">
+                <!-- First Row: Address -->
+                <div class="store-address-row-1">
+                    <div class="store-address-item">
+                        <p>
+                            <strong class="store-addres-info">
+                                <i class="fa-solid fa-location-dot location-dots"></i> Address:
+                            </strong>
+                            Raidurg, Serilingampally, Mandal, Survey no. 83/1, Plot No.25, 26, Part 29 Panmaqtha, Rangareddy, Hyderabad, Hyderabad
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="store-info">
+                <!-- Separate Div for City, State & Zip Code in a Single Row -->
+                <div class="store-address-row-2">
+                    <div class="store-address-inline">
+                        <div class="store-list-item">
+                            <p>
+                                <img class="state" src="~/images/city.png" />
+                                <strong class="store-addres-info">
+                                   City:
+                                </strong> Hyderabad
+                            </p>
+                        </div>
+                        
+                        <div class="store-list-item">
+                            <img class="state" src="~/images/output-onlinepngtools.png" />
+                            <p>
+                                <strong class="store-addres-info ">
+                                    State:
+                                </strong> Pennsylvania
+                            </p>
+                        </div>
+                        <div class="store-list-item">
+                            <img class="state" src="~/images/zip-code.png" />
+                            <p>
+                                <strong class="store-addres-info">
+                                    Zip Code:
+                                </strong> 18501
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-row">
+                    <div class="contact-details-inline">
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <img class="contacts-img" src="~/images/gmail.png" />
+                            <p>
+                                
+                                <strong class="contact-label">Email:</strong>
+                                <a href="mailto:contact@secretbaconroll.com" class="contact-link">contact@secretbaconroll.com</a>
+                            </p>
+                        </div>
+
+                        <!-- Contact Number -->
+                        <div class="contact-item">
+                            <img class="contacts-img" src="~/images/callus.png" />
+                            <p>
+                                
+                                <strong class="contact-label">Contact:</strong>
+                                <a href="tel:+15551234567" class="contact-link">(555) 123-4567</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-shops">
+                <a href="#" class="more-shops-button">
+                    <img src="~/images/More.png" class="more-img"/>More Shops</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+ *@
+
+
+

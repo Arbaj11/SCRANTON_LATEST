@@ -1,0 +1,64 @@
+﻿@model Scanton.Models.FooterDescription
+@{
+    Layout = "_AdminLayout";
+    ViewBag.Title = "Edit Footer";
+}
+
+<form asp-action="Edit" method="post" class="bg-light p-4 rounded shadow-sm">
+    <h3 class="text-center text-primary fw-bold mb-4">Footer Description</h3>
+    <input asp-for="Id" type="hidden"/>
+    <!-- Title -->
+    <div class="mb-4">
+        <label asp-for="Title" class="form-label fw-bold text-dark">Title</label>
+        <input asp-for="Title" class="form-control rounded-pill border-primary shadow-sm" placeholder="Enter title" />
+        <span asp-validation-for="Title" class="text-danger small"></span>
+    </div>
+
+    <!-- Description -->
+    <div class="mb-4">
+        <label asp-for="Description" class="form-label fw-bold text-dark">Description</label>
+        <!-- TinyMCE-Enabled Textarea -->
+        <textarea id="editor" name="Description" class="form-control" rows="5" style="min-height: 150px;">@Model.Description</textarea>
+        <span asp-validation-for="Description" class="text-danger small"></span>
+    </div>
+
+
+
+
+
+
+    <!-- Submit Button -->
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary rounded-pill px-4 shadow-sm submit-model custom-button">Submit</button>
+    </div>
+</form>
+
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/uri33eo7eany9kxw5kj74jvznvem0uauna1wrsg8y5ang3s7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: '#editor',
+        menubar: false,
+        statusbar: false,
+        plugins: 'autoresize anchor autolink charmap code codesample directionality fullpage help hr image imagetools insertdatetime link lists media nonbreaking pagebreak preview print searchreplace table template textpattern toc visualblocks visualchars',
+        toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help fullscreen',
+        skin: 'bootstrap',
+        toolbar_drawer: 'floating',
+        min_height: 200,
+        autoresize_bottom_margin: 16,
+        setup: (editor) => {
+            editor.on('init', () => {
+                editor.getContainer().style.transition = "border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out";
+            });
+            editor.on('focus', () => {
+                editor.getContainer().style.boxShadow = "0 0 0 .2rem rgba(0, 123, 255, .25)";
+                editor.getContainer().style.borderColor = "#80bdff";
+            });
+            editor.on('blur', () => {
+                editor.getContainer().style.boxShadow = "";
+                editor.getContainer().style.borderColor = "";
+            });
+        }
+    });
+</script>

@@ -1,0 +1,106 @@
+﻿@model Scanton.Models.IndexViewModel
+@{
+    Layout = "_Layout";
+
+}
+
+
+<section class="breadscrumb-section pt-0">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadscrumb-contain">
+                    <nav>
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="https://www.hempstarproducts.com/" class="breadcrumb-link">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="blog.aspx" class="breadcrumb-link">Blog</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new-blog-section section-b-space">
+    <div class="container-fluid-lg">
+        <div class="row g-sm-4 g-3">
+            <!-- Sidebar Section -->
+            <div class="col-xxl-3 col-xl-4 col-lg-5 d-lg-block d-none">
+                <div class="custom-sidebar-box">
+                    <div class="accordion custom-accordion-box" id="customAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="customAccordion-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#customAccordion-collapseOne" aria-expanded="true" aria-controls="customAccordion-collapseOne">
+                                    Recent Posts
+                                </button>
+                            </h2>
+                            <div id="customAccordion-collapseOne" class="accordion-collapse collapse show" aria-labelledby="customAccordion-headingOne">
+                                <div class="accordion-body custom-padding-0">
+                                    <div class="recent-post-wrapper">
+                                        @foreach (var recent in Model.Blogs)
+                                        {
+                                            <div class="custom-recent-box">
+                                                <a href="@Url.Action("BlogDetails", "Home", new { blog_id = recent.Id })" class="custom-recent-image">
+                                                    <img src="@recent.ImagePath" class="img-fluid blur-up lazyloaded" alt="@recent.Title">
+                                                </a>
+                                                <div class="custom-recent-detail">
+                                                    <a href="@Url.Action("BlogDetails", "Home", new { blog_id = recent.Id })" class="custom-recent-link">
+                                                        <h5 class="custom-recent-title">@recent.Title</h5>
+                                                    </a>
+                                                    <span class="point-detail"> 
+                                                        <i class="fa-regular fa-calendar blog-calender"></i>@recent.PublishedDate.ToString("MMM dd, yyyy")
+                                                    </span>
+                                                    <span class="point-detail">  
+                                                        <i class="fa-regular fa-pen-to-square blog-author"></i>@recent.Author
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Details Section -->
+            <div class="col-xxl-9 col-xl-8 col-lg-7">
+                <div class="new-blog-detail-container">
+                    <!-- Large Image Section -->
+                    <div class="new-blog-detail-image rounded-3 mb-4 bg-size" style="background-image: url('@ViewBag.BlogDetals.ImagePath'); background-size: cover; background-position: center;">
+                        <div class="new-blog-image-overlay">
+                            <h1 class="custom-blog-title">@ViewBag.BlogDetalsTitle</h1>
+                            <ul class="custom-blog-meta">
+                                <li>By <span>@ViewBag.BlogDetals.Author</span></li>
+                                <li>@ViewBag.BlogDetals.PublishedDate.ToString("MMM dd, yyyy")</li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                    </svg> 122
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Blog Content -->
+                    <div class="new-blog-content">
+                       @ViewBag.BlogDetals.Content
+                    </div>
+                </div>
+
+                <!-- Dropdown for Similar Posts -->
+                <!-- You can add the code for similar posts here if necessary -->
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,568 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanton - Admin Panel</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    @RenderSection("Styles", required: false)
+    <style>
+        /* Basic page structure */
+        /* Basic page structure */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 100vh;
+            background-color: Black;
+            color: #fff;
+            padding-top: 20px;
+            overflow-y: auto; /* Add vertical scrolling */
+            scrollbar-width: thin; /* For modern browsers */
+           
+        }
+
+        td.pdf-table-data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .sidebar::-webkit-scrollbar {
+                width: 8px; /* Width of the scrollbar */
+            }
+
+            .sidebar::-webkit-scrollbar-thumb {
+                background-color: #007bff; /* Color of the scrollbar thumb */
+                border-radius: 4px; /* Round corners for the thumb */
+            }
+
+            .sidebar::-webkit-scrollbar-track {
+                background-color: #000; /* Background of the scrollbar track */
+            }
+
+
+        .sidebar a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+
+        .sidebar a:hover {
+            background-color: #1391a5;
+            color: #fff;
+        }
+
+               
+        .sidebar .active {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Sidebar heading */
+        .sidebar h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Main content area */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-y: auto; /* Add vertical scrolling for main content */
+            background-color: #fff;
+        }
+
+            .content::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .content::-webkit-scrollbar-thumb {
+                background-color: #1391a5;
+                border-radius: 4px;
+            }
+
+            .content::-webkit-scrollbar-track {
+                background-color: #f1f1f1;
+            }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #294869;
+            color: #fff;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .header .logout {
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #settingMenu ul.nav {
+            font-size: 0.9rem; /* Decrease font size */
+        }
+
+            #settingMenu ul.nav .nav-link {
+                padding: 5px 10px; /* Adjust padding for smaller appearance */
+            }
+
+            #settingMenu ul.nav .nav-item {
+                margin-bottom: 5px; /* Add spacing between items */
+            }
+
+            /* Optional: Change the background or text color */
+            #settingMenu ul.nav .nav-link:hover {
+                background-color: #1c1c1c;
+                color: #00aaff;
+            }
+
+      
+    </style>
+</head>
+<body>
+
+    
+    <div class="sidebar bg-dark text-white p-3">
+        <h3 class="text-center text-light">SCRANTON</h3>
+        <ul class="nav flex-column mt-4">
+
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+                <a href="@Url.Action("Index", "Dashboard")" class="nav-link text-white @((ViewData["ActivePage"] as string) == "Dashboard" ? "active bg-primary" : "")">
+                    <i class="bi bi-speedometer2 me-2"></i> Dashboard
+                </a>
+            </li>
+
+            <!-- Parent Categories -->
+            <li class="nav-item">
+                <a href="@Url.Action("Index", "ParentCategory")" class="nav-link text-white @((ViewData["ActivePage"] as string) == "ParentCategory" ? "active bg-primary" : "")">
+                    <i class="bi bi-folder-fill me-2"></i> Parent Categories
+                </a>
+            </li>
+
+            <!-- Category -->
+            <li class="nav-item">
+                <a href="@Url.Action("Index", "Category")" class="nav-link text-white @((ViewData["ActivePage"] as string) == "Category" ? "active bg-primary" : "")">
+                    <i class="bi bi-tags-fill me-2"></i> Category
+                </a>
+            </li>
+
+            <!-- Product Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#productMenu" role="button" aria-expanded="false" aria-controls="productMenu">
+                    <i class="bi bi-box-seam me-2"></i> Product
+                </a>
+                <div class="collapse" id="productMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "Product")" class="nav-link text-white">Create Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("List", "Product")" class="nav-link text-white">Product List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Page Footer -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#paging" role="button" aria-expanded="false" aria-controls="pagemenu">
+                    <i class="fa-regular fa-file-word me-2"></i> Page
+                </a>
+                <div class="collapse" id="paging">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "Page")" class="nav-link text-white">Create Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Page")" class="nav-link text-white">Page List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- About Us -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#aboutus" role="button" aria-expanded="false" aria-controls="aboutus">
+                    <i class="fa-regular fa-file-word me-2"></i> AboutUs
+                </a>
+                <div class="collapse" id="aboutus">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "AboutUs")" class="nav-link text-white">Create AboutUs Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "AboutUs")" class="nav-link text-white">AboutUs List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <!-- Order  -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#order-menu" role="button" aria-expanded="false" aria-controls="orderDetails">
+                    <i class="fa-solid fa-file-invoice me-2"></i> Orders Details
+                </a>
+                <div class="collapse" id="order-menu">
+                    <ul class="nav flex-column ps-4">
+                        
+                        <li class="nav-item">
+                            <a href="/Order/Index" class="nav-link text-white">Order List </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+
+            <!-- COA -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#coa-menu" role="button" aria-expanded="false" aria-controls="aboutus">
+                    <i class="fa-solid fa-file-invoice me-2"></i> COA
+                </a>
+                <div class="collapse" id="coa-menu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "COA")" class="nav-link text-white">Create COA </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "COA")" class="nav-link text-white">COA List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Banner Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#bannerMenu" role="button" aria-expanded="false" aria-controls="bannerMenu">
+                    <i class="bi bi-image me-2"></i> Banner
+                </a>
+                <div class="collapse" id="bannerMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "Banner")" class="nav-link text-white">Create Banner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Banner")" class="nav-link text-white">Banner List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Gallery Videos Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#videoMenu" role="button" aria-expanded="false" aria-controls="videoMenu">
+                    <i class="bi bi-image me-2"></i> Videos Gallery
+                </a>
+                <div class="collapse" id="videoMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "VideoGallery")" class="nav-link text-white">Upload Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "VideoGallery")" class="nav-link text-white">Videos List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!--Soft Banner Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#softBannerMenu" role="button" aria-expanded="false" aria-controls="softBannerMenu">
+                    <i class="bi bi-image me-2"></i> Soft Banner
+                </a>
+                <div class="collapse" id="softBannerMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "SoftBanner")" class="nav-link text-white">Create Soft Banner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "SoftBanner")" class="nav-link text-white">Soft Banner List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <!--Short Banner Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#shortBannerMenu" role="button" aria-expanded="false" aria-controls="shortBannerMenu">
+                    <i class="bi bi-image me-2"></i> Short Banner
+                </a>
+                <div class="collapse" id="shortBannerMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "ShortBanner")" class="nav-link text-white">Create Soft Banner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "ShortBanner")" class="nav-link text-white">Short Banner List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+            
+
+            <!-- Blog Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#blogMenu" role="button" aria-expanded="false" aria-controls="blogMenu">
+                    <i class="bi bi-journal-text me-2"></i> Blog
+                </a>
+                <div class="collapse" id="blogMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "Blog")" class="nav-link text-white">Create Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Blog")" class="nav-link text-white">Blog List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+           
+
+            
+            <!-- Store Profile Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#storeProfileMenu" role="button" aria-expanded="false" aria-controls="storeProfileMenu">
+                    <i class="bi bi-shop me-2"></i> Store Profile
+                </a>
+                <div class="collapse" id="storeProfileMenu">
+                    <ul class="nav flex-column ps-4">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Create", "StoreProfile")" class="nav-link text-white">Create Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("List", "StoreProfile")" class="nav-link text-white">Store List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+             <!-- Setting Group -->
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="collapse" href="#settingMenu" role="button" aria-expanded="false" aria-controls="settingMenu">
+                    <i class="bi bi-gear me-2"></i> Setting
+                </a>
+                <div class="collapse" id="settingMenu">
+                    <ul class="nav flex-column ps-4">
+
+                        <!-- Flash Messages Group -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#flashMessageMenu" role="button" aria-expanded="false" aria-controls="flashMessageMenu">
+                                <i class="bi bi-bell me-2"></i> Flash Messages
+                            </a>
+                            <div class="collapse" id="flashMessageMenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "FlashMessage")" class="nav-link text-white setting-menu">Create Flash</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "FlashMessage")" class="nav-link text-white setting-menu">Flash Message List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Coupon Group -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#couponMenu" role="button" aria-expanded="false" aria-controls="couponMenu">
+                                <i class="bi bi-receipt me-2"></i> Coupon
+                            </a>
+                            <div class="collapse" id="couponMenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "Coupon")" class="nav-link text-white setting-menu">Create Coupon</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "Coupon")" class="nav-link text-white setting-menu">Coupon List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Social Media -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#socialmenu" role="button" aria-expanded="false" aria-controls="blogMenu">
+                                <i class="fa-brands fa-facebook me-2"></i> Social Media
+                            </a>
+                            <div class="collapse" id="socialmenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "SocialMedia")" class="nav-link text-white setting-menu">Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "SocialMedia")" class="nav-link text-white setting-menu">Icon  List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <!-- Foooter -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#footerProfile" role="button" aria-expanded="false" aria-controls="storeProfileMenu">
+                                <i class="fa-solid fa-shoe-prints me-2"></i> Footer Description
+                            </a>
+                            <div class="collapse" id="footerProfile">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "FooterDescription")" class="nav-link text-white setting-menu">Create Footer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "FooterDescription")" class="nav-link text-white setting-menu">Store List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- FAQ Group -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#faqMenu" role="button" aria-expanded="false" aria-controls="faqMenu">
+                                <i class="bi bi-question-circle me-2"></i> FAQ
+                            </a>
+                            <div class="collapse" id="faqMenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "FAQ")" class="nav-link text-white setting-menu">Create FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("List", "FAQ")" class="nav-link text-white setting-menu">FAQ List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Shipment Tracking Group -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#shipmentMenu" role="button" aria-expanded="false" aria-controls="shipmentMenu">
+                                <i class="bi bi-truck me-2"></i> Shipment Tracking
+                            </a>
+                            <div class="collapse" id="shipmentMenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "ShipmentTracking")" class="nav-link text-white setting-menu">Create Shipment</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "ShipmentTracking")" class="nav-link text-white setting-menu">Shipment List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white setting-menu" data-bs-toggle="collapse" href="#tagMenu" role="button" aria-expanded="false" aria-controls="tagMenu">
+                                <i class="bi bi-tag me-2"></i> Tag
+                            </a>
+                            <div class="collapse" id="tagMenu">
+                                <ul class="nav flex-column ps-4">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "Tag")" class="nav-link text-white setting-menu">Create Tag</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "Tag")" class="nav-link text-white setting-menu">Tag List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="content">
+        <!-- Header with logout button -->
+        <div class="header">
+            <h2>Admin Panel</h2>
+            <a href="@Url.Action("Login", "Account")" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+
+        <!-- Dynamic page content -->
+        @RenderBody()
+    </div>
+
+    @* <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Scranton Admin Panel | All Rights Reserved.</p>
+    </div> *@
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.tiny.cloud/1/uri33eo7eany9kxw5kj74jvznvem0uauna1wrsg8y5ang3s7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#editor',
+            menubar: false,
+            statusbar: false,
+            plugins: 'autoresize anchor autolink charmap code codesample directionality fullpage help hr image imagetools insertdatetime link lists media nonbreaking pagebreak preview print searchreplace table template textpattern toc visualblocks visualchars',
+            toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help fullscreen',
+            skin: 'bootstrap',
+            toolbar_drawer: 'floating',
+            min_height: 200,
+            autoresize_bottom_margin: 16,
+            setup: (editor) => {
+                editor.on('init', () => {
+                    editor.getContainer().style.transition = "border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out";
+                });
+                editor.on('focus', () => {
+                    editor.getContainer().style.boxShadow = "0 0 0 .2rem rgba(0, 123, 255, .25)";
+                    editor.getContainer().style.borderColor = "#80bdff";
+                });
+                editor.on('blur', () => {
+                    editor.getContainer().style.boxShadow = "";
+                    editor.getContainer().style.borderColor = "";
+                });
+            }
+        });
+    </script>
+</body>
+</html>

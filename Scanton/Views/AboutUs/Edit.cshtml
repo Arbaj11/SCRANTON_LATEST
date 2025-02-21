@@ -1,0 +1,135 @@
+﻿@model Scanton.Models.AboutUs
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Edit About Us";
+}
+
+<h2 class="text-center my-4">Edit About Us</h2>
+
+<div class="container">
+    <form asp-action="Edit" asp-route-id="@Model.Id" enctype="multipart/form-data" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-pencil-fill me-2"></i> Edit About Us Details</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <!-- Banner Image -->
+                    <div class="mb-3">
+                        <label for="Banner_Image" class="form-label">Banner Image</label>
+                        <input type="file" class="form-control" id="Banner_Image" name="BannerImageFile" />
+                        <input type="hidden" name="fileType" value="Banner_Image" />
+                        @if (!string.IsNullOrEmpty(Model.Banner_Image))
+                        {
+                            <div class="mt-2">
+                                <img src="@Url.Content(Model.Banner_Image)" alt="Banner Image" class="img-thumbnail" style="max-height: 150px;" />
+                            </div>
+                        }
+                        <span asp-validation-for="Banner_Image" class="text-danger"></span>
+                    </div>
+
+                    <!-- Banner Title -->
+                    <div class="mb-3">
+                        <label for="Banner_Title" class="form-label">Banner Title</label>
+                        <input asp-for="Banner_Title" class="form-control" />
+                        <span asp-validation-for="Banner_Title" class="text-danger"></span>
+                    </div>
+                    <!-- Banner SubTitle -->
+                    <div class="mb-3">
+                        <label for="Banner_SubTitle" class="form-label">Banner Subtitle</label>
+                        <input asp-for="Banner_SubTitle" class="form-control" />
+                        <span asp-validation-for="Banner_SubTitle" class="text-danger"></span>
+                    </div>
+
+                    <!-- Other Fields -->
+                    <!-- Repeat the same structure for other fields -->
+                    <!-- Product Image 1 -->
+                    <div class="mb-3">
+                        <label for="Product_Image1" class="form-label">Product Image 1</label>
+                        <input type="file" class="form-control" id="Product_Image1" name="ProductImage1File" />
+                        <input type="hidden" name="fileType" value="Product_Image1" />
+                        @if (!string.IsNullOrEmpty(Model.Product_Image1))
+                        {
+                            <div class="mt-2">
+                                <img src="@Url.Content(Model.Product_Image1)" alt="Product Image 1" class="img-thumbnail" style="max-height: 150px;" />
+                            </div>
+                        }
+                        <span asp-validation-for="Product_Image1" class="text-danger"></span>
+                    </div>
+                    <!-- Product 1 Title -->
+                    <div class="mb-3">
+                        <label for="Product1_Title" class="form-label">Product 1 Title</label>
+                        <input asp-for="Product1_Title" class="form-control" />
+                        <span asp-validation-for="Product1_Title" class="text-danger"></span>
+                    </div>
+
+                    <!-- Product 1 Description -->
+                    <div class="mb-3">
+                        <label for="Product1_Description" class="form-label">Product 1 Description</label>
+                        <textarea asp-for="Product1_Description" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="Product1_Description" class="text-danger"></span>
+                    </div>
+
+
+                    <!-- Product Image 2 -->
+                    <div class="mb-3">
+                        <label for="Product_Image2" class="form-label">Product Image 2</label>
+                        <input type="file" class="form-control" id="Product_Image2" name="ProductImage2File" />
+                        <input type="hidden" name="fileType" value="Product_Image2" />
+                        @if (!string.IsNullOrEmpty(Model.Product_Image2))
+                        {
+                            <div class="mt-2">
+                                <img src="@Url.Content(Model.Product_Image2)" alt="Product Image 2" class="img-thumbnail" style="max-height: 150px;" />
+                            </div>
+                        }
+                        <span asp-validation-for="Product_Image2" class="text-danger"></span>
+                    </div>
+
+                    <!-- Product 2 Title -->
+                    <div class="mb-3">
+                        <label for="Product2_Title" class="form-label">Product 2 Title</label>
+                        <input asp-for="Product2_Title" class="form-control" />
+                        <span asp-validation-for="Product2_Title" class="text-danger"></span>
+                    </div>
+
+                    <!-- Product 2 Description -->
+                    <div class="mb-3">
+                        <label for="Product2_Description" class="form-label">Product 2 Description</label>
+                        <textarea asp-for="Product2_Description" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="Product2_Description" class="text-danger"></span>
+                    </div>
+
+                    <!-- Video Upload -->
+                    <div class="mb-3">
+                        <label for="VideoFile" class="form-label">Upload Video</label>
+                        <input type="file" class="form-control" id="VideoFile" name="VideoFile" accept="video/*" />
+                        @if (!string.IsNullOrEmpty(Model.VideoPath))
+                        {
+                            <div class="mt-2">
+                                <video controls style="max-height: 200px; max-width: 100%;">
+                                    <source src="@Url.Content(Model.VideoPath)" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        }
+                        <span asp-validation-for="VideoPath" class="text-danger"></span>
+                    </div>
+
+                    <!-- Video Title -->
+                    <div class="mb-3">
+                        <label for="VideoTitle" class="form-label">Video Title</label>
+                        <input asp-for="VideoTitle" class="form-control" />
+                        <span asp-validation-for="VideoTitle" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-save-fill me-2"></i> Update
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
